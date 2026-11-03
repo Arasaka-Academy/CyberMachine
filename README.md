@@ -22,7 +22,7 @@ CyberMachine 是一个 NAS 设备硬件设计仓库，保存机箱结构、可�
 | 版本 | 仓库现有资料 | 验证边界 |
 | --- | --- | --- |
 | R1 | CAD 源码、机箱 STEP、3MF、STL、装配说明与数字验证报告 | 有几何、干涉、网格与切片记录；实物打印和装配仍需验证 |
-| R2 | 每盘四点螺丝固定方案的交互结构图、SVG、预览与图形审计记录 | 当前未收录对应的 R2 CAD、打印项目或试装件 |
+| R2 | 完整外观与展开交互图、每盘四点螺丝固定示意、SVG、预览与图形审计记录 | 主板接口对照原厂 STEP；当前未收录对应的 R2 CAD、打印项目或试装件 |
 
 R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料时按 R1 装配说明操作，交互图的展示位移不能作为装配行程。
 
@@ -62,7 +62,7 @@ R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料
 | 分件 STL 与打印盘清单 | [STL ZIP](hardware/enclosure/r1/print/CyberMachine-r1-stl.zip) · [plate-list.csv](hardware/enclosure/r1/print/plate-list.csv) |
 | CAD 源码与重建方法 | [源码说明](hardware/enclosure/r1/src/README.md) |
 | R2 交互结构图 | [使用说明](docs/anatomy/r2/README.md) · [深色页面](docs/anatomy/r2/index.html) · [浅色页面](docs/anatomy/r2/index-light.html) |
-| 验证记录 | [R1 报告](validation/r1/report.json) · [R2 历史日志](validation/r2/history.log) |
+| 验证记录 | [R1 报告](validation/r1/report.json) · [R2 原厂模型对照](validation/r2/fidelity.json) · [R2 历史日志](validation/r2/history.log) |
 
 ## 使用方式
 
@@ -114,7 +114,7 @@ CAD 默认以仓库根目录为工作空间，`--root` 可指定其他工作空�
 
 ## 验证状态
 
-`validation/r1/report.json` 与 `validation/r2/` 保留已有的数字检查结果和历史日志，其日期与验收范围沿用原始记录。普通 R2 构建不代表重新完成几何审计；需要审计时显式使用 `--audit`。
+`validation/r1/report.json` 保留 R1 数字检查记录；`validation/r2/` 保存交互图的几何审计、原厂 STEP 包络对照与历史日志。日期、对应源码和检查范围见各报告。普通 R2 构建不代表重新完成几何审计；需要审计时显式使用 `--audit`。
 
 在仓库根目录校验当前正式文件：
 

@@ -1,0 +1,297 @@
+{
+  "checkedAt": "2026-11-03T04:33:47.065Z",
+  "scope": "Illustration envelopes and datums; not full B-rep equivalence or physical assembly validation.",
+  "source": "references/radxa-taco/radxa_taco_3d_stp_v1.61.stp",
+  "sourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "modelGeometrySha256": "d3d76f0b8e07f0e88f3b48307aca363aa22a27cda8e78847031a65b9f7f9cc18",
+  "transform": {
+    "rotationAxis": [
+      0,
+      1,
+      0
+    ],
+    "rotationDegrees": 180,
+    "translationMm": [
+      72.1,
+      120,
+      135
+    ]
+  },
+  "nativeSolidCount": 730,
+  "checks": [
+    {
+      "name": "board.pcb",
+      "stepSolidIndex": 0,
+      "expected": [
+        9.1842,
+        35.6795,
+        133.4,
+        122.8908,
+        120.5503,
+        135
+      ],
+      "rendered": [
+        9.2,
+        35.7,
+        133.4,
+        122.8876,
+        120.55,
+        135
+      ],
+      "maxErrorMm": 0.0205,
+      "toleranceMm": 0.03
+    },
+    {
+      "name": "io.ethernet-1g.",
+      "stepSolidIndex": 699,
+      "expected": [
+        10.65,
+        33.05,
+        131.05,
+        26.88,
+        54.3,
+        148.35
+      ],
+      "rendered": [
+        10.65,
+        33.05,
+        131.05,
+        26.88,
+        54.3,
+        148.35
+      ],
+      "maxErrorMm": 0,
+      "toleranceMm": 0.001
+    },
+    {
+      "name": "io.ethernet-2.5g.",
+      "stepSolidIndex": 700,
+      "expected": [
+        31.65,
+        33.05,
+        131.05,
+        47.88,
+        54.3,
+        148.35
+      ],
+      "rendered": [
+        31.65,
+        33.05,
+        131.05,
+        47.88,
+        54.3,
+        148.35
+      ],
+      "maxErrorMm": 0,
+      "toleranceMm": 0.001
+    },
+    {
+      "name": "io.usb-a.",
+      "stepSolidIndex": 714,
+      "expected": [
+        51.04,
+        33,
+        131.8024,
+        66.71,
+        50.46,
+        150.5
+      ],
+      "rendered": [
+        51.04,
+        33,
+        131.8024,
+        66.71,
+        50.46,
+        150.5
+      ],
+      "maxErrorMm": 0,
+      "toleranceMm": 0.001
+    },
+    {
+      "name": "io.hdmi.",
+      "stepSolidIndex": 698,
+      "expected": [
+        70.622,
+        33.4,
+        132.975,
+        85.622,
+        45.4,
+        141.25
+      ],
+      "rendered": [
+        70.622,
+        33.4,
+        132.975,
+        85.622,
+        45.4,
+        141.25
+      ],
+      "maxErrorMm": 0,
+      "toleranceMm": 0.001
+    },
+    {
+      "name": "io.usb-c.",
+      "stepSolidIndex": 687,
+      "expected": [
+        88.945,
+        33.4401,
+        131.0076,
+        96.345,
+        40.8401,
+        142.0076
+      ],
+      "rendered": [
+        88.945,
+        33.4401,
+        131.0076,
+        96.345,
+        40.8401,
+        142.0076
+      ],
+      "maxErrorMm": 0,
+      "toleranceMm": 0.001
+    },
+    {
+      "name": "io.dc.",
+      "stepSolidIndex": 701,
+      "expected": [
+        107.515,
+        34.35,
+        132.1991,
+        117.515,
+        47.35,
+        145.4
+      ],
+      "rendered": [
+        107.515,
+        34.35,
+        132.1991,
+        117.515,
+        47.35,
+        145.4
+      ],
+      "maxErrorMm": 0,
+      "toleranceMm": 0.001
+    },
+    {
+      "name": "board.sata1",
+      "stepSolidIndex": 691,
+      "expected": [
+        26.555,
+        54.7,
+        122.7003,
+        31.4549,
+        98.2587,
+        133.4
+      ],
+      "rendered": [
+        26.55,
+        54.7,
+        122.7003,
+        31.4499,
+        98.2587,
+        133.4
+      ],
+      "maxErrorMm": 0.005,
+      "toleranceMm": 0.01
+    },
+    {
+      "name": "board.sata2",
+      "stepSolidIndex": 692,
+      "expected": [
+        48.05,
+        54.7,
+        122.7003,
+        52.9499,
+        98.2587,
+        133.4
+      ],
+      "rendered": [
+        48.05,
+        54.7,
+        122.7003,
+        52.95,
+        98.2587,
+        133.4
+      ],
+      "maxErrorMm": 0.0001,
+      "toleranceMm": 0.01
+    },
+    {
+      "name": "board.sata3",
+      "stepSolidIndex": 693,
+      "expected": [
+        69.55,
+        54.7,
+        122.7003,
+        74.4499,
+        98.2587,
+        133.4
+      ],
+      "rendered": [
+        69.55,
+        54.7,
+        122.7003,
+        74.45,
+        98.2587,
+        133.4
+      ],
+      "maxErrorMm": 0.0001,
+      "toleranceMm": 0.01
+    },
+    {
+      "name": "board.sata4",
+      "stepSolidIndex": 694,
+      "expected": [
+        91.05,
+        54.7,
+        122.7003,
+        95.9499,
+        98.2587,
+        133.4
+      ],
+      "rendered": [
+        91.05,
+        54.7,
+        122.7003,
+        95.95,
+        98.2587,
+        133.4
+      ],
+      "maxErrorMm": 0.0001,
+      "toleranceMm": 0.01
+    },
+    {
+      "name": "board.sata5",
+      "stepSolidIndex": 695,
+      "expected": [
+        112.55,
+        54.7,
+        122.7003,
+        117.4499,
+        98.2587,
+        133.4
+      ],
+      "rendered": [
+        112.55,
+        54.7,
+        122.7003,
+        117.45,
+        98.2587,
+        133.4
+      ],
+      "maxErrorMm": 0.0001,
+      "toleranceMm": 0.01
+    }
+  ],
+  "enclosure": {
+    "bodyMm": [
+      144,
+      168,
+      210
+    ],
+    "feetMm": 6,
+    "sideThicknessMm": 3
+  },
+  "passed": true
+}

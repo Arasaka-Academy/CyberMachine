@@ -1,6 +1,7 @@
 import * as k from './kit/iso-kit.mjs';
 import * as G from './kit/lathe.mjs';
 import * as A from './kit/audit.mjs';
+import {BOARD,PORTS} from './reference.mjs';
 
 export const SPEC = Object.freeze({width:144,depth:168,height:210,feet:6,pitch:21.5,
   sata:[29,50.5,72,93.5,115],holes:[32.1,108.7],sideOffset:3,sidePitch:76.6,
@@ -9,11 +10,12 @@ export const SPEC = Object.freeze({width:144,depth:168,height:210,feet:6,pitch:2
 export const W=1040,H=830;
 export const P=k.fitProjection([
  ...k.boxCorners({x:0,y:0,w:144,d:168,r:0},-6,210),
+ ...k.boxCorners({x:-80,y:0,w:3,d:168,r:0},0,207),
  ...k.boxCorners({x:3,y:-75,w:138,d:3,r:0},0,132),
  ...k.boxCorners({x:3,y:225,w:138,d:3,r:0},0,207),
  ...k.boxCorners({x:0,y:0,w:144,d:168,r:0},283,286)],W,H,
   {pad:36,azimuth:232,elevation:25});
-export const MOVES={frame:[0,0,0],front:[0,-75,0],rear:[0,60,0],top:[0,0,76]};
+export const MOVES={frame:[0,0,0],front:[0,-75,0],rear:[0,60,0],top:[0,0,76],left:[-80,0,0],io:[0,-75,-36]};
 const add=G.add3,mul=G.mul3,at=p=>k.iso(p,P),V=G.viewOf(P);
 const path=(p,closed=true)=>k.pathOf(p.map(at),closed);
 const rect=(x,y,w,h)=>[[x,y],[x+w,y],[x+w,y+h],[x,y+h]];
@@ -27,26 +29,34 @@ function capsule(cx,cy,w,h){return k.roundedPlan({x:cx-w/2,y:cy-h/2,w,d:h,r:Math
 
 // Native SVG faces for an arbitrary prism, including through apertures and their reveals.
 // The audit records the same outer prism with the same cut prisms.
-function prismPaths(F,outer,holes,s0,s1){
+function prismPaths(F,outer,holes,s0,s1,id){
  const rings=[oriented(outer),...holes.map(p=>oriented(p,false))];
  const near=G.dot3(F.a,V)>0?s1:s0,far=near===s1?s0:s1;
- const capNormal=mul(F.a,near===s1?1:-1),buckets=[[],[],[],[],[]],edges=[],creases=[],fills=[];
+ const capNormal=mul(F.a,near===s1?1:-1),buckets=[[],[],[],[],[]],edges=[],creases=[],fills=[],reveals=[];
  const cap=rings.map((r,i)=>k.pathOf(oriented(r.map(p=>at(coord(F,near,p))),i===0),true)).join('');
  fills.push(cap);buckets[G.toneOf(capNormal,P)].push(cap);
  rings.forEach((r,ri)=>{
+  const tones=ri?[[],[],[],[],[]]:buckets,outline=ri?[]:edges,crease=ri?[]:creases,fill=ri?[]:fills;
   const flags=r.map((p,i)=>{const q=r[(i+1)%r.length];return G.dot3(add(mul(F.u,q[1]-p[1]),mul(F.v,p[0]-q[0])),V)>1e-8});
   r.forEach((p,i)=>{
    const q=r[(i+1)%r.length],a=coord(F,near,p),b=coord(F,near,q),c=coord(F,far,q),e=coord(F,far,p);
    if(flags[i]){
     const normal=G.unit3(add(mul(F.u,q[1]-p[1]),mul(F.v,p[0]-q[0])));
     const face=k.pathOf(oriented([a,b,c,e].map(at)),true);
-    fills.push(face);buckets[G.toneOf(normal,P)].push(face);
-    edges.push(path([c,e],false));creases.push(path([a,b],false));
-   }else edges.push(path([a,b],false));
-   if(flags[i]!==flags[(i+r.length-1)%r.length])edges.push(path([a,e],false));
+    fill.push(face);tones[G.toneOf(normal,P)].push(face);
+    outline.push(path([c,e],false));crease.push(path([a,b],false));
+   }else outline.push(path([a,b],false));
+   if(flags[i]!==flags[(i+r.length-1)%r.length])outline.push(path([a,e],false));
   });
+  if(ri){
+   const opening=path(r.map(p=>coord(F,near,p))),clip=`${id}-${ri}`;
+   // Inner walls are visible only through the near opening. Without this clip,
+   // their far edges spill onto the panel as arrows and bow-tie screw holes.
+   reveals.push({clip,opening,paths:{fill:fill.join(''),outline:outline.join(''),crease:crease.join(''),top:tones[4].join(''),shades:tones.slice(0,4).map(b=>b.join(''))}});
+   edges.push(opening);
+  }
  });
- return {fill:fills.join(''),outline:edges.join(''),crease:creases.join(''),top:buckets[4].join(''),shades:buckets.slice(0,4).map(b=>b.join(''))};
+ return {paths:{fill:fills.join(''),outline:edges.join(''),crease:creases.join(''),top:buckets[4].join(''),shades:buckets.slice(0,4).map(b=>b.join(''))},reveals};
 }
 
 export function makeScene(mode='mixed'){
@@ -60,7 +70,9 @@ export function makeScene(mode='mixed'){
   const cut=holes.map(h=>A.prism(F,h,s0-.02,s1+.02));
   const shape=A.prism(F,outer,s0,s1,{cut});
   const u=outer.reduce((s,p)=>s+p[0],0)/outer.length,v=outer.reduce((s,p)=>s+p[1],0)/outer.length;
-  return put(name,coord(F,(s0+s1)/2,[u,v]),k.solidSvg(prismPaths(F,outer,holes,s0,s1),{tone,lit,crease:'faint',inner})+extra,shape,opts);
+  const {paths,reveals}=prismPaths(F,outer,holes,s0,s1,`opening-${mode}-${name.replace(/[^a-z0-9-]/gi,'-')}`);
+  const walls=reveals.map(({clip,opening,paths})=>`<clipPath id="${clip}"><path d="${opening}"/></clipPath><g clip-path="url(#${clip})">${k.solidSvg(paths,{tone,lit,crease:'faint'})}</g>`).join('');
+  return put(name,coord(F,(s0+s1)/2,[u,v]),k.solidSvg(paths,{tone,lit,crease:'faint',inner:walls+inner})+extra,shape,opts);
  }
  function box(name,x,y,z,w,d,h,opts={}){
   return prism(name,ZF,rect(x,y,w,d),z,z+h,opts);
@@ -79,11 +91,21 @@ export function makeScene(mode='mixed'){
  }
  function planeMatrix(o,ex,ey){const q=at(o),x=at(add(o,ex)),y=at(add(o,ey));return `matrix(${x[0]-q[0]} ${x[1]-q[1]} ${y[0]-q[0]} ${y[1]-q[1]} ${q[0]} ${q[1]})`}
 
- // Base is an open structural frame; the omitted bottom hatch is called out in the caption.
- box('stand.base.front',3,3,0,138,15,8,{tone:'lo',piece:'structure',owner:'base'});
- box('stand.base.rear',3,150,0,138,15,8,{tone:'lo',owner:'base'});
- box('stand.base.left',3,18,0,15,132,8,{tone:'lo',owner:'base'});
- box('stand.base.right',126,18,0,15,132,8,{tone:'lo',owner:'base'});
+ // Match the CAD's stepped hatch recess; the cover fits below the upper ledge.
+ for(const [z,h,inset]of [[0,3.5,7],[3.5,4.5,15]]){
+  box(`stand.base.front.${z}`,3,3,z,138,inset,h,{tone:'lo',owner:'base'});
+  box(`stand.base.rear.${z}`,3,165-inset,z,138,inset,h,{tone:'lo',owner:'base'});
+  box(`stand.base.left.${z}`,3,3+inset,z,inset,162-2*inset,h,{tone:'lo',owner:'base'});
+  box(`stand.base.right.${z}`,141-inset,3+inset,z,inset,162-2*inset,h,{tone:'lo',owner:'base'});
+ }
+ box('base.air-dam',12,123,8,120,3,14,{tone:'lo',owner:'base'});
+ prism('service-hatch',ZF,k.roundedPlan({x:10.3,y:10.3,w:123.4,d:147.4,r:2},6),.2,3.3,
+  {holes:[14,130].flatMap(x=>[14,154].map(y=>k.circleRing(x,y,1.7,20))),tone:'lo',piece:'enclosure',owner:'hatch'});
+ for(const x of [14,130])for(const y of [14,154]){
+  disc(`hatch.screw.${x}.${y}`,G.frameAlong([x,y,.2],[0,0,-1]),0,1.2,2.8,{piece:'enclosure',owner:'hatch'});
+  // The threaded shaft is enclosed by the hatch bore and the base ledge.
+  // As with the drive screws, draw only its exposed head, not the hidden shank.
+ }
  for(const x of [7,137])for(const y of [7,161]){
   disc(`stand.foot.${x}.${y}`,G.frameAlong([x,y,-6],[0,0,1]),0,6,7,{tone:'lo'});
  }
@@ -92,14 +114,22 @@ export function makeScene(mode='mixed'){
   box(`guide.mount.${x}.${y}`,x-6,y-6,18,12,12,4,{piece:'guides',owner:y===46?'guide.front':'guide.rear'});
   disc(`guide.mount.screw.${x}.${y}`,G.frameAlong([x,y,22],[0,0,1]),0,2.2,2.85,{tone:'hi',piece:'guides'});
  }
- // A cutaway keeps the rear wall's upper vent section and two real side mounting strips.
- box('side.rear.riser',133,157,8,8,8,199,{tone:'lo',owner:'side'});
- box('side.front.riser',133,3,8,8,8,199,{tone:'lo',owner:'side'});
- box('rear.upper',3,165,132,138,3,75,{tone:'lo',ride:'rear',piece:'fans',holes:[]});
- // The upper wall vents are actual closed apertures, not dashed illustration marks.
- R.items.pop();R.solids.pop();
- prism('rear.upper.vented',YF,rect(3,132,138,75),165,168,{tone:'lo',ride:'rear',piece:'fans',
-  holes:[149,158,167,176,185,194].flatMap(z=>[25,48,71,94,117].map(x=>capsule(x,z,17,5)))});
+ // Both full side panels are retained. Only the left panel leaves in the explode.
+ const sideScrews=[[22,4],[146,4],[7,16],[7,120],[161,16],[161,120],[161,184],[37.5,128],[37.5,198],[46,122.4],[132,122.4]];
+ for(const left of [true,false]){
+  const x=left?0:141,ride=left?'left':'frame',tag=left?'left':'right';
+  prism(`side.${tag}`,XF,rect(0,0,168,207),x,x+3,{tone:'mid',ride,piece:'enclosure',owner:`side.${tag}`,
+   holes:[...sideScrews.map(([y,z])=>k.circleRing(y,z,1.7,20)),
+    ...[149,158,167,176,185,194].flatMap(z=>[54,77,100,123,146].map(y=>capsule(y,z,17,5))),
+    ...(left?[rect(75.2,133.2,18,7.2)]:[])]});
+  for(const y of [3,157]){
+   box(`side.${tag}.lid-mount.${y}`,left?3:133,y,199,8,8,8,{tone:'mid',ride,piece:'enclosure',owner:`side.${tag}`});
+  }
+ }
+ // The I/O panel is recessed 30.5 mm, with the five CAD access windows.
+ prism('io.panel',YF,rect(3,124,138,83),30.5,33.5,{tone:'mid',ride:'io',piece:'enclosure',owner:'io-panel',
+  holes:[rect(9.85,130.25,17.83,18.9),rect(30.85,130.25,17.83,18.9),rect(50.24,131.002,17.27,20.298),
+   rect(69.8,130.2,29.4,13),rect(105.5,130.2,14,17.2)]});
 
  for(const rear of [false,true]){
   const y=rear?111.75:39.5,side=rear?108.75:41.1,tag=rear?'rear':'front';
@@ -141,8 +171,8 @@ export function makeScene(mode='mixed'){
   // A printed label is a surface treatment carried by the drive, not an independently sorted object.
   const label=faceDetails(x,thickness,i);
   body.svg+=label.svg;body.shapes.push(...label.shapes);R.items.splice(R.items.indexOf(label),1);byName.delete(label.name);
-  box(`drive${i}.connector`,x-1.8,55.5,122.7,2,42,1.7,{tone:'lo',piece:'drives',drive:i,owner:`drive${i}`});
-  for(let j=0;j<7;j++)box(`drive${i}.contact${j}`,x-1.82,57+j*5.5,123.1,.02,3,1.1,{tone:'hi',piece:'drives',drive:i,owner:`drive${i}`});
+  box(`drive${i}.connector`,x-1,55.5,122.7,2,42,1.7,{tone:'lo',piece:'drives',drive:i,owner:`drive${i}`});
+  for(let j=0;j<7;j++)box(`drive${i}.contact${j}`,x-1.02,57+j*5.5,123.1,.02,3,1.1,{tone:'hi',piece:'drives',drive:i,owner:`drive${i}`});
   // Platform touches the standard drive envelope; the 0.25 mm production play is simplified here.
   box(`shoe${i}.platform`,x-6.5,50,18,17.1,29.5,4.25,{piece:'guides',drive:i,owner:`shoe${i}`});
   box(`shoe${i}.cross`,x-6.5,46,18,17.1,4,4,{piece:'guides',drive:i,owner:`shoe${i}`});
@@ -154,27 +184,89 @@ export function makeScene(mode='mixed'){
    box(`shim${i}.${yy}.stop`,x+4.7,yy===108.75?yy-1:yy,114,4.1,4,2,{tone:'hi',piece:'shims',drive:i,owner:`shim${i}`});
   }
  });
- // Motherboard saddle with five real slots; the board is a component-envelope proxy.
- prism('saddle',ZF,rect(6,34,132,102),124.4,127.4,{piece:'board',tone:'mid',holes:SPEC.sata.map(x=>rect(x-4.5,39,13.1,74.8))});
- for(const [x,y]of [[20.1,60.2],[12.9,116.95],[105,60.2],[119.45,116.9]]){
+ // Motherboard saddle with five real slots; native PCB outline and mounting datums.
+ // Partition the single printed saddle at its window edges. A whole plate with
+ // five holes wraps the underside SATA bodies and cannot have one painter key.
+ const saddleOptions={piece:'board',tone:'mid',owner:'saddle'};
+ box('saddle.front',6,34,124.4,132,5,3,saddleOptions);
+ box('saddle.rear',6,113.8,124.4,132,22.2,3,saddleOptions);
+ let ribStart=6;
+ for(const [left,right]of [...SPEC.sata.map(x=>[x-4.5,x+8.6]),[138,138]]){
+  box(`saddle.rib.${ribStart}`,ribStart,39,124.4,left-ribStart,74.8,3,saddleOptions);
+  ribStart=right;
+ }
+ for(const [x,y]of BOARD.holes){
   disc(`board.standoff.${x}`,G.frameAlong([x,y,127.4],[0,0,1]),0,6,2.25,{piece:'board',tone:'mid'});
   disc(`board.screw.${x}`,G.frameAlong([x,y,135],[0,0,1]),0,1.1,2,{piece:'board',tone:'hi'});
  }
- box('board.pcb',9.18,35.68,133.4,113.71,84.87,1.6,{tone:'mid',piece:'board',owner:'board'});
- // The hidden side mounts connect the saddle to the structural side riser.
- for(const yy of [46,132])box(`saddle.side${yy}`,129,yy-4,117.4,12,8,10,{piece:'board',owner:'saddle'});
+ prism('board.pcb',ZF,BOARD.outline,BOARD.bottom,BOARD.top,{tone:'mid',piece:'board',owner:'board',
+  holes:BOARD.holes.map(([x,y])=>k.circleRing(x,y,1.35,24))});
+ // The CAD fuses these mounts into the saddle. Keep that exact union, with
+ // tangent pieces: the upper inner 9 mm already belongs to a rib / rear plate.
+ for(const xx of [3,129])for(const yy of [46,132]){
+  box(`saddle.side.${xx}.${yy}`,xx,yy-4,117.4,12,8,7,{piece:'board',owner:'saddle'});
+  box(`saddle.side.outer.${xx}.${yy}`,xx===3?3:138,yy-4,124.4,3,8,3,{piece:'board',owner:'saddle'});
+ }
+ SPEC.sata.forEach((x,i)=>{
+  const {y,depth,bottom,width}=BOARD.sata;
+  // Five underside receptacles meet the actual drive connector datum.
+  prism(`board.sata${i+1}`,ZF,rect(x-width/2,y,width,depth),bottom,BOARD.bottom,{tone:'lo',piece:'board',owner:'board',
+   holes:[rect(x-1.25,y+.5,2.5,depth-1)]});
+ });
  // Cooler visual proxy is below the reserved 35 mm height; the readout states only the envelope.
- box('cm5.standoffs',35,56.7,135,55,40,3.5,{tone:'lo',piece:'board',owner:'cm5'});
- box('cm5.pcb',35,56.7,138.5,55,40,1.2,{piece:'board',owner:'cm5'});
+ for(const [i,y]of [58.06,92.06].entries()){
+  box(`cm5.board-connector${i}`,53.7442,y,135,22.6,3.38,1.45,{tone:'lo',piece:'board',owner:'cm5'});
+  box(`cm5.mating-connector${i}`,53.7442,y,136.45,22.6,3.38,2.05,{tone:'lo',piece:'board',owner:'cm5'});
+ }
+ prism('cm5.pcb',ZF,k.roundedPlan({x:35,y:56.7,w:55,d:40,r:3},6),138.5,139.7,{piece:'board',owner:'cm5'});
  box('cm5.cooler.base',34.55,55.2,139.7,56,43,4,{tone:'hi',piece:'board',owner:'cm5'});
  for(let i=0;i<11;i++)box(`cm5.fin${i}`,35.55,56.2+i*3.8,143.7,54,1.6,12,{tone:'hi',piece:'board',owner:'cm5'});
- box('m2.connector',34.7,98.3,135,80,22,3,{tone:'lo',piece:'board',owner:'m2'});
- box('m2.pcb',34.7,98.3,138,80,22,1.2,{piece:'board',owner:'m2'});
- box('m2.heatspreader',39.7,98.3,139.2,68,22,6,{tone:'hi',piece:'board',owner:'m2'});
- for(const [x,w,h]of [[10.65,16.23,16],[31.65,16.23,16],[51.04,15.67,16],[70.6,14,8],[88,9,6],[106,12,11]]){
-  box(`io.port${x}`,x,35.68,135,w,14,h,{piece:'board',tone:'hi',owner:'board'});
-  // Dark closed socket recess is an inlay on the connector face.
-  prism(`io.socket${x}`,YF,rect(x+1,136,w-2,h-2),35.56,35.68,{piece:'board',tone:'lo',owner:'board'});
+ // End-mounted M-key socket; the previous full-length connector was misleading.
+ box('m2.connector.lower',32.7998,98.175,135,7.1002,21.85,3.5,{tone:'lo',piece:'board',owner:'m2'});
+ box('m2.connector.back',32.7998,98.175,138.5,1.9002,21.85,1.2,{tone:'lo',piece:'board',owner:'m2'});
+ box('m2.connector.upper',32.7998,98.175,139.7,7.1002,21.85,3.82,{tone:'lo',piece:'board',owner:'m2'});
+ prism('m2.pcb',ZF,k.roundedPlan({x:34.7,y:98.3,w:80,d:22,r:1},4),138.5,139.7,{piece:'board',owner:'m2'});
+ box('m2.heatspreader',40.2,98.3,139.7,67.5,22,6,{tone:'hi',piece:'board',owner:'m2'});
+ disc('m2.mount',G.frameAlong([111.7,109.3,135],[0,0,1]),0,3.5,2.3,{piece:'board',owner:'m2'});
+ disc('m2.screw',G.frameAlong([111.7,109.3,139.7],[0,0,1]),0,1.2,2.4,{piece:'board',owner:'m2'});
+ // Recognisable major peripherals, located from the vendor STEP.
+ disc('rtc.holder',G.frameAlong([20.5,84,135],[0,0,1]),0,4.3,7.1,{piece:'board',tone:'lo',owner:'board'});
+ disc('rtc.cell',G.frameAlong([20.5,84,139.3],[0,0,1]),0,.5,5.8,{piece:'board',tone:'hi',owner:'board'});
+ box('power.terminal',10.65,62.8,135,5.8,10.2,11.4,{piece:'board',tone:'mid',owner:'board'});
+ box('tf.socket',107.5811,68.8501,135,15,16.1,1.9,{piece:'board',tone:'hi',owner:'board'});
+ for(const port of PORTS){
+  const [x,y,z,x1,y1,z1]=port.bounds,w=x1-x,h=z1-z,cx=(x+x1)/2;
+  const options={piece:'board',tone:'hi',owner:'board'};
+  let holes;
+  if(port.kind==='rj45'){
+   holes=[[[x+1.2,z+2],[x+5,z+2],[x+5,z+.9],[x1-5,z+.9],[x1-5,z+2],[x1-1.2,z+2],[x1-1.2,z1-1.4],[x+1.2,z1-1.4]]];
+  }else if(port.kind==='usb-a'){
+   holes=[rect(x+1.1,133.05,w-2.2,6.05),rect(x+1.1,142.25,w-2.2,6.25)];
+  }else if(port.kind==='hdmi'){
+   holes=[[[x+1.3,139.9],[x1-1.3,139.9],[x1-1.3,137.7],[x1-3.5,134.3],[x+3.5,134.3],[x+1.3,137.7]]];
+  }else if(port.kind==='usb-c'){
+   holes=[capsule(cx,137.7,w-1,3.6)];
+  }else{
+   holes=[k.circleRing(cx,139,3.1,32)];
+  }
+  // Keep the front lip below the PCB, but stop it at the PCB front edge.
+  // Hidden solder pins and embedded housing surfaces are intentionally omitted.
+  prism(`io.${port.id}.lip`,YF,rect(x,z,w,h),y,BOARD.front,{...options,holes});
+  box(`io.${port.id}.body`,x,BOARD.front,135,w,y1-BOARD.front,z1-135,options);
+  for(let i=0;i<holes.length;i++){
+   prism(`io.${port.id}.well${i}`,YF,holes[i],BOARD.front-.12,BOARD.front,{...options,tone:'lo'});
+  }
+  if(port.kind==='dc'){
+   disc('io.dc.pin',G.frameAlong([cx,BOARD.front-.12,139],[0,-1,0]),0,BOARD.front-y-.6,.85,options);
+  }else if(port.kind==='rj45'){
+   box(`io.${port.id}.tongue`,x+2.2,y+.8,134.1,w-4.4,BOARD.front-y-.92,.8,{...options,tone:'lo'});
+   for(let j=0;j<8;j++)box(`io.${port.id}.contact${j}`,x+3.1+j*1.25,y+1,134.9,.4,BOARD.front-y-1.12,.15,options);
+  }else if(port.kind==='usb-a'){
+   for(const zz of [135,144.2])box(`io.${port.id}.tongue${zz}`,x+2.5,y+.7,zz,w-5,BOARD.front-y-.82,1.2,{...options,tone:'lo'});
+  }else{
+   const zz=port.kind==='hdmi'?137:137.4,ww=port.kind==='hdmi'?w-5:w-2.8;
+   box(`io.${port.id}.tongue`,cx-ww/2,y+.7,zz,ww,BOARD.front-y-.82,.6,{...options,tone:'lo'});
+  }
  }
  function fan(name,c,size,axis,ride){
   const [cx,cy,cz]=c,F=axis==='y'?{...YF,o:[cx,cy,cz]}:{...ZF,o:[cx,cy,cz]};
@@ -195,27 +287,37 @@ export function makeScene(mode='mixed'){
   for(const dx of [-1,1])for(const dy of [-1,1]){
    const off=size===92?41.25:52.5;
    const isRear=name.startsWith('rear'),screwSide=axis==='z'||isRear?1:-1;
-   const FF={...F,o:coord(F,screwSide*12.5,[dx*off,dy*off]),a:mul(F.a,screwSide)};
+   const surface=axis==='z'?17.5:isRear?17.5:-17.5;
+   const FF={...F,o:coord(F,surface,[dx*off,dy*off]),a:mul(F.a,screwSide)};
    disc(`${name}.bolt.${dx}.${dy}`,FF,0,2.2,2.7,{piece:'fans',tone:'mid',ride,owner:name});
-  }
-  // Guard strips span the real fan face, carried by the same module.
-  for(let j=-3;j<=3;j++){
-   const v=j*size/9,half=Math.sqrt(r*r-v*v);
-   const guardSide=axis==='z'||name.startsWith('rear')?1:-1;
-   prism(`${name}.guard${j}`,F,rect(-half,v-1.4,half*2,2.8),guardSide>0?12.5:-14.5,guardSide>0?14.5:-12.5,
-    {tone:'mid',piece:'fans',ride,owner:name});
   }
  }
  // Front and rear panel silhouettes plus real fan apertures, kept separate from the rotors.
  for(const rear of [false,true]){
   const ride=rear?'rear':'front',y=rear?165:0;
-  prism(`${ride}.panel`,YF,rect(3,0,138,132),y,y+3,{holes:[k.circleRing(72,68,57,64)],tone:'lo',ride,piece:'fans',owner:ride});
+  const mountHoles=[19.5,124.5].flatMap(x=>[15.5,120.5].map(z=>k.circleRing(x,z,2.25,24)));
+  prism(`${ride}.panel`,YF,rect(3,0,138,rear?207:132),y,y+3,{holes:[k.circleRing(72,68,57,64),...mountHoles,
+   ...(rear?[149,158,167,176,185,194].flatMap(z=>[25,48,71,94,117].map(x=>capsule(x,z,17,5))):[])],tone:'mid',ride,piece:'enclosure',owner:ride});
   fan(`${ride}.fan`,[72,rear?150.5:17.5,68],120,'y',ride);
  }
- prism('lid',ZF,rect(0,0,144,168),207,210,{holes:[k.circleRing(68,91,43,64)],tone:'mid',ride:'top',piece:'fans',owner:'top'});
+ const lidHoles=[7,137].flatMap(x=>[7,161].map(y=>k.circleRing(x,y,1.7,24)));
+ lidHoles.push(...[-41.25,41.25].flatMap(x=>[-41.25,41.25].map(y=>k.circleRing(68+x,91+y,2.25,24))));
+ prism('lid',ZF,rect(0,0,144,168),207,210,{holes:[k.circleRing(68,91,43,64),...lidHoles],tone:'mid',ride:'top',piece:'enclosure',owner:'top'});
  fan('top.fan',[68,91,192.5],92,'z','top');
- // Physical frame contact: a narrow rear rail supports the saddle at its side lug.
- box('stand.saddle.support',133,128,22,8,8,95.4,{tone:'lo',owner:'side'});
+ // Independent 2 mm CAD guards with closed, rounded slots and real bolt holes.
+ for(const [name,F,size,pitch,aperture,s0]of [
+  ['front',{...YF,o:[72,0,68]},120,105,114,3],
+  ['rear',{...YF,o:[72,0,68]},120,105,114,163],
+  ['top',{...ZF,o:[68,91,0]},92,82.5,86,205]]){
+  const radius=aperture/2-1,holes=[];
+  for(let v=-Math.floor(radius)+7;v<radius;v+=11){
+   const length=2*Math.sqrt(Math.max(0,radius*radius-(Math.abs(v)+4)**2));
+   if(length>14)holes.push(capsule(0,v,length,7.8));
+  }
+  holes.push(...[-pitch/2,pitch/2].flatMap(x=>[-pitch/2,pitch/2].map(y=>k.circleRing(x,y,2.25,24))));
+  prism(`${name}.guard`,F,k.roundedPlan({x:-size/2,y:-size/2,w:size,d:size,r:5},6),s0,s0+2,
+   {holes,tone:'mid',piece:'fans',ride:name,owner:`${name}.fan`});
+ }
  return {R,byName,mode,thicknesses:SPEC.sata.map((_,i)=>mode==='7'?7:mode==='9.5'?9.5:(i%2?7:9.5))};
 }
 

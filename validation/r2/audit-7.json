@@ -85,5 +85,17 @@
     0.9666666666666667,
     0.9833333333333333,
     1
-  ]
+  ],
+  "geometrySha256": "d3d76f0b8e07f0e88f3b48307aca363aa22a27cda8e78847031a65b9f7f9cc18",
+  "checkedAt": "2026-11-03T04:40:41.355Z",
+  "precision": {
+    "overlapSampleStepPx": 0.25,
+    "depthStates": 61,
+    "clearanceStates": 61
+  },
+  "counts": {
+    "items": 431,
+    "solids": 436,
+    "tubes": 0
+  }
 }

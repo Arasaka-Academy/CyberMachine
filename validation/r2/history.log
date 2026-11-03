@@ -131,3 +131,71 @@ shot work/anatomy/shots/assembled-junctions.png · readout "装配位置 · 0%"
 eval: undefined
 shot work/anatomy/shots/shim-detail.png · readout "完全展开 · 100%"
 console: clean
+
+
+--- 原始记录结束 ---
+
+CyberMachine R2 Anatomy — 外观与原厂几何修正 2026-11-03
+本次环境：CyberMachine 仓库，Node.js 22.22.0，Headless Chrome；HTML 通过 file:// 离线打开。以下为本次实际执行的检查，旧记录保持原文。
+修正：完整左右侧板、凹入式 I/O 面板、底部检修盖、独立风扇护网；投影左右方向；原厂 PCB 轮廓与安装孔；六类前方接口及五个底部 SATA 插座；CM5 / M.2 安装结构；孔壁裁切和主板托架连接处的重复面。图中螺丝埋入段省略，底盖保持安装。
+原厂核对：直接读取仓库 Taco V1.61 STEP（730 个实体），沿用绕 Y 轴 180 度后平移 (72.1, 120, 135) mm 的 CAD 变换。PCB、六类前方接口、五个 SATA 插座共 12 组包络全部通过；PCB 轮廓采样容差 0.03 mm，SATA 名义基准容差 0.01 mm，I/O 容差 0.001 mm。详见 fidelity.json，范围限于包络与基准，不代表完整 B-rep 等价。
+几何源码联合 SHA256：d3d76f0b8e07f0e88f3b48307aca363aa22a27cda8e78847031a65b9f7f9cc18
+完整图形审计：三个独立 Node 进程分别调用与构建器相同的 makeScene、A.settle 和 A.auditOrExit --audit，保持默认 0.25 px 遮挡采样和每种 61 个均匀展开位置（含两端）。最终三个模式全部失败项为 0，中间位置的非失败互锁记录也为 0。仅把本次通过检查且 SHA256 一致的求解结果合入 order-cache.json。
+浏览器：深浅主题各在 1440 px 和 390 px 下通过 461 项离线、默认完整外观、三厚度模式、五盘位、组件切换、接口顺序、资源裁切 ID、主题往返、有限变换和无横向溢出检查；真实键盘 Home / End / 数字选盘 / 方向键 / 空格通过。
+动画：深浅主题均通过单调缓动、减少动态效果时直接定位且巡览静止、离屏暂停 / 返回恢复、巡览继续与 Esc 暂停；控制台无错误。
+线端：深浅主题的装配、展开、主板、固定螺丝与垫片视图均为 0；目视检查两套主题和 390 px 整体、展开过程及 4 倍接口 / 护网 / 螺丝 / 垫片 / 通风孔细节。
+重建：仓库根目录与 /tmp 下的深浅主题构建一致，6 个 HTML / SVG、缓存及 4 份当前 JSON 报告共 11 个文件 SHA256 保持一致。JavaScript / Python 语法、JSON、4 个 SVG 和 52 个本地 Markdown / HTML 链接通过。四张正式 PNG 已更新。
+保留：R1 制造资料、R1 预览及验证、原厂参考文件和第三方 kit 的 25 个跟踪文件逐字节与此前提交一致。
+验证边界：说明图及数字几何检查；没有重建 R1 制造资料或重新切片，也没有进行实物打印、装配、公差、螺丝深度、振动、噪声、温度或风量实测。CM5 / M.2 散热器和接口内部仍为有说明的简化图形。
+
+Geometry audit (default 0.25 px, 61 depth / clearance states per mode)
+settle mixed: 5:13.074 (m:ss.mmm)
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 424 solids · 419 items · 61 depth states · 302333 overlaps · 6101 order rules · 124.9 s
+audit passed
+
+settle 9.5: 5:11.859 (m:ss.mmm)
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 416 solids · 411 items · 61 depth states · 293083 overlaps · 5920 order rules · 124.5 s
+audit passed
+
+settle 7: 5:13.985 (m:ss.mmm)
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 436 solids · 431 items · 61 depth states · 315001 overlaps · 6355 order rules · 124.8 s
+audit passed
