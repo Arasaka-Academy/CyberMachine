@@ -1,0 +1,133 @@
+仓库目录整理说明 — 2026-11-03
+
+以下保留原交付与项目更名时的完整历史记录。记录中的文件名、路径、包内清单与下载链接只对应当时的交付环境，不作为当前仓库导航。当前交互图位于 docs/anatomy/r2/，审计报告位于 validation/r2/；正式文件统一由根目录 SHA256SUMS.txt 校验。此次目录整理不增加实物验证结论。
+
+--- 原始记录开始 ---
+
+CyberMachine R2 Anatomy — 原交付记录 2026-11-02
+
+2026-11-03：项目统一命名为 CyberMachine。本文件保留原交付的验证日志，涉及 R2 打印包和下载链接的记录仅代表当时的交付环境。当前仓库未包含 R2 打印包，页面链接已改为仓库说明与明确标注版本的 R1 资料；当前文件完整性见 SHA256SUMS.txt。
+
+说明图检查，不等同于实体 CAD 或硬件验收。
+mixed: 61 sampled poses; failures=0; 365 drawn items
+9.5: 61 sampled poses; failures=0; 357 drawn items
+7: 61 sampled poses; failures=0; 377 drawn items
+
+浏览器：深浅主题；装配/展开；混合、全 7、全 9.5 mm；厚度与组件切换；键盘盘位选择；390 px 手机无横向溢出；减少动态效果；离屏暂停/返回恢复巡览；Esc 暂停；控制台无错误。
+线头检查：深浅主题、装配与展开、7 mm 垫片淡显及硬盘标签视图，均 line ends: 0。
+目视检查：整体与手机、展开过程，以及螺丝/垫圈、导轨/托脚、风扇护网和散热片的 4× 局部。
+完整 R2 旧文件 SHA256：18 / 18 一致。独立 HTML 无外部脚本、样式和图片依赖；3 个本地下载链接存在；4 个 SVG XML 可读。
+未验证：实物装配、打印公差、硬盘实际螺孔与螺纹深度、振动、温度与风量。
+
+Geometry audit (default 0.25 px overlap sampling)
+settle mixed: 1:20.505 (m:ss.mmm)
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 370 solids · 365 items · 61 depth states · 220976 overlaps · 4725 order rules · 16.1 s
+audit passed
+settle 9.5: 1:26.050 (m:ss.mmm)
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 362 solids · 357 items · 61 depth states · 213543 overlaps · 4567 order rules · 21.0 s
+audit passed
+settle 7: 1:33.711 (m:ss.mmm)
+clearance: 0 problems
+clearance apart: 0 problems
+terminals: 0 ends not on a mount
+loose ends: 0
+screen folds: 0
+support: 0 unsupported solids · 0 hanging tubes · 0 sunk pairs
+depth order: 0 problems
+through in mid-flight: 0 pairs
+self-overlap: 0 chunks whose outline crosses itself on screen
+wobble: 0 smoothed profiles whose slope turns between its ends
+saddles off their host apart: 0
+stand-in shapes: 0 items whose recorded shape covers too little of what it draws
+crowding: 0 pairs where a bend or end touches another line on screen
+audit · 0 tubes · 382 solids · 377 items · 61 depth states · 231836 overlaps · 4956 order rules · 18.1 s
+audit passed
+built dark · 365 items · settled ordering
+
+tour-dark.log
+eval: undefined
+eval: {"interrupted":false}
+eval: {"mode":"mixed","focus":"drives","drive":1,"x":1,"target":1,"touring":true,"visible":false,"reduced":false}
+eval: true
+eval: {"mode":"mixed","focus":"screws","drive":1,"x":1,"target":1,"touring":true,"visible":true,"reduced":false}
+eval: true
+console: clean
+
+tour-light.log
+eval: undefined
+eval: {"interrupted":false}
+eval: {"mode":"mixed","focus":"drives","drive":1,"x":1,"target":1,"touring":true,"visible":false,"reduced":false}
+eval: true
+eval: {"mode":"mixed","focus":"screws","drive":1,"x":1,"target":1,"touring":true,"visible":true,"reduced":false}
+eval: true
+console: clean
+
+controls-light.log
+eval: {"mode":"mixed","focus":"screws","drive":1,"x":1,"target":1,"touring":false,"visible":true,"reduced":false}
+shot work/anatomy/shots/apart-screws-light.png · readout "完全展开 · 100%"
+line ends: 0 of 0 ends on 40 lines float
+shot work/anatomy/shots/lines-apart-light.png
+shot work/anatomy/shots/screw-detail-dark-light.png · readout "完全展开 · 100%"
+eval: 20
+shot work/anatomy/shots/shims-dark-light.png · readout "完全展开 · 100%"
+line ends: 0 of 0 ends on 40 lines float
+shot work/anatomy/shots/lines-7-light.png
+shot work/anatomy/shots/assembled-dark-light.png · readout "装配位置 · 0%"
+line ends: 0 of 0 ends on 40 lines float
+shot work/anatomy/shots/lines-assembled-light.png
+eval: {"mode":"7","focus":"shims","drive":3,"x":1,"target":1,"touring":false,"visible":true,"reduced":false}
+shot work/anatomy/shots/board-dark-light.png · readout "完全展开 · 100%"
+line ends: 0 of 0 ends on 45 lines float
+shot work/anatomy/shots/lines-9p5-light.png
+eval: true
+eval: undefined
+sheet work/anatomy/shots/opening-light.png · 12 frames every 160 ms · readouts 0:"剖开展示 · 12%" 1:"剖开展示 · 26%" 2:"剖开展示 · 38%" 3:"剖开展示 · 48%" 4:"剖开展示 · 56%" 5:"剖开展示 · 63%" 6:"剖开展示 · 69%" 7:"剖开展示 · 73%" 8:"剖开展示 · 78%" 9:"剖开展示 · 81%" 10:"剖开展示 · 84%" 11:"剖开展示 · 86%"
+console: clean
+
+browser-mobile.log
+eval: undefined
+shot work/anatomy/shots/phone-final.png · readout "完全展开 · 100%"
+eval: {"mode":"7","focus":"screws","drive":3,"x":1,"target":1,"touring":false,"visible":true,"reduced":true}
+eval: {"mode":"7","focus":"screws","drive":3,"x":0,"target":0,"touring":false,"visible":true,"reduced":true}
+line ends: 0 of 0 ends on 40 lines float
+shot work/anatomy/shots/phone-lines.png
+shot work/anatomy/shots/phone-light-final.png · readout "装配位置 · 0%"
+console: clean
+
+junctions-dark.log
+eval: undefined
+shot work/anatomy/shots/guide-detail.png · readout "完全展开 · 100%"
+eval: undefined
+shot work/anatomy/shots/top-fan-detail.png · readout "完全展开 · 100%"
+shot work/anatomy/shots/front-fan-detail.png · readout "完全展开 · 100%"
+eval: undefined
+shot work/anatomy/shots/assembled-junctions.png · readout "装配位置 · 0%"
+eval: undefined
+shot work/anatomy/shots/shim-detail.png · readout "完全展开 · 100%"
+console: clean

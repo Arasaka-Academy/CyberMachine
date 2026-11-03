@@ -1,0 +1,13 @@
+# Keep checksum-covered text consistent across platforms.
+* text eol=lf
+
+# Preserve native CAD and CSV bytes, including their original line endings.
+*.stp -text
+*.step -text
+*.csv -text
+
+# Compressed projects and visual reference files are binary artifacts.
+*.3mf binary
+*.zip binary
+*.png binary
+*.pdf binary

@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+
+# CAD reconstruction and slicer working directories.
+/work/
+/outputs/

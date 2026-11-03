@@ -1,0 +1,12 @@
+﻿盘号,内容,预计小时,预计克数,启用支撑,零件
+1,试装件,0.42,4.37,否,00_fit_coupon; 00_fit_shim_2p5
+2,左侧板,3.81,94.64,否,03_left_side
+3,右侧板,3.82,94.91,否,04_right_side
+4,后风扇面板,2.32,54.04,否,06_rear_fan_panel
+5,前面板与 I/O,2.45,59.03,否,05_front_fan_panel; 09_recessed_IO_panel
+6,底框（含支撑）,2.57,58.34,是,01_base_frame
+7,检修盖与主板支架,3.19,78.9,否,02_service_hatch; 12_motherboard_saddle
+8,顶盖,2.08,52.84,否,10_top_lid
+9,硬盘导轨（含支撑）,2.83,59.07,是,13_front_drive_guide; 14_rear_drive_guide
+10,三个风扇护网,2.06,50.62,否,07_front_guard; 08_rear_guard; 11_top_guard
+11,托脚 / 垫片 / 脚垫,1.46,32.29,否,15_drive_shoe_1; 16_7mm_shim_1_front; 16_7mm_shim_1_rear; 15_drive_shoe_2; 16_7mm_shim_2_front; 16_7mm_shim_2_rear; 15_drive_shoe_3; 16_7mm_shim_3_front; 16_7mm_shim_3_rear; 15_drive_shoe_4; 16_7mm_shim_4_front; 16_7mm_shim_4_rear; 15_drive_shoe_5; 16_7mm_shim_5_front; 16_7mm_shim_5_rear; 17_foot_1; 17_foot_2; 17_foot_3; 17_foot_4

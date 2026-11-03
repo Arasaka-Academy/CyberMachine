@@ -1,0 +1,602 @@
+{
+  "revision": "R1",
+  "date": "2026-10-30",
+  "units": "mm",
+  "printer": "Bambu Lab P1S 0.4 nozzle",
+  "envelope_mm": [
+    144,
+    168,
+    210
+  ],
+  "feet_mm": 6,
+  "printed_case_parts": 33,
+  "test_parts": 2,
+  "step_readback_solids": 33,
+  "native_cad_valid": true,
+  "mesh_checks": [
+    {
+      "part": "01_base_frame",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 58249.6,
+      "triangles": 6676,
+      "valid": true
+    },
+    {
+      "part": "02_service_hatch",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 56263.36,
+      "triangles": 1052,
+      "valid": true
+    },
+    {
+      "part": "03_left_side",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 97331.75,
+      "triangles": 9768,
+      "valid": true
+    },
+    {
+      "part": "04_right_side",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 97720.55,
+      "triangles": 9748,
+      "valid": true
+    },
+    {
+      "part": "05_front_fan_panel",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 27098.63,
+      "triangles": 2972,
+      "valid": true
+    },
+    {
+      "part": "06_rear_fan_panel",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 52608.04,
+      "triangles": 10420,
+      "valid": true
+    },
+    {
+      "part": "07_front_guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 16007.12,
+      "triangles": 3252,
+      "valid": true
+    },
+    {
+      "part": "08_rear_guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 16007.12,
+      "triangles": 3252,
+      "valid": true
+    },
+    {
+      "part": "09_recessed_IO_panel",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 31816.08,
+      "triangles": 1828,
+      "valid": true
+    },
+    {
+      "part": "10_top_lid",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 54863.8,
+      "triangles": 2052,
+      "valid": true
+    },
+    {
+      "part": "11_top_guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 9938.12,
+      "triangles": 2592,
+      "valid": true
+    },
+    {
+      "part": "12_motherboard_saddle",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 25952.61,
+      "triangles": 2716,
+      "valid": true
+    },
+    {
+      "part": "13_front_drive_guide",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 20883.74,
+      "triangles": 2912,
+      "valid": true
+    },
+    {
+      "part": "14_rear_drive_guide",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 17943.96,
+      "triangles": 772,
+      "valid": true
+    },
+    {
+      "part": "15_drive_shoe_1",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 3537.3,
+      "triangles": 448,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_1_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_1_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "15_drive_shoe_2",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 3537.3,
+      "triangles": 448,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_2_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_2_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "15_drive_shoe_3",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 3537.3,
+      "triangles": 448,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_3_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_3_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "15_drive_shoe_4",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 3537.3,
+      "triangles": 448,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_4_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_4_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "15_drive_shoe_5",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 3537.3,
+      "triangles": 448,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_5_front",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "16_7mm_shim_5_rear",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 632.8,
+      "triangles": 24,
+      "valid": true
+    },
+    {
+      "part": "17_foot_1",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 816.42,
+      "triangles": 612,
+      "valid": true
+    },
+    {
+      "part": "17_foot_2",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 816.42,
+      "triangles": 612,
+      "valid": true
+    },
+    {
+      "part": "17_foot_3",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 816.42,
+      "triangles": 612,
+      "valid": true
+    },
+    {
+      "part": "17_foot_4",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 816.42,
+      "triangles": 612,
+      "valid": true
+    },
+    {
+      "part": "00_fit_coupon",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 3859.16,
+      "triangles": 676,
+      "valid": true
+    },
+    {
+      "part": "00_fit_shim_2p5",
+      "watertight": true,
+      "winding_consistent": true,
+      "volume_mm3": 112.5,
+      "triangles": 12,
+      "valid": true
+    }
+  ],
+  "part_intersections": [],
+  "reference_intersections": [],
+  "hdd_checks": {
+    "static": [
+      {
+        "thickness_mm": 9.5,
+        "static_intersections": []
+      },
+      {
+        "thickness_mm": 7.0,
+        "static_intersections": []
+      }
+    ],
+    "extraction_travel_mm": 125,
+    "downward_extraction_intersections": []
+  },
+  "fastener_checks": [
+    {
+      "item": "M2.5 standoff",
+      "position": [
+        20.1,
+        60.2
+      ],
+      "overlap_with_board_mm3": 0.0
+    },
+    {
+      "item": "M2.5 standoff",
+      "position": [
+        12.9,
+        116.95
+      ],
+      "overlap_with_board_mm3": 0.0
+    },
+    {
+      "item": "M2.5 standoff",
+      "position": [
+        105.0,
+        60.2
+      ],
+      "overlap_with_board_mm3": 0.0
+    },
+    {
+      "item": "M2.5 standoff",
+      "position": [
+        119.45,
+        116.9
+      ],
+      "overlap_with_board_mm3": 0.0
+    },
+    {
+      "item": "M3 shoe head",
+      "slot": 1,
+      "clearance_to_front_fan_mm": 1.0,
+      "overlap_with_fan_mm3": 0.0
+    },
+    {
+      "item": "M3 shoe head",
+      "slot": 2,
+      "clearance_to_front_fan_mm": 1.0,
+      "overlap_with_fan_mm3": 0.0
+    },
+    {
+      "item": "M3 shoe head",
+      "slot": 3,
+      "clearance_to_front_fan_mm": 1.0,
+      "overlap_with_fan_mm3": 0.0
+    },
+    {
+      "item": "M3 shoe head",
+      "slot": 4,
+      "clearance_to_front_fan_mm": 1.0,
+      "overlap_with_fan_mm3": 0.0
+    },
+    {
+      "item": "M3 shoe head",
+      "slot": 5,
+      "clearance_to_front_fan_mm": 1.0,
+      "overlap_with_fan_mm3": 0.0
+    }
+  ],
+  "board_reference": "Original supplied Taco V1.61 STEP transformed by Y rotation 180 degrees, translation (72.1,120,135) mm",
+  "standard_hdd_envelopes_mm": [
+    [
+      100.45,
+      69.85,
+      9.5
+    ],
+    [
+      100.45,
+      69.85,
+      7
+    ]
+  ],
+  "limitations": [
+    "CM5/heatsink/HDD/fans/M2 are reference envelopes, not supplied exact models",
+    "HDD connector datum and insertion depth require physical trial assembly",
+    "No physical print, vibration, acoustic or thermal test performed"
+  ],
+  "slicer_version": "BambuStudio-02.08.02.61",
+  "slicer_return_code": 0,
+  "plates": [
+    {
+      "plate": 1,
+      "objects": [
+        "00_fit_coupon",
+        "00_fit_shim_2p5"
+      ],
+      "seconds": 1514,
+      "grams": 4.37,
+      "support": false,
+      "bbox": [
+        110.00001,
+        113.50001,
+        146.00001,
+        142.49999000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 2,
+      "objects": [
+        "03_left_side"
+      ],
+      "seconds": 13725,
+      "grams": 94.64,
+      "support": false,
+      "bbox": [
+        24.500000000000004,
+        44.00000000000001,
+        231.50000000000003,
+        212.00000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 3,
+      "objects": [
+        "04_right_side"
+      ],
+      "seconds": 13753,
+      "grams": 94.91,
+      "support": false,
+      "bbox": [
+        24.49999,
+        44.00000000000001,
+        231.49999000000003,
+        212.00000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 4,
+      "objects": [
+        "06_rear_fan_panel"
+      ],
+      "seconds": 8335,
+      "grams": 54.04,
+      "support": false,
+      "bbox": [
+        59.00001,
+        24.500000000000004,
+        197.00001,
+        231.50000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 5,
+      "objects": [
+        "05_front_fan_panel",
+        "09_recessed_IO_panel"
+      ],
+      "seconds": 8832,
+      "grams": 59.03,
+      "support": false,
+      "bbox": [
+        59.00001,
+        18.000020000000003,
+        197.00001,
+        238.00000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 6,
+      "objects": [
+        "01_base_frame"
+      ],
+      "seconds": 9240,
+      "grams": 58.34,
+      "support": true,
+      "bbox": [
+        59.00001,
+        47.00001,
+        197.00001,
+        209.00001
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 7,
+      "objects": [
+        "02_service_hatch",
+        "12_motherboard_saddle"
+      ],
+      "seconds": 11475,
+      "grams": 78.9,
+      "support": false,
+      "bbox": [
+        14.30001,
+        54.30001000000001,
+        241.70000000000002,
+        201.70000000000002
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 8,
+      "objects": [
+        "10_top_lid"
+      ],
+      "seconds": 7504,
+      "grams": 52.84,
+      "support": false,
+      "bbox": [
+        56.00000000000001,
+        44.00000000000001,
+        200.00000000000003,
+        212.00000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 9,
+      "objects": [
+        "13_front_drive_guide",
+        "14_rear_drive_guide"
+      ],
+      "seconds": 10190,
+      "grams": 59.07,
+      "support": true,
+      "bbox": [
+        62.00000000000001,
+        104.00000000000001,
+        194.00000000000003,
+        246.00000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 10,
+      "objects": [
+        "07_front_guard",
+        "08_rear_guard",
+        "11_top_guard"
+      ],
+      "seconds": 7408,
+      "grams": 50.62,
+      "support": false,
+      "bbox": [
+        7.000030000000001,
+        21.000020000000003,
+        249.00000000000003,
+        235.00000000000003
+      ],
+      "warnings": ""
+    },
+    {
+      "plate": 11,
+      "objects": [
+        "15_drive_shoe_1",
+        "16_7mm_shim_1_front",
+        "16_7mm_shim_1_rear",
+        "15_drive_shoe_2",
+        "16_7mm_shim_2_front",
+        "16_7mm_shim_2_rear",
+        "15_drive_shoe_3",
+        "16_7mm_shim_3_front",
+        "16_7mm_shim_3_rear",
+        "15_drive_shoe_4",
+        "16_7mm_shim_4_front",
+        "16_7mm_shim_4_rear",
+        "15_drive_shoe_5",
+        "16_7mm_shim_5_front",
+        "16_7mm_shim_5_rear",
+        "17_foot_1",
+        "17_foot_2",
+        "17_foot_3",
+        "17_foot_4"
+      ],
+      "seconds": 5247,
+      "grams": 32.29,
+      "support": false,
+      "bbox": [
+        61.50019,
+        78.40004,
+        194.49982000000003,
+        177.59999000000002
+      ],
+      "warnings": ""
+    }
+  ],
+  "total_estimated_hours": 27.01,
+  "total_estimated_grams": 639.05
+}
