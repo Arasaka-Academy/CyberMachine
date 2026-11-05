@@ -2,6 +2,8 @@
 
 CyberMachine NAS 设备的 R2 结构示意，主板平台为 Radxa Taco V1.61。打开 [index.html](index.html)（深色）或 [index-light.html](index-light.html)（浅色）。两个页面均可离线打开，页面右上角也可切换明暗主题。
 
+在线访问 [GitHub Pages 交互图](https://arasaka-academy.github.io/CyberMachine/)；自动发布与本地预览见[发布说明](../../github-pages.md)。
+
 - 切换「混合安装 / 全 9.5 mm / 全 7 mm」，查看五盘与可拆垫片的关系。
 - 初始为「完整外观」，保留左右侧板、凹入式 I/O 面板与底部检修盖，与仓库产品渲染使用相同的前方与左右方向。
 - 拖动展开滑块，左侧板向外移开，I/O 面板向前下方移开，前后风扇模块向外移开，顶盖与顶扇一起升起。右侧板与底盖保持安装。

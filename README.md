@@ -2,6 +2,8 @@
 
 CyberMachine 是一个 NAS 设备硬件设计仓库，保存机箱结构、可编辑 CAD 模型、3D 打印文件、装配说明、五金清单和交互结构图。
 
+**[在线查看 3D 交互结构图](https://arasaka-academy.github.io/CyberMachine/)** · [浅色主题](https://arasaka-academy.github.io/CyberMachine/docs/anatomy/r2/index-light.html) · [发布说明](docs/github-pages.md)
+
 当前设计基于 **Radxa Taco V1.61 + Raspberry Pi CM5**，采用五盘位 2.5 英寸 SATA 硬盘布局，支持 7 mm 与 9.5 mm 厚度硬盘。CyberMachine 是设备与项目名称，Radxa Taco 是所用主板平台。
 
 ![CyberMachine R1 五盘 NAS 设计总览](docs/images/r1/overview.png)
@@ -71,7 +73,7 @@ R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料
 3. 试装通过后，在 Bambu Studio 中打开 R1 多盘项目，按实际耗材调整配置并重新切片。
 4. 按装配说明安装；修改结构时，从 CAD 源码或分件 STEP 开始，并重新检查干涉与公差。
 
-下载或克隆仓库后，可直接用浏览器离线打开 R2 HTML 页面。GitHub 文件页展示 HTML 源码；交互需要在本地打开页面。
+可在 [GitHub Pages](https://arasaka-academy.github.io/CyberMachine/) 直接操作 R2 交互结构图。下载或克隆仓库后，也可用浏览器离线打开 R2 HTML 页面；GitHub 仓库的 HTML 文件页展示源码。
 
 ## 构建与依赖
 
