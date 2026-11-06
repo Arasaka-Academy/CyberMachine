@@ -2,7 +2,7 @@
 
 CyberMachine 是一个 NAS 设备硬件设计仓库，保存机箱结构、可编辑 CAD 模型、3D 打印文件、装配说明、五金清单和交互结构图。
 
-**[在线查看 3D 交互结构图](https://arasaka-academy.github.io/CyberMachine/)** · [浅色主题](https://arasaka-academy.github.io/CyberMachine/docs/anatomy/r2/index-light.html) · [发布说明](docs/github-pages.md)
+**[在线查看 3D 交互结构图](https://arasaka-academy.github.io/CyberMachine/)** · [3D 装配教学](https://arasaka-academy.github.io/CyberMachine/docs/assembly/r2/) · [浅色主题](https://arasaka-academy.github.io/CyberMachine/docs/anatomy/r2/index-light.html) · [发布说明](docs/github-pages.md)
 
 当前设计基于 **Radxa Taco V1.61 + Raspberry Pi CM5**，采用五盘位 2.5 英寸 SATA 硬盘布局，支持 7 mm 与 9.5 mm 厚度硬盘。CyberMachine 是设备与项目名称，Radxa Taco 是所用主板平台。
 
@@ -24,7 +24,7 @@ CyberMachine 是一个 NAS 设备硬件设计仓库，保存机箱结构、可�
 | 版本 | 仓库现有资料 | 验证边界 |
 | --- | --- | --- |
 | R1 | CAD 源码、机箱 STEP、3MF、STL、装配说明与数字验证报告 | 有几何、干涉、网格与切片记录；实物打印和装配仍需验证 |
-| R2 | 完整外观与展开交互图、每盘四点螺丝固定示意、SVG、预览与图形审计记录 | 主板接口对照原厂 STEP；当前未收录对应的 R2 CAD、打印项目或试装件 |
+| R2 | 交互结构图、每盘四点固定示意、五章 3D 装配教学与练习、操作预览及数字审计 | 主板采用原厂 STEP；尚无 R2 制造 STEP、打印项目或实物试装 |
 
 R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料时按 R1 装配说明操作，交互图的展示位移不能作为装配行程。
 
@@ -42,13 +42,14 @@ R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料
 │   └── print/                # 3MF、STL ZIP、打印盘清单
 ├── docs/
 │   ├── assembly/r1.md        # 装配、五金与打印说明
+│   ├── assembly/r2/          # 离线三维教程、模型、源码与 30 秒预览
 │   ├── images/r1/            # R1 设计与打印预览
-│   ├── images/r2/            # R2 交互图预览
+│   ├── images/r2/            # R2 结构图与装配教学预览
 │   └── anatomy/r2/           # 离线 HTML、SVG、使用说明及 src/
 ├── references/radxa-taco/    # 原厂主板参考资料
 └── validation/
     ├── r1/                   # 原 R1 数字验证报告
-    └── r2/                   # 图形审计与历史验证日志
+    └── r2/                   # 图形、装配数字验证与历史日志
 ```
 
 目录与普通文件名使用英文；Python 文件名使用下划线，其他普通文件使用连字符。独立下载的模型与打印文件带 `CyberMachine-r1-` 前缀，便于离开仓库目录后识别项目与版本。
@@ -64,7 +65,8 @@ R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料
 | 分件 STL 与打印盘清单 | [STL ZIP](hardware/enclosure/r1/print/CyberMachine-r1-stl.zip) · [plate-list.csv](hardware/enclosure/r1/print/plate-list.csv) |
 | CAD 源码与重建方法 | [源码说明](hardware/enclosure/r1/src/README.md) |
 | R2 交互结构图 | [使用说明](docs/anatomy/r2/README.md) · [深色页面](docs/anatomy/r2/index.html) · [浅色页面](docs/anatomy/r2/index-light.html) |
-| 验证记录 | [R1 报告](validation/r1/report.json) · [R2 原厂模型对照](validation/r2/fidelity.json) · [R2 历史日志](validation/r2/history.log) |
+| R2 3D 装配教学 | [离线教程](docs/assembly/r2/index.html) · [复现说明](docs/assembly/r2/README.md) · [30 秒预览](docs/assembly/r2/preview.mp4) |
+| 验证记录 | [R1 报告](validation/r1/report.json) · [R2 原厂模型对照](validation/r2/fidelity.json) · [R2 教学验证](validation/r2/assembly-validation.md) · [R2 历史日志](validation/r2/history.log) |
 
 ## 使用方式
 
@@ -81,6 +83,7 @@ R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料
 | --- | --- |
 | 离线查看 R2 | 浏览器，直接打开 HTML |
 | 重建 R2 HTML / SVG | Node.js 20.10+；使用 Node 内置模块及仓库内的绘图工具，无需安装 npm 依赖 |
+| 重建 R2 三维教程 | Node.js 22.12+、锁定的 npm 依赖；模型已收录，重新建模另需 OCCT 8 和 Blender 3.6，见[教程说明](docs/assembly/r2/README.md) |
 | 重建 R1 CAD | Python 3.12+、OCCT 8 对应的 Python 库、NumPy、trimesh；具体版本见源码说明 |
 | 验证、切片准备、渲染与打包 | 除上述环境外，分别需要 CAD 中间文件、Bambu Studio 本机配置、兼容的 Blender 环境、Pillow 和实际切片结果 |
 

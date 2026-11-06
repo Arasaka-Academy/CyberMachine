@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-06",
+  "browser": "156.0.8078.75",
+  "checks": [
+    "file URL works with all network access disabled",
+    "five chapters, arbitrary seeks, reverse navigation and replay",
+    {
+      "anchorGapsMm": [
+        0.0002980232238769531,
+        0.0002980232238769531,
+        0.0002980232238769531,
+        0.0002980232238769531,
+        0.0002980232238769531,
+        0
+      ]
+    },
+    "actual GLB mating anchors agree within 1 mm",
+    "three themes, three thickness modes, five bays and cutaway",
+    "keyboard, free orbit, reset and mesh selection",
+    "practice errors preserve progress; desktop drag and drop works",
+    "complete practice in all thickness modes and safely change thickness",
+    "390 px layout and mobile tap installation",
+    "offscreen pause resumes without jumping",
+    "visibility change pauses and restores the lesson clock",
+    "reduced motion completes immediately and keeps replay static",
+    "all runtime document and media links resolve locally"
+  ],
+  "errors": [],
+  "networkRequests": [],
+  "performance": {
+    "fps": 60.006000600060354,
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Max, Unspecified Version)"
+  },
+  "viewports": [
+    [
+      1440,
+      980
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "offline": true,
+  "visibilityTest": "visibilitychange event contract; document.hidden overridden because headless background tabs vary",
+  "htmlSha256": "2d4f849d91d838f0c4442c20acaf27f1ff0bf7b5626fb487845df53c7508f9ff",
+  "modelSha256": "b0c293a0072a718a9275ca60e77b55cbbbdbab62d3f3ec139f69c78e0a9739ce",
+  "physicalTesting": false
+}

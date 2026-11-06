@@ -11,3 +11,10 @@
 *.zip binary
 *.png binary
 *.pdf binary
+*.glb binary
+*.gz binary
+*.mp4 binary
+
+# Generated bundles retain upstream shader and license text spacing.
+docs/assembly/r2/index.html -whitespace
+docs/assembly/r2/assets/third-party-licenses.txt -whitespace

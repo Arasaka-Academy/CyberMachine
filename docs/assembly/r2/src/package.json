@@ -1,0 +1,26 @@
+{
+  "name": "cybermachine-r2-assembly-lesson",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5420",
+    "build": "node build.mjs",
+    "export-scene": "node export-scene.mjs",
+    "test": "node --test tests/lesson.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "record": "node record-film.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "vite": "8.3.6"
+  },
+  "engines": { "node": ">=22.12.0" }
+}

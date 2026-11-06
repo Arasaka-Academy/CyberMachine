@@ -1,0 +1,19 @@
+{
+  "sourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "nativeSolids": 730,
+  "analyticParts": 54,
+  "analyticShapes": 487,
+  "invalidAnalyticShapes": [],
+  "triangles": 640002,
+  "meshes": 90,
+  "supplementalEKey": "U33 placement-map envelope; connector height and antenna geometry are schematic.",
+  "date": "2026-11-06",
+  "units": "mm",
+  "renderMapping": "[x,z,-y]/1000",
+  "logicalNodes": 55,
+  "meshPurpose": "interactive teaching; not manufacturing",
+  "artifactSha256": {
+    "docs/assembly/r2/assets/assembly.glb": "b0c293a0072a718a9275ca60e77b55cbbbdbab62d3f3ec139f69c78e0a9739ce",
+    "docs/assembly/r2/assets/assembly.glb.gz": "61d90a51a65e01cf506963d043e762bd94a02bdeebe418f1e1d2f3c661a3e6a2"
+  }
+}

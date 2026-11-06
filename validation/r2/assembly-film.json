@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-06",
+  "durationSeconds": 30,
+  "frames": 900,
+  "fps": 30,
+  "size": [
+    960,
+    600
+  ],
+  "audio": "silent UI preview",
+  "firstClockMs": 1999.9999999999982,
+  "capture": "offline HTML; actual Playwright clicks, 4x playback and small orbits; virtual RAF/performance/Date clock; 2 s pre-roll",
+  "events": [
+    {
+      "frame": 0,
+      "kind": "click",
+      "target": "2× 播放速度"
+    },
+    {
+      "frame": 0,
+      "kind": "click",
+      "target": "4× 播放速度"
+    },
+    {
+      "frame": 0,
+      "kind": "click",
+      "target": "第 1 章"
+    },
+    {
+      "frame": 0,
+      "kind": "click",
+      "target": "播放本章"
+    },
+    {
+      "frame": 120,
+      "kind": "click",
+      "target": "第 2 章"
+    },
+    {
+      "frame": 120,
+      "kind": "click",
+      "target": "播放本章"
+    },
+    {
+      "frame": 242,
+      "kind": "orbit",
+      "target": "三维工作台"
+    },
+    {
+      "frame": 270,
+      "kind": "click",
+      "target": "第 3 章"
+    },
+    {
+      "frame": 270,
+      "kind": "click",
+      "target": "播放本章"
+    },
+    {
+      "frame": 392,
+      "kind": "orbit",
+      "target": "三维工作台"
+    },
+    {
+      "frame": 420,
+      "kind": "click",
+      "target": "第 4 章"
+    },
+    {
+      "frame": 420,
+      "kind": "click",
+      "target": "播放本章"
+    },
+    {
+      "frame": 527,
+      "kind": "orbit",
+      "target": "三维工作台"
+    },
+    {
+      "frame": 540,
+      "kind": "click",
+      "target": "第 5 章"
+    },
+    {
+      "frame": 540,
+      "kind": "click",
+      "target": "播放本章"
+    },
+    {
+      "frame": 736,
+      "kind": "orbit",
+      "target": "三维工作台"
+    },
+    {
+      "frame": 750,
+      "kind": "click",
+      "target": "装配练习"
+    },
+    {
+      "frame": 765,
+      "kind": "click",
+      "target": "选择 E-Key 网卡"
+    },
+    {
+      "frame": 795,
+      "kind": "click",
+      "target": "尝试错误 M-Key"
+    },
+    {
+      "frame": 799,
+      "kind": "orbit",
+      "target": "三维工作台"
+    },
+    {
+      "frame": 845,
+      "kind": "click",
+      "target": "安装到 E-Key"
+    },
+    {
+      "frame": 860,
+      "kind": "click",
+      "target": "选择天线"
+    },
+    {
+      "frame": 885,
+      "kind": "click",
+      "target": "扣合天线"
+    },
+    {
+      "frame": 889,
+      "kind": "orbit",
+      "target": "三维工作台"
+    }
+  ],
+  "errors": [],
+  "framingFaults": [],
+  "duplicateCheck": {
+    "retainedFrames": 887,
+    "maxRetainedFrameGapSeconds": 0.13333300000000037
+  },
+  "htmlSha256": "2d4f849d91d838f0c4442c20acaf27f1ff0bf7b5626fb487845df53c7508f9ff",
+  "videoSha256": "806a2a45720f565b038aeeed0abd8f3a92763f6f1e72c80402a72c7d92902632",
+  "browser": "156.0.8078.75"
+}

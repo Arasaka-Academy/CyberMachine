@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-06",
+  "kind": "sampled exact B-rep motion audit",
+  "states": 1515,
+  "statistics": {
+    "candidatePairs": 437,
+    "booleanOperations": 1
+  },
+  "pathConflicts": [],
+  "seatedBoardContacts": [
+    {
+      "parts": [
+        "wifi-slot",
+        "taco"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "wifi-slot",
+        "wifi"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "wifi-slot",
+        "cm5"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "wifi-slot",
+        "cm5-cooler"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "wifi",
+        "taco"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "wifi",
+        "cm5"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "wifi",
+        "cm5-cooler"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "cm5",
+        "taco"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "cm5",
+        "cm5-cooler"
+      ],
+      "volumeMm3": 0
+    },
+    {
+      "parts": [
+        "cm5-cooler",
+        "taco"
+      ],
+      "volumeMm3": 0
+    }
+  ],
+  "antennaWires": {
+    "routes": 20,
+    "samplesPerRoute": 201,
+    "radiusMm": 0.65,
+    "exactDistanceChecks": 0,
+    "contacts": [],
+    "intentionalContacts": "first 2 mm at wireless antenna terminals; wire ends enter FPC antenna pads"
+  },
+  "toleranceVolumeMm3": 0.05,
+  "sampling": "101 uniform samples per chapter plus phase boundaries, all 3 thickness modes",
+  "intentionalContacts": [
+    "native SATA shells 691-695 versus drive tongue",
+    "native CM5 carrier shells 706-707 versus CM5 mating connectors",
+    "seated screw heads, fasteners, and inherited R2 joined surfaces use final contact volume as baseline"
+  ],
+  "limits": [
+    "sampled paths, not continuous swept-volume proof",
+    "antenna curves sampled every 1/200 curve parameter at 10 terminal heights; no flexible cable mechanics or RF validation",
+    "no physical trial, print, thermal, vibration, noise or driver test"
+  ],
+  "sources": {
+    "docs/anatomy/r2/src/model.mjs": "001bc7213f474f03943d732b9369701f50037774063d157d2383a6210cad0996",
+    "docs/anatomy/r2/src/reference.mjs": "4917e4bc2d0707e89c57d3e4d5c4a7bd343dce2af0d41573dcd08e6f93810f25",
+    "references/radxa-taco/radxa_taco_3d_stp_v1.61.stp": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+    "references/radxa-taco/radxa_taco_components_placement_map_v1.61.pdf": "d7d8916dd5e8b10a103e84ff3a5611315886484e9684137a47fd12a94a7ab8ad"
+  },
+  "lessonSha256": "a959bdc1381ca360859a85a5c34868c35c1154d4511fad0ae2e312eae219d907"
+}

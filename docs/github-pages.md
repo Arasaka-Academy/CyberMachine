@@ -4,16 +4,20 @@
 
 - [深色主题](https://arasaka-academy.github.io/CyberMachine/docs/anatomy/r2/)
 - [浅色主题](https://arasaka-academy.github.io/CyberMachine/docs/anatomy/r2/index-light.html)
+- [R2 3D 装配教学与练习](https://arasaka-academy.github.io/CyberMachine/docs/assembly/r2/)，复现见[教程说明](assembly/r2/README.md)
+- [30 秒操作预览](https://arasaka-academy.github.io/CyberMachine/docs/assembly/r2/preview.mp4)
 
-页面保留三种硬盘厚度、展开滑块、组件与盘位选择、键盘操作和巡览。图中的下载继续使用 R1 文件与名称；R2 当前只有结构示意，对应的制造文件和实物验证状态见[仓库说明](../README.md)。HTML 仍可下载后离线打开。
+页面保留三种硬盘厚度、展开滑块、组件与盘位选择、键盘操作和巡览。图中的下载继续使用 R1 文件与名称；R2 提供结构示意与装配设计教学，对应的制造文件和实物验证状态见[仓库说明](../README.md)。HTML 仍可下载后离线打开。
 
 ## 构建与预览
 
-需要 Node.js 20.10+、Python 3.10+ 和 Git，无需安装额外依赖。在仓库根目录运行：
+结构图需要 Node.js 20.10+、Python 3.10+ 和 Git，无需额外依赖。三维教程需要 Node.js 22.12+ 和锁定的 npm 依赖；使用已收录模型构建，不运行 CAD 或 Blender。在仓库根目录运行：
 
 ```sh
 node docs/anatomy/r2/src/build.mjs
 node docs/anatomy/r2/src/build.mjs --light
+npm --prefix docs/assembly/r2/src ci
+npm --prefix docs/assembly/r2/src run build
 python3 scripts/build_figure_pages.py
 python3 -m http.server 8000 --bind 127.0.0.1 --directory outputs/github-pages
 ```
@@ -26,4 +30,4 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory outputs/github-pages
 
 [Pages 工作流](https://github.com/Arasaka-Academy/CyberMachine/blob/main/.github/workflows/pages.yml)在 `main` 上的页面、正式资料、构建脚本或校验清单更新后自动执行，也可在 GitHub Actions 手动触发。仓库 Settings → Pages 的 Source 使用 **GitHub Actions**。
 
-工作流先校验正式文件 SHA256，再重新构建深浅主题并确认与提交内容一致，随后暂存、检查链接、上传并部署。普通构建复用几何缓存；这项发布流程不执行新的 CAD、切片、几何审计或实物试装。
+工作流先校验正式文件 SHA256，再重新构建深浅结构图及三维教程、运行教程逻辑检查，并确认页面与提交内容一致，随后暂存、检查链接、上传并部署。普通构建复用几何缓存；这项发布流程不执行新的 CAD、切片、几何审计或实物试装。

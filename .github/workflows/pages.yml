@@ -43,6 +43,13 @@ jobs:
           node docs/anatomy/r2/src/build.mjs
           node docs/anatomy/r2/src/build.mjs --light
           git diff --exit-code -- docs/anatomy/r2 validation/r2
+      - name: Build offline assembly lesson
+        working-directory: docs/assembly/r2/src
+        run: |
+          npm ci
+          npm test
+          npm run build
+          git diff --exit-code -- ../index.html
       - name: Configure Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Stage figure and verify local links

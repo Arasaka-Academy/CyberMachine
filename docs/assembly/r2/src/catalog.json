@@ -1,0 +1,643 @@
+{
+  "units": "mm",
+  "renderMapping": "[x,z,-y]/1000",
+  "spec": {
+    "width": 144,
+    "depth": 168,
+    "height": 210,
+    "feet": 6,
+    "pitch": 21.5,
+    "sata": [
+      29,
+      50.5,
+      72,
+      93.5,
+      115
+    ],
+    "holes": [
+      32.1,
+      108.7
+    ],
+    "sideOffset": 3,
+    "sidePitch": 76.6,
+    "screw": "M3 × 6",
+    "washer": 0.5,
+    "engagement": 2.25,
+    "shim": 2.5,
+    "boardZ": 135,
+    "heatsinkCeiling": 170,
+    "topFanBottom": 180,
+    "frontFan": [
+      120,
+      120,
+      25
+    ],
+    "topFan": [
+      92,
+      92,
+      25
+    ]
+  },
+  "board": {
+    "bottom": 133.4,
+    "top": 135,
+    "front": 35.6795,
+    "outline": [
+      [
+        120.2,
+        35.7
+      ],
+      [
+        120.8693,
+        35.7343
+      ],
+      [
+        121.505,
+        35.9466
+      ],
+      [
+        122.0606,
+        36.3213
+      ],
+      [
+        122.4956,
+        36.8312
+      ],
+      [
+        122.7781,
+        37.4389
+      ],
+      [
+        122.8876,
+        38.1001
+      ],
+      [
+        122.8876,
+        116.75
+      ],
+      [
+        122.8271,
+        117.5942
+      ],
+      [
+        122.5802,
+        118.4038
+      ],
+      [
+        122.1592,
+        119.1381
+      ],
+      [
+        121.5852,
+        119.7602
+      ],
+      [
+        120.8871,
+        120.2388
+      ],
+      [
+        120.1,
+        120.55
+      ],
+      [
+        12.9,
+        120.55
+      ],
+      [
+        11.9455,
+        120.4366
+      ],
+      [
+        11.0538,
+        120.0779
+      ],
+      [
+        10.2866,
+        119.4989
+      ],
+      [
+        9.6972,
+        118.7396
+      ],
+      [
+        9.3264,
+        117.8528
+      ],
+      [
+        9.2,
+        116.9
+      ],
+      [
+        9.2,
+        39.5489
+      ],
+      [
+        9.2553,
+        38.5093
+      ],
+      [
+        9.611,
+        37.5309
+      ],
+      [
+        10.2362,
+        36.6985
+      ],
+      [
+        11.0768,
+        36.0843
+      ],
+      [
+        12.0598,
+        35.7416
+      ],
+      [
+        13.1,
+        35.7
+      ]
+    ],
+    "holes": [
+      [
+        20.1,
+        60.2
+      ],
+      [
+        12.9,
+        116.95
+      ],
+      [
+        105,
+        60.2
+      ],
+      [
+        119.45,
+        116.9
+      ]
+    ],
+    "sata": {
+      "y": 54.7,
+      "depth": 43.5587,
+      "bottom": 122.7003,
+      "width": 4.8999
+    }
+  },
+  "wifi": {
+    "x": 91,
+    "y": 85.5,
+    "w": 22,
+    "d": 30,
+    "bottom": 138.5,
+    "top": 139.3,
+    "insertion": [
+      102,
+      115.5,
+      138.9
+    ],
+    "entry": [
+      102,
+      113.5,
+      138.9
+    ],
+    "mount": [
+      102,
+      87.5,
+      139.3
+    ],
+    "antennas": [
+      [
+        94.5,
+        90,
+        140
+      ],
+      [
+        109.5,
+        90,
+        140
+      ]
+    ],
+    "pivot": [
+      102,
+      115.5,
+      138.9
+    ]
+  },
+  "antennaRoutes": [
+    [
+      [
+        94.5,
+        90,
+        140
+      ],
+      [
+        99.5,
+        85,
+        146
+      ],
+      [
+        128,
+        75,
+        152
+      ],
+      [
+        139.3,
+        62,
+        150
+      ]
+    ],
+    [
+      [
+        109.5,
+        90,
+        140
+      ],
+      [
+        114.5,
+        85,
+        146
+      ],
+      [
+        128,
+        96,
+        152
+      ],
+      [
+        139.3,
+        100,
+        150
+      ]
+    ]
+  ],
+  "anchors": {
+    "sata": [
+      [
+        29,
+        76.5,
+        122.7003
+      ],
+      [
+        50.5,
+        76.5,
+        122.7003
+      ],
+      [
+        72,
+        76.5,
+        122.7003
+      ],
+      [
+        93.5,
+        76.5,
+        122.7003
+      ],
+      [
+        115,
+        76.5,
+        122.7003
+      ]
+    ],
+    "drive": [
+      [
+        29,
+        76.5,
+        122.7
+      ],
+      [
+        50.5,
+        76.5,
+        122.7
+      ],
+      [
+        72,
+        76.5,
+        122.7
+      ],
+      [
+        93.5,
+        76.5,
+        122.7
+      ],
+      [
+        115,
+        76.5,
+        122.7
+      ]
+    ],
+    "cm5": [
+      [
+        65.0542,
+        59.75,
+        136.45
+      ],
+      [
+        65.0442,
+        93.75,
+        136.45
+      ]
+    ],
+    "wifi": [
+      102,
+      115.5,
+      138.9
+    ],
+    "wifiMount": [
+      102,
+      87.5,
+      139.3
+    ],
+    "antenna": [
+      [
+        94.5,
+        90,
+        140
+      ],
+      [
+        109.5,
+        90,
+        140
+      ]
+    ]
+  },
+  "sources": {
+    "docs/anatomy/r2/src/model.mjs": "001bc7213f474f03943d732b9369701f50037774063d157d2383a6210cad0996",
+    "docs/anatomy/r2/src/reference.mjs": "4917e4bc2d0707e89c57d3e4d5c4a7bd343dce2af0d41573dcd08e6f93810f25",
+    "references/radxa-taco/radxa_taco_3d_stp_v1.61.stp": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+    "references/radxa-taco/radxa_taco_components_placement_map_v1.61.pdf": "d7d8916dd5e8b10a103e84ff3a5611315886484e9684137a47fd12a94a7ab8ad"
+  },
+  "parts": [
+    {
+      "id": "base",
+      "label": "底框",
+      "drive": 0
+    },
+    {
+      "id": "hatch",
+      "label": "底部检修盖",
+      "drive": 0
+    },
+    {
+      "id": "feet",
+      "label": "脚垫",
+      "drive": 0
+    },
+    {
+      "id": "guide-front",
+      "label": "前导轨",
+      "drive": 0
+    },
+    {
+      "id": "guide-rear",
+      "label": "后导轨",
+      "drive": 0
+    },
+    {
+      "id": "left",
+      "label": "左侧板",
+      "drive": 0
+    },
+    {
+      "id": "right",
+      "label": "右侧框",
+      "drive": 0
+    },
+    {
+      "id": "io-panel",
+      "label": "I/O 面板",
+      "drive": 0
+    },
+    {
+      "id": "disk-screws-1",
+      "label": "1 号四点固定螺丝",
+      "drive": 1
+    },
+    {
+      "id": "disk-screws-2",
+      "label": "2 号四点固定螺丝",
+      "drive": 2
+    },
+    {
+      "id": "disk-screws-3",
+      "label": "3 号四点固定螺丝",
+      "drive": 3
+    },
+    {
+      "id": "disk-screws-4",
+      "label": "4 号四点固定螺丝",
+      "drive": 4
+    },
+    {
+      "id": "disk-screws-5",
+      "label": "5 号四点固定螺丝",
+      "drive": 5
+    },
+    {
+      "id": "shoe-1",
+      "label": "1 号托脚",
+      "drive": 1
+    },
+    {
+      "id": "shim-1-front",
+      "label": "1 号薄盘垫片",
+      "drive": 1
+    },
+    {
+      "id": "shim-1-rear",
+      "label": "1 号薄盘垫片",
+      "drive": 1
+    },
+    {
+      "id": "shoe-2",
+      "label": "2 号托脚",
+      "drive": 2
+    },
+    {
+      "id": "shim-2-front",
+      "label": "2 号薄盘垫片",
+      "drive": 2
+    },
+    {
+      "id": "shim-2-rear",
+      "label": "2 号薄盘垫片",
+      "drive": 2
+    },
+    {
+      "id": "shoe-3",
+      "label": "3 号托脚",
+      "drive": 3
+    },
+    {
+      "id": "shim-3-front",
+      "label": "3 号薄盘垫片",
+      "drive": 3
+    },
+    {
+      "id": "shim-3-rear",
+      "label": "3 号薄盘垫片",
+      "drive": 3
+    },
+    {
+      "id": "shoe-4",
+      "label": "4 号托脚",
+      "drive": 4
+    },
+    {
+      "id": "shim-4-front",
+      "label": "4 号薄盘垫片",
+      "drive": 4
+    },
+    {
+      "id": "shim-4-rear",
+      "label": "4 号薄盘垫片",
+      "drive": 4
+    },
+    {
+      "id": "shoe-5",
+      "label": "5 号托脚",
+      "drive": 5
+    },
+    {
+      "id": "shim-5-front",
+      "label": "5 号薄盘垫片",
+      "drive": 5
+    },
+    {
+      "id": "shim-5-rear",
+      "label": "5 号薄盘垫片",
+      "drive": 5
+    },
+    {
+      "id": "saddle",
+      "label": "主板支架",
+      "drive": 0
+    },
+    {
+      "id": "standoffs",
+      "label": "主板隔离柱",
+      "drive": 0
+    },
+    {
+      "id": "board-screws",
+      "label": "TACO 固定螺丝",
+      "drive": 0
+    },
+    {
+      "id": "cm5",
+      "label": "Raspberry Pi CM5",
+      "drive": 0
+    },
+    {
+      "id": "cm5-cooler",
+      "label": "CM5 散热器",
+      "drive": 0
+    },
+    {
+      "id": "front-panel",
+      "label": "前面板",
+      "drive": 0
+    },
+    {
+      "id": "front-fan",
+      "label": "前风扇与护网",
+      "drive": 0
+    },
+    {
+      "id": "rear-panel",
+      "label": "后面板",
+      "drive": 0
+    },
+    {
+      "id": "rear-fan",
+      "label": "后风扇与护网",
+      "drive": 0
+    },
+    {
+      "id": "lid",
+      "label": "顶盖",
+      "drive": 0
+    },
+    {
+      "id": "top-fan",
+      "label": "顶部风扇与护网",
+      "drive": 0
+    },
+    {
+      "id": "drive-1-7",
+      "label": "1 号 SATA 硬盘",
+      "drive": 1,
+      "variant": "7"
+    },
+    {
+      "id": "drive-2-7",
+      "label": "2 号 SATA 硬盘",
+      "drive": 2,
+      "variant": "7"
+    },
+    {
+      "id": "drive-3-7",
+      "label": "3 号 SATA 硬盘",
+      "drive": 3,
+      "variant": "7"
+    },
+    {
+      "id": "drive-4-7",
+      "label": "4 号 SATA 硬盘",
+      "drive": 4,
+      "variant": "7"
+    },
+    {
+      "id": "drive-5-7",
+      "label": "5 号 SATA 硬盘",
+      "drive": 5,
+      "variant": "7"
+    },
+    {
+      "id": "drive-1-95",
+      "label": "1 号 SATA 硬盘",
+      "drive": 1,
+      "variant": "9.5"
+    },
+    {
+      "id": "drive-2-95",
+      "label": "2 号 SATA 硬盘",
+      "drive": 2,
+      "variant": "9.5"
+    },
+    {
+      "id": "drive-3-95",
+      "label": "3 号 SATA 硬盘",
+      "drive": 3,
+      "variant": "9.5"
+    },
+    {
+      "id": "drive-4-95",
+      "label": "4 号 SATA 硬盘",
+      "drive": 4,
+      "variant": "9.5"
+    },
+    {
+      "id": "drive-5-95",
+      "label": "5 号 SATA 硬盘",
+      "drive": 5,
+      "variant": "9.5"
+    },
+    {
+      "id": "cm5-screws",
+      "label": "CM5 配套固定件"
+    },
+    {
+      "id": "wifi-slot",
+      "label": "M.2 E-Key 插槽（补绘示意）"
+    },
+    {
+      "id": "wifi",
+      "label": "E-Key 2230 无线模块"
+    },
+    {
+      "id": "wifi-screw",
+      "label": "无线模块尾部固定螺丝"
+    },
+    {
+      "id": "antennas",
+      "label": "两路内置 FPC 天线"
+    }
+  ]
+}
