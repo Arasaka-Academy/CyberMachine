@@ -1,0 +1,6160 @@
+{
+  "date": "2026-11-24",
+  "status": "candidate",
+  "toleranceVolumeMm3": 0.0001,
+  "parts": {
+    "shell": {
+      "valid": true,
+      "solids": 1,
+      "boundsMm": [
+        -5.0,
+        27.9999999,
+        0.0,
+        149.0,
+        172.0,
+        174.0
+      ],
+      "volumeMm3": 302982.1288970884
+    },
+    "lid": {
+      "valid": true,
+      "solids": 1,
+      "boundsMm": [
+        -5.0,
+        28.0,
+        169.3,
+        149.0,
+        172.0,
+        194.0
+      ],
+      "volumeMm3": 101740.15205057594
+    },
+    "spine": {
+      "valid": true,
+      "solids": 1,
+      "boundsMm": [
+        5.5,
+        31.5,
+        7.999999999999999,
+        138.5,
+        138.0,
+        133.4
+      ],
+      "volumeMm3": 109040.62166207992
+    },
+    "carrier": {
+      "valid": true,
+      "solids": 1,
+      "boundsMm": [
+        24.3,
+        39.099999999999994,
+        19.85,
+        38.6,
+        120.6,
+        114.0
+      ],
+      "volumeMm3": 8291.7291209461
+    },
+    "rear-fan-frame": {
+      "valid": true,
+      "solids": 1,
+      "boundsMm": [
+        9.75,
+        136.5,
+        8.0,
+        135.75,
+        142.0,
+        128.0
+      ],
+      "volumeMm3": 10645.732755698029
+    }
+  },
+  "conflicts": [],
+  "scope": "Exact OCCT solid booleans. Nonzero intentional seating contact is not permitted as overlap.",
+  "notVerified": [
+    "actual solder tails",
+    "specific HDD connector geometry and insertion depth",
+    "specific cooler and CM5 attachment",
+    "fastener thread strength",
+    "support removal",
+    "physical assembly",
+    "temperature vibration and noise"
+  ],
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "ioSourceSha256": "47fdf6153820d1faa0c3f7b9908fea01bab277e9fdef47b5cffcfa0dd18ba9fb",
+  "candidateStepSha256": {
+    "shell": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+    "lid": "303d34d4755666c38407dae94e18b2df3cba128a5fbf653428c5e55a00e1fb44",
+    "spine": "f069fb06ee6fe190415cf6f28d11d1163eaca68d341ad0ad6b3805a7b05e1cbb",
+    "carrier": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a",
+    "rear-fan-frame": "e3a3360eaab6b383f6a9dbf4a43f76302620e5463d55038b39f004e3adcb710d"
+  },
+  "purchasedStepSha256": {
+    "top-fan": "ef8528e83778ce2525061fca463eebafa7ce4ed243842a41024fb35d53b2b9bf"
+  },
+  "nativeBooleanFailureControl": {
+    "witnessBoundsMm": [
+      2.8,
+      42.0,
+      0.0,
+      11.5,
+      54.0,
+      200.0
+    ],
+    "knownBlockedCandidate": "144mm case, old left D seat X2.8..11.5/Y42..54",
+    "pcb0OverlapMm3": 44.159999999999904,
+    "all730PerSolidOverlapMm3": 157.04614652341115,
+    "positiveParts": [
+      {
+        "part": "native-0",
+        "overlapMm3": 44.159999999999904
+      },
+      {
+        "part": "native-699",
+        "overlapMm3": 112.88614652341124
+      }
+    ],
+    "legacyMixedTreeCommonOverlapMm3": 0.0,
+    "pureClosedSolidsCompoundCommonOverlapMm3": 0.0,
+    "verdictMethod": "Closed native solids individually, including PCB entity 0; both mixed-tree and pure-solid Compound Common are diagnostic only."
+  },
+  "boardSourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "boardSolids": 730,
+  "boardBoundsMm": [
+    9.184182757151993,
+    32.9999999,
+    122.70031588321267,
+    122.89075123932099,
+    120.550346709674,
+    150.5000001
+  ],
+  "nativeBoardVolumeMm3": 36295.938284162825,
+  "boardChecks": [
+    {
+      "part": "shell",
+      "boardOverlapMm3": 0.0,
+      "electronicsMinDistanceMm": 2.1999999999999993,
+      "nativeSolidsChecked": 730,
+      "candidateSolidChecks": [
+        {
+          "part": "native-0",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-6",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-7",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-8",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-9",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-10",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-11",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-12",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-13",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-14",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-15",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-16",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-17",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-18",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-19",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-20",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-21",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-22",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-23",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-24",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-25",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-26",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-27",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-28",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-29",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-30",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-31",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-32",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-33",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-34",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-35",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-36",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-37",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-38",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-39",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-40",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-41",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-42",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-43",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-44",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-45",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-46",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-47",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-48",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-49",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-50",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-51",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-52",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-53",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-54",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-55",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-56",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-57",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-58",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-59",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-60",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-61",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-62",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-63",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-64",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-65",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-66",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-67",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-68",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-69",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-70",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-71",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-72",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-73",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-74",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-75",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-76",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-77",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-78",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-79",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-80",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-81",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-82",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-83",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-84",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-85",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-86",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-87",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-88",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-89",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-90",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-91",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-92",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-93",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-94",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-95",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-96",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-97",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-98",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-99",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-100",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-101",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-102",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-103",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-104",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-105",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-106",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-107",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-108",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-109",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-110",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-111",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-112",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-113",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-114",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-115",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-116",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-117",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-118",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-119",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-120",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-121",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-122",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-123",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-124",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-125",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-126",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-127",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-128",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-129",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-130",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-131",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-132",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-133",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-134",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-135",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-136",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-137",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-138",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-139",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-140",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-141",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-142",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-143",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-144",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-145",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-146",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-147",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-148",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-149",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-150",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-151",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-152",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-153",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-154",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-155",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-156",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-157",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-158",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-159",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-160",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-161",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-162",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-163",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-164",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-165",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-166",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-167",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-168",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-169",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-170",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-171",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-172",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-173",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-174",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-175",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-176",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-177",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-178",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-179",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-180",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-181",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-182",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-183",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-184",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-185",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-186",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-187",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-188",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-189",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-190",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-191",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-192",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-193",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-194",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-195",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-196",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-197",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-198",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-199",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-200",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-201",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-202",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-203",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-204",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-205",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-206",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-207",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-208",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-209",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-210",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-211",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-212",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-213",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-214",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-215",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-216",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-217",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-218",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-219",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-220",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-221",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-222",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-223",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-224",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-225",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-226",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-227",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-228",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-229",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-230",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-231",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-232",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-233",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-234",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-235",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-236",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-237",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-238",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-239",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-240",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-241",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-242",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-243",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-244",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-245",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-246",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-247",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-248",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-249",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-250",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-251",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-252",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-253",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-254",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-255",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-256",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-257",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-258",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-259",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-260",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-261",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-262",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-263",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-264",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-265",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-266",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-267",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-268",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-269",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-270",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-271",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-272",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-273",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-274",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-275",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-276",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-277",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-278",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-279",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-280",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-281",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-282",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-283",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-284",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-285",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-286",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-287",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-288",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-289",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-290",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-291",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-292",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-293",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-294",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-295",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-296",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-297",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-298",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-299",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-300",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-301",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-302",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-303",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-304",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-305",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-306",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-307",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-308",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-309",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-310",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-311",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-312",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-313",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-314",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-315",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-316",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-317",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-318",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-319",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-320",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-321",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-322",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-323",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-324",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-325",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-326",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-327",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-328",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-329",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-330",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-331",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-332",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-333",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-334",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-335",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-336",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-337",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-338",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-339",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-340",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-341",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-342",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-343",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-344",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-345",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-346",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-347",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-348",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-349",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-350",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-351",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-352",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-353",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-354",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-355",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-356",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-357",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-358",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-359",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-360",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-361",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-362",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-363",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-364",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-365",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-366",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-367",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-368",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-369",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-370",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-371",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-372",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-373",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-374",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-375",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-376",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-377",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-378",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-379",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-380",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-381",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-382",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-383",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-384",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-385",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-386",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-387",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-388",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-389",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-390",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-391",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-392",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-393",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-394",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-395",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-396",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-397",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-398",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-399",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-400",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-401",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-402",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-403",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-404",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-405",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-406",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-407",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-408",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-409",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-410",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-411",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-412",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-413",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-414",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-415",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-416",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-417",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-418",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-419",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-420",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-421",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-422",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-423",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-424",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-425",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-426",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-427",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-428",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-429",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-430",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-431",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-432",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-433",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-434",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-435",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-436",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-437",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-438",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-439",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-440",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-441",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-442",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-443",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-444",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-445",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-446",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-447",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-448",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-449",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-450",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-451",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-452",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-453",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-454",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-455",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-456",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-457",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-458",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-459",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-460",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-461",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-462",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-463",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-464",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-465",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-466",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-467",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-468",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-469",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-470",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-471",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-472",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-473",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-474",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-475",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-476",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-477",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-478",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-479",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-480",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-481",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-482",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-483",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-484",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-485",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-486",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-487",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-488",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-489",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-490",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-491",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-492",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-493",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-494",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-495",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-496",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-497",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-498",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-499",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-500",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-501",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-502",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-503",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-504",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-505",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-506",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-507",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-508",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-509",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-510",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-511",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-512",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-513",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-514",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-515",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-516",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-517",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-518",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-519",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-520",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-521",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-522",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-523",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-524",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-525",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-526",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-527",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-528",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-529",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-530",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-531",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-532",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-533",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-534",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-535",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-536",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-537",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-538",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-539",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-540",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-541",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-542",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-543",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-544",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-545",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-546",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-547",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-548",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-549",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-550",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-551",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-552",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-553",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-554",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-555",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-556",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-557",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-558",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-559",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-560",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-561",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-562",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-563",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-564",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-565",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-566",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-567",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-568",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-569",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-570",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-571",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-572",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-573",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-574",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-575",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-576",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-577",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-578",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-579",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-580",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-581",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-582",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-583",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-584",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-585",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-586",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-587",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-588",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-589",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-590",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-591",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-592",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-593",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-594",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-595",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-596",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-597",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-598",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-599",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-600",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-601",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-602",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-603",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-604",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-605",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-606",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-607",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-608",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-609",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-610",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-611",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-612",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-613",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-614",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-615",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-616",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-617",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-618",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-619",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-620",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-621",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-622",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-623",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-624",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-625",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-626",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-627",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-628",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-629",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-630",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-631",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-632",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-633",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-634",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-635",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-636",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-637",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-638",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-639",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-640",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-641",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-642",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-643",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-644",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-645",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-646",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-647",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-648",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-649",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-650",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-651",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-652",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-653",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-654",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-655",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-656",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-657",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-658",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-659",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-660",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-661",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-662",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-663",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-664",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-665",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-666",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-667",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-668",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-669",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-670",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-671",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-672",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-673",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-674",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-675",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-676",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-677",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-678",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-679",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-680",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-681",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-682",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-683",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-684",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-685",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-686",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-687",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-688",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-689",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-690",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-691",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-692",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-693",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-694",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-695",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-696",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-697",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-698",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-699",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-700",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-701",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-702",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-703",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-704",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-705",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-706",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-707",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-708",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-709",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-710",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-711",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-712",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-713",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-714",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-715",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-716",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-717",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-718",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-719",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-720",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-721",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-722",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-723",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-724",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-725",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-726",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-727",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-728",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-729",
+          "overlapMm3": 0.0
+        }
+      ]
+    },
+    {
+      "part": "lid",
+      "boardOverlapMm3": 0,
+      "electronicsMinDistanceMm": 18.80000000000001,
+      "nativeSolidsChecked": 730,
+      "candidateSolidChecks": []
+    },
+    {
+      "part": "spine",
+      "boardOverlapMm3": 0.0,
+      "electronicsMinDistanceMm": 1.8680129671614563,
+      "nativeSolidsChecked": 730,
+      "candidateSolidChecks": [
+        {
+          "part": "native-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-6",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-7",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-8",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-9",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-10",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-11",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-12",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-13",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-14",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-15",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-16",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-17",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-18",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-19",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-20",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-21",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-22",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-23",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-24",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-25",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-26",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-27",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-28",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-29",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-30",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-31",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-32",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-33",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-34",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-35",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-36",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-37",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-38",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-39",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-40",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-41",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-42",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-43",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-44",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-45",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-46",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-47",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-48",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-49",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-50",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-51",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-52",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-53",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-54",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-55",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-56",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-59",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-60",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-61",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-62",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-63",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-64",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-65",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-67",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-71",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-73",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-75",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-76",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-78",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-82",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-83",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-84",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-85",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-86",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-87",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-88",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-89",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-90",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-91",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-92",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-93",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-94",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-95",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-96",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-97",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-98",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-99",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-100",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-101",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-102",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-103",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-104",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-105",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-106",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-108",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-109",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-111",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-112",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-113",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-114",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-115",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-116",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-117",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-118",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-120",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-127",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-133",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-134",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-135",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-136",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-137",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-139",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-146",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-147",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-148",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-149",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-150",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-152",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-153",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-154",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-155",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-156",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-157",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-158",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-159",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-163",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-164",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-165",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-166",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-167",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-168",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-169",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-170",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-171",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-172",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-173",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-174",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-175",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-176",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-178",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-179",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-183",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-216",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-217",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-222",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-229",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-230",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-231",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-232",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-237",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-238",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-239",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-240",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-241",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-242",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-243",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-244",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-245",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-246",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-247",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-248",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-249",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-250",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-251",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-252",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-253",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-254",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-255",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-257",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-258",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-259",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-260",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-261",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-262",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-263",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-264",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-265",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-266",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-267",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-268",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-269",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-270",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-271",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-272",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-273",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-274",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-275",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-276",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-277",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-278",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-279",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-280",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-281",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-283",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-284",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-285",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-293",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-294",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-295",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-296",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-297",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-298",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-299",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-300",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-301",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-302",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-303",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-304",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-305",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-306",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-307",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-308",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-309",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-311",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-312",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-313",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-314",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-315",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-316",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-317",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-318",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-320",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-321",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-322",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-323",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-324",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-325",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-326",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-327",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-328",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-329",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-330",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-331",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-332",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-333",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-334",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-335",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-336",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-337",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-338",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-341",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-342",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-344",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-345",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-346",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-348",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-352",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-354",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-356",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-357",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-358",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-359",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-360",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-361",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-362",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-364",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-365",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-366",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-367",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-368",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-369",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-370",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-371",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-377",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-378",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-379",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-380",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-381",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-385",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-391",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-392",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-393",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-395",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-399",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-400",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-402",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-405",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-411",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-412",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-416",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-419",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-421",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-422",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-425",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-426",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-427",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-429",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-430",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-431",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-432",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-433",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-434",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-435",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-436",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-437",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-438",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-439",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-440",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-441",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-442",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-443",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-444",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-445",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-446",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-447",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-448",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-449",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-450",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-451",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-452",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-453",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-454",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-455",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-456",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-457",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-458",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-459",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-460",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-461",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-462",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-463",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-464",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-465",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-466",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-467",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-468",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-469",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-470",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-471",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-472",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-473",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-474",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-475",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-476",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-477",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-478",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-479",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-480",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-481",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-484",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-485",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-486",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-487",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-488",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-489",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-490",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-491",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-492",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-493",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-496",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-497",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-498",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-499",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-500",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-501",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-502",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-504",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-505",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-506",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-507",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-508",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-509",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-510",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-511",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-512",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-513",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-514",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-515",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-516",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-517",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-519",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-520",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-521",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-522",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-523",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-524",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-529",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-531",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-532",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-533",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-534",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-535",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-536",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-537",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-538",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-539",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-540",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-541",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-542",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-543",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-544",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-545",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-546",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-547",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-550",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-551",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-552",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-554",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-555",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-558",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-562",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-563",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-564",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-565",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-566",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-568",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-569",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-570",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-571",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-572",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-573",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-574",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-575",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-576",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-577",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-578",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-579",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-580",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-581",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-582",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-583",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-624",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-625",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-626",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-627",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-628",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-629",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-630",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-631",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-632",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-633",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-634",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-635",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-637",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-638",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-639",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-640",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-641",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-642",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-647",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-648",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-649",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-650",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-651",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-652",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-659",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-664",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-665",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-666",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-671",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-674",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-675",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-676",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-678",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-679",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-683",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-684",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-686",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-687",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-690",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-691",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-692",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-693",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-694",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-695",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-696",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-698",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-699",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-700",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-701",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-710",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-714",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-725",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-726",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-727",
+          "overlapMm3": 0.0
+        },
+        {
+          "part": "native-729",
+          "overlapMm3": 0.0
+        }
+      ]
+    },
+    {
+      "part": "rear-fan-frame",
+      "boardOverlapMm3": 0,
+      "electronicsMinDistanceMm": 18.525822518851896,
+      "nativeSolidsChecked": 730,
+      "candidateSolidChecks": []
+    }
+  ],
+  "printedPairs": [
+    {
+      "a": "shell",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "shell",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "spine",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "spine",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "spine",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "spine",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "spine",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "spine",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "rear-fan-frame",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "rear-fan-frame",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "rear-fan-frame",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "rear-fan-frame",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "rear-fan-frame",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-1",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-1",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-1",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-1",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-2",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-2",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-2",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-3",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-3",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "carrier-4",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    }
+  ],
+  "driveSpecification": {
+    "count": 5,
+    "thicknessMm": 7.0,
+    "datum": "negative-X",
+    "bays": [
+      {
+        "bay": 1,
+        "thicknessMm": 7.0,
+        "boundsMm": [
+          26.3,
+          41.5,
+          22.25,
+          33.3,
+          111.35,
+          122.7
+        ]
+      },
+      {
+        "bay": 2,
+        "thicknessMm": 7.0,
+        "boundsMm": [
+          47.8,
+          41.5,
+          22.25,
+          54.8,
+          111.35,
+          122.7
+        ]
+      },
+      {
+        "bay": 3,
+        "thicknessMm": 7.0,
+        "boundsMm": [
+          69.3,
+          41.5,
+          22.25,
+          76.3,
+          111.35,
+          122.7
+        ]
+      },
+      {
+        "bay": 4,
+        "thicknessMm": 7.0,
+        "boundsMm": [
+          90.8,
+          41.5,
+          22.25,
+          97.8,
+          111.35,
+          122.7
+        ]
+      },
+      {
+        "bay": 5,
+        "thicknessMm": 7.0,
+        "boundsMm": [
+          112.3,
+          41.5,
+          22.25,
+          119.3,
+          111.35,
+          122.7
+        ]
+      }
+    ]
+  },
+  "purchasedEnvelopeChecks": [
+    {
+      "a": "fan-envelope",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-envelope",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cm5-envelope",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "cooler-envelope",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-envelope",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "top-fan-hardware",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "lid-fasteners",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-15.5",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-19.5-120.5",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-15.5",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "fan-head-124.5-120.5",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-1",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-2",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-3",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-4",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "shell",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "lid",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "spine",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "rear-fan-frame",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "carrier-1",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "carrier-2",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "carrier-3",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "carrier-4",
+      "overlapMm3": 0.0
+    },
+    {
+      "a": "drive-5",
+      "b": "carrier-5",
+      "overlapMm3": 0.0
+    }
+  ],
+  "topFanChecks": {
+    "frameEnvelopeToCoolerMm": 5.199999999999989,
+    "completeGeometryToCoolerMm": 5.199999999999989,
+    "completeGeometryNativeOverlapMm3": 0,
+    "frameEnvelopeCoolerOverlapMm3": 0.0
+  },
+  "newLidSeatsContinuousLiftIsolation": {
+    "regions": [
+      {
+        "centerXYmm": [
+          3.0,
+          48.0
+        ],
+        "witnessBoundsMm": [
+          -2.3,
+          42.0,
+          0.0,
+          8.2,
+          54.0,
+          200.0
+        ],
+        "nativeBoardProjectionOverlapMm3": 0,
+        "completeCartridgeProjectionOverlapMm3": 0.0,
+        "nativeSolidsChecked": 730,
+        "perSolidCandidateChecks": [],
+        "cartridgeCandidateChecks": [
+          {
+            "part": "spine",
+            "overlapMm3": 0.0
+          }
+        ]
+      },
+      {
+        "centerXYmm": [
+          141.0,
+          48.0
+        ],
+        "witnessBoundsMm": [
+          135.8,
+          42.0,
+          0.0,
+          146.3,
+          54.0,
+          200.0
+        ],
+        "nativeBoardProjectionOverlapMm3": 0,
+        "completeCartridgeProjectionOverlapMm3": 0.0,
+        "nativeSolidsChecked": 730,
+        "perSolidCandidateChecks": [],
+        "cartridgeCandidateChecks": [
+          {
+            "part": "spine",
+            "overlapMm3": 0.0
+          }
+        ]
+      },
+      {
+        "centerXYmm": [
+          3.0,
+          152.0
+        ],
+        "witnessBoundsMm": [
+          -2.3,
+          146.0,
+          0.0,
+          8.2,
+          158.0,
+          200.0
+        ],
+        "nativeBoardProjectionOverlapMm3": 0,
+        "completeCartridgeProjectionOverlapMm3": 0,
+        "nativeSolidsChecked": 730,
+        "perSolidCandidateChecks": [],
+        "cartridgeCandidateChecks": []
+      },
+      {
+        "centerXYmm": [
+          141.0,
+          152.0
+        ],
+        "witnessBoundsMm": [
+          135.8,
+          146.0,
+          0.0,
+          146.3,
+          158.0,
+          200.0
+        ],
+        "nativeBoardProjectionOverlapMm3": 0,
+        "completeCartridgeProjectionOverlapMm3": 0,
+        "nativeSolidsChecked": 730,
+        "perSolidCandidateChecks": [],
+        "cartridgeCandidateChecks": []
+      }
+    ],
+    "actualCartridgeBoundsMm": [
+      5.5,
+      31.5,
+      7.999999999999999,
+      138.5,
+      168.7,
+      170.0
+    ],
+    "basis": "All cartridge solids and conservative purchased envelopes lie within witness Z0..200. Zero intersection with each full-height seat XY prism proves those added seat/ramp footprints cannot intersect any Z translation. Original shell surfaces still use pose checks.",
+    "includesNativeBoardSolids": 730
+  },
+  "cartridgeLift": {
+    "stepMm": 10,
+    "rangeMm": [
+      0,
+      200
+    ],
+    "samples": [
+      {
+        "liftMm": 0,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 10,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 20,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 30,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 40,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 50,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 60,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 70,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 80,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 90,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 100,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 110,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 120,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 130,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 140,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 150,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 160,
+        "overlapMm3": 0.0,
+        "conservativeBoardBoxOverlapMm3": 0.0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 170,
+        "overlapMm3": 0,
+        "conservativeBoardBoxOverlapMm3": 0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 180,
+        "overlapMm3": 0,
+        "conservativeBoardBoxOverlapMm3": 0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 190,
+        "overlapMm3": 0,
+        "conservativeBoardBoxOverlapMm3": 0,
+        "verdictBasis": "conservative board box clear"
+      },
+      {
+        "liftMm": 200,
+        "overlapMm3": 0,
+        "conservativeBoardBoxOverlapMm3": 0,
+        "verdictBasis": "conservative board box clear"
+      }
+    ],
+    "includes": "Lid and attached top fan removed first. Exact internal printed pieces including the rear fan frame and keys, five 7 mm HDD envelopes, rear fan/CM5/cooler design envelopes, four rear fan screw heads, conservative solid envelope of all native board components.",
+    "limitations": "Original shell checks are discrete poses. Conservative board-box failures are retained and resolved with all 730 native solids; added lid seats also have continuous XY isolation proof. Wiring, actual solder tail height and actual mating depths are excluded.",
+    "overlapMetric": "Sum of per-solid intersections; not a geometric union volume. Zero is the required verdict."
+  },
+  "passed": true,
+  "checkedAt": "2026-11-24T09:44:01.466139+00:00"
+}

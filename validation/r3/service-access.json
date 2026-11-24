@@ -1,0 +1,878 @@
+{
+  "checkedAt": "2026-11-24T09:40:35.669562+00:00",
+  "designSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "ioSourceSha256": "47fdf6153820d1faa0c3f7b9908fea01bab277e9fdef47b5cffcfa0dd18ba9fb",
+  "pcbInsertBores": [
+    {
+      "hole": 1,
+      "centerMm": [
+        20.1,
+        60.2
+      ],
+      "diameterMm": 3.3,
+      "measuredBottomZ": 128.5,
+      "measuredTopZ": 133.4,
+      "measuredDepthMm": 4.900000000000006,
+      "screw": "M2.5 low-head x6, no washer",
+      "screwEndZ": 129.0,
+      "nominalEngagementMm": 4.400000000000006,
+      "nominalBottomAllowanceMm": 0.5,
+      "boreOverlapMm3": 0.0,
+      "floorWitnessVolumeMm3": 0.2454369260617212,
+      "screwPlasticOverlapMm3": 0.0
+    },
+    {
+      "hole": 2,
+      "centerMm": [
+        12.9,
+        116.95
+      ],
+      "diameterMm": 3.3,
+      "measuredBottomZ": 128.5,
+      "measuredTopZ": 133.4,
+      "measuredDepthMm": 4.900000000000006,
+      "screw": "M2.5 low-head x6, no washer",
+      "screwEndZ": 129.0,
+      "nominalEngagementMm": 4.400000000000006,
+      "nominalBottomAllowanceMm": 0.5,
+      "boreOverlapMm3": 0.0,
+      "floorWitnessVolumeMm3": 0.24543692606172127,
+      "screwPlasticOverlapMm3": 0.0
+    },
+    {
+      "hole": 3,
+      "centerMm": [
+        105.0,
+        60.2
+      ],
+      "diameterMm": 3.3,
+      "measuredBottomZ": 128.5,
+      "measuredTopZ": 133.4,
+      "measuredDepthMm": 4.900000000000006,
+      "screw": "M2.5 low-head x6, no washer",
+      "screwEndZ": 129.0,
+      "nominalEngagementMm": 4.400000000000006,
+      "nominalBottomAllowanceMm": 0.5,
+      "boreOverlapMm3": 0.0,
+      "floorWitnessVolumeMm3": 0.24543692606172124,
+      "screwPlasticOverlapMm3": 0.0
+    },
+    {
+      "hole": 4,
+      "centerMm": [
+        119.45,
+        116.9
+      ],
+      "diameterMm": 3.3,
+      "measuredBottomZ": 128.5,
+      "measuredTopZ": 133.4,
+      "measuredDepthMm": 4.900000000000006,
+      "screw": "M2.5 low-head x6, no washer",
+      "screwEndZ": 129.0,
+      "nominalEngagementMm": 4.400000000000006,
+      "nominalBottomAllowanceMm": 0.5,
+      "boreOverlapMm3": 0.0,
+      "floorWitnessVolumeMm3": 0.24543692606172116,
+      "screwPlasticOverlapMm3": 0.0
+    }
+  ],
+  "rearFanInsertBores": [
+    {
+      "centerXZmm": [
+        19.5,
+        15.5
+      ],
+      "measuredBoreYmm": [
+        131.6,
+        138.0
+      ],
+      "measuredBoreDepthMm": 6.400000000000006,
+      "screw": "M3 x35, no washer",
+      "screwTipYmm": 132.0,
+      "screwUnderHeadYmm": 167.0,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "frameClearanceDiameterMm": 3.4,
+      "frameThicknessMm": 4.0,
+      "nominalInsertLengthMm": 5.4,
+      "insertSpecificationVerified": false
+    },
+    {
+      "centerXZmm": [
+        19.5,
+        120.5
+      ],
+      "measuredBoreYmm": [
+        131.6,
+        138.0
+      ],
+      "measuredBoreDepthMm": 6.400000000000006,
+      "screw": "M3 x35, no washer",
+      "screwTipYmm": 132.0,
+      "screwUnderHeadYmm": 167.0,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "frameClearanceDiameterMm": 3.4,
+      "frameThicknessMm": 4.0,
+      "nominalInsertLengthMm": 5.4,
+      "insertSpecificationVerified": false
+    },
+    {
+      "centerXZmm": [
+        124.5,
+        15.5
+      ],
+      "measuredBoreYmm": [
+        131.6,
+        138.0
+      ],
+      "measuredBoreDepthMm": 6.400000000000006,
+      "screw": "M3 x35, no washer",
+      "screwTipYmm": 132.0,
+      "screwUnderHeadYmm": 167.0,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "frameClearanceDiameterMm": 3.4,
+      "frameThicknessMm": 4.0,
+      "nominalInsertLengthMm": 5.4,
+      "insertSpecificationVerified": false
+    },
+    {
+      "centerXZmm": [
+        124.5,
+        120.5
+      ],
+      "measuredBoreYmm": [
+        131.6,
+        138.0
+      ],
+      "measuredBoreDepthMm": 6.400000000000006,
+      "screw": "M3 x35, no washer",
+      "screwTipYmm": 132.0,
+      "screwUnderHeadYmm": 167.0,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "frameClearanceDiameterMm": 3.4,
+      "frameThicknessMm": 4.0,
+      "nominalInsertLengthMm": 5.4,
+      "insertSpecificationVerified": false
+    }
+  ],
+  "lidInsertBores": [
+    {
+      "centerXYmm": [
+        3.0,
+        48.0
+      ],
+      "actualPilotZmm": [
+        166.4,
+        174.0
+      ],
+      "actualPilotDepthMm": 7.599999999999994,
+      "screw": "M3 ISO7380 x25, no washer",
+      "screwTipZmm": 166.8,
+      "screwUnderHeadZmm": 191.8,
+      "screwHeadTopZmm": 193.5,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "nominalInsertLengthMm": 5.4,
+      "nominalInsertZmm": [
+        168.6,
+        174.0
+      ],
+      "actualInsertSpecificationVerified": false
+    },
+    {
+      "centerXYmm": [
+        141.0,
+        48.0
+      ],
+      "actualPilotZmm": [
+        166.4,
+        174.0
+      ],
+      "actualPilotDepthMm": 7.599999999999994,
+      "screw": "M3 ISO7380 x25, no washer",
+      "screwTipZmm": 166.8,
+      "screwUnderHeadZmm": 191.8,
+      "screwHeadTopZmm": 193.5,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "nominalInsertLengthMm": 5.4,
+      "nominalInsertZmm": [
+        168.6,
+        174.0
+      ],
+      "actualInsertSpecificationVerified": false
+    },
+    {
+      "centerXYmm": [
+        3.0,
+        152.0
+      ],
+      "actualPilotZmm": [
+        166.4,
+        174.0
+      ],
+      "actualPilotDepthMm": 7.599999999999994,
+      "screw": "M3 ISO7380 x25, no washer",
+      "screwTipZmm": 166.8,
+      "screwUnderHeadZmm": 191.8,
+      "screwHeadTopZmm": 193.5,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "nominalInsertLengthMm": 5.4,
+      "nominalInsertZmm": [
+        168.6,
+        174.0
+      ],
+      "actualInsertSpecificationVerified": false
+    },
+    {
+      "centerXYmm": [
+        141.0,
+        152.0
+      ],
+      "actualPilotZmm": [
+        166.4,
+        174.0
+      ],
+      "actualPilotDepthMm": 7.599999999999994,
+      "screw": "M3 ISO7380 x25, no washer",
+      "screwTipZmm": 166.8,
+      "screwUnderHeadZmm": 191.8,
+      "screwHeadTopZmm": 193.5,
+      "nominalFloorAllowanceMm": 0.4000000000000057,
+      "nominalInsertLengthMm": 5.4,
+      "nominalInsertZmm": [
+        168.6,
+        174.0
+      ],
+      "actualInsertSpecificationVerified": false
+    }
+  ],
+  "toolEnvelopes": [
+    {
+      "kind": "driver-shaft",
+      "bay": 1,
+      "screwCenterMm": [
+        29.3,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-1",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 1,
+      "screwCenterMm": [
+        29.3,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 1.0,
+      "nearestPart": "spine",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 1,
+      "screwCenterMm": [
+        29.3,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-1",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 1,
+      "screwCenterMm": [
+        29.3,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 1.0,
+      "nearestPart": "spine",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 2,
+      "screwCenterMm": [
+        50.8,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-2",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 2,
+      "screwCenterMm": [
+        50.8,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-2",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 2,
+      "screwCenterMm": [
+        50.8,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-2",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 2,
+      "screwCenterMm": [
+        50.8,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-2",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 3,
+      "screwCenterMm": [
+        72.3,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-3",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 3,
+      "screwCenterMm": [
+        72.3,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-3",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 3,
+      "screwCenterMm": [
+        72.3,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-3",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 3,
+      "screwCenterMm": [
+        72.3,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-3",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 4,
+      "screwCenterMm": [
+        93.8,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-4",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 4,
+      "screwCenterMm": [
+        93.8,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 3.0,
+      "nearestPart": "spine",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 4,
+      "screwCenterMm": [
+        93.8,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-4",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 4,
+      "screwCenterMm": [
+        93.8,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 3.0,
+      "nearestPart": "spine",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 5,
+      "screwCenterMm": [
+        115.3,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-5",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 5,
+      "screwCenterMm": [
+        115.3,
+        39.1,
+        32.1
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 0.9000000000000057,
+      "nearestPart": "spine",
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "bay": 5,
+      "screwCenterMm": [
+        115.3,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        -4.4,
+        35.6
+      ],
+      "minDistanceMm": 3.5,
+      "nearestPart": "carrier-5",
+      "overlaps": []
+    },
+    {
+      "kind": "fingertip",
+      "bay": 5,
+      "screwCenterMm": [
+        115.3,
+        39.1,
+        108.7
+      ],
+      "diameterMm": 14.0,
+      "axisY": [
+        28.6,
+        35.6
+      ],
+      "minDistanceMm": 0.9000000000000057,
+      "nearestPart": "spine",
+      "overlaps": []
+    },
+    {
+      "kind": "rear-fan-driver",
+      "centerMm": [
+        19.5,
+        15.5
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        168.7,
+        208.7
+      ],
+      "minDistanceMm": 26.69999999999999,
+      "nearestPart": "rear-fan-frame",
+      "overlaps": []
+    },
+    {
+      "kind": "rear-fan-driver",
+      "centerMm": [
+        19.5,
+        120.5
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        168.7,
+        208.7
+      ],
+      "minDistanceMm": 26.69999999999999,
+      "nearestPart": "rear-fan-frame",
+      "overlaps": []
+    },
+    {
+      "kind": "rear-fan-driver",
+      "centerMm": [
+        124.5,
+        15.5
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        168.7,
+        208.7
+      ],
+      "minDistanceMm": 26.69999999999999,
+      "nearestPart": "rear-fan-frame",
+      "overlaps": []
+    },
+    {
+      "kind": "rear-fan-driver",
+      "centerMm": [
+        124.5,
+        120.5
+      ],
+      "diameterMm": 6.0,
+      "axisY": [
+        168.7,
+        208.7
+      ],
+      "minDistanceMm": 26.69999999999999,
+      "nearestPart": "rear-fan-frame",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-driver",
+      "centerMm": [
+        30.75,
+        58.75
+      ],
+      "diameterMm": 6.0,
+      "axisZ": [
+        193.5,
+        233.5
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 0.14999999999999858,
+      "nearestPart": "detached-lid",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-nut-tool",
+      "centerMm": [
+        30.75,
+        58.75
+      ],
+      "diameterMm": 9.0,
+      "axisZ": [
+        162.9,
+        172.9
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 2.299999999999983,
+      "nearestPart": "top-fan-frame-envelope",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-driver",
+      "centerMm": [
+        30.75,
+        141.25
+      ],
+      "diameterMm": 6.0,
+      "axisZ": [
+        193.5,
+        233.5
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 0.14999999999998992,
+      "nearestPart": "detached-lid",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-nut-tool",
+      "centerMm": [
+        30.75,
+        141.25
+      ],
+      "diameterMm": 9.0,
+      "axisZ": [
+        162.9,
+        172.9
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 2.299999999999983,
+      "nearestPart": "top-fan-frame-envelope",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-driver",
+      "centerMm": [
+        113.25,
+        58.75
+      ],
+      "diameterMm": 6.0,
+      "axisZ": [
+        193.5,
+        233.5
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 0.15000000000000244,
+      "nearestPart": "detached-lid",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-nut-tool",
+      "centerMm": [
+        113.25,
+        58.75
+      ],
+      "diameterMm": 9.0,
+      "axisZ": [
+        162.9,
+        172.9
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 2.299999999999983,
+      "nearestPart": "top-fan-frame-envelope",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-driver",
+      "centerMm": [
+        113.25,
+        141.25
+      ],
+      "diameterMm": 6.0,
+      "axisZ": [
+        193.5,
+        233.5
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 0.14999999999997832,
+      "nearestPart": "detached-lid",
+      "overlaps": []
+    },
+    {
+      "kind": "top-fan-nut-tool",
+      "centerMm": [
+        113.25,
+        141.25
+      ],
+      "diameterMm": 9.0,
+      "axisZ": [
+        162.9,
+        172.9
+      ],
+      "assemblyState": "lid detached; tool excludes mating fastener body",
+      "minDistanceMm": 2.299999999999983,
+      "nearestPart": "top-fan-frame-envelope",
+      "overlaps": []
+    },
+    {
+      "kind": "lid-lock-driver",
+      "centerXYmm": [
+        3.0,
+        48.0
+      ],
+      "diameterMm": 6.0,
+      "axisZmm": [
+        193.5,
+        233.5
+      ],
+      "minDistanceMm": 0.14999999999999641,
+      "nearestPart": "lid",
+      "overlaps": []
+    },
+    {
+      "kind": "lid-lock-driver",
+      "centerXYmm": [
+        141.0,
+        48.0
+      ],
+      "diameterMm": 6.0,
+      "axisZmm": [
+        193.5,
+        233.5
+      ],
+      "minDistanceMm": 0.14999999999998934,
+      "nearestPart": "lid",
+      "overlaps": []
+    },
+    {
+      "kind": "lid-lock-driver",
+      "centerXYmm": [
+        3.0,
+        152.0
+      ],
+      "diameterMm": 6.0,
+      "axisZmm": [
+        193.5,
+        233.5
+      ],
+      "minDistanceMm": 0.14999999999998073,
+      "nearestPart": "lid",
+      "overlaps": []
+    },
+    {
+      "kind": "lid-lock-driver",
+      "centerXYmm": [
+        141.0,
+        152.0
+      ],
+      "diameterMm": 6.0,
+      "axisZmm": [
+        193.5,
+        233.5
+      ],
+      "minDistanceMm": 0.1499999999999847,
+      "nearestPart": "lid",
+      "overlaps": []
+    }
+  ],
+  "materialGeometry": {
+    "baselineDesignSha256": "ce3048c023bf72616ed49128c970f5d1fa4328f358106d42b4788f4fdd7713a8",
+    "spine": {
+      "beforeMm3": 109383.404113391,
+      "currentMm3": 109040.62165475343,
+      "rearFrameMm3": 10645.732755698,
+      "combinedCurrentMm3": 119686.35441045143,
+      "reductionPercent": -9.419116529213145
+    },
+    "carrier": {
+      "beforeMm3": 15393.050740064,
+      "currentMm3": 8291.729120946122,
+      "reductionPercent": 46.133295725681165,
+      "beforeDatumContactAreaMm2": 3218.7375,
+      "currentDatumContactAreaMm2": 2437.722017542563
+    },
+    "reinforcementBaseline": {
+      "sourceSha256": "e874404198cd09697694dc932cd375fd87b6e8dfde03335970dd293193a73b7a",
+      "spineVolumeMm3": 82897.49201150429,
+      "volumeAddedMm3": 36788.86239894714,
+      "volumeAddedPercent": 44.37873994287027
+    },
+    "frameMinimumMm": {
+      "outerFrame": 8.0,
+      "diagonal": 8.0,
+      "thickness": 3.6,
+      "baseHeight": 6.0
+    },
+    "carrierMinimumMm": {
+      "frontSideContact": 6.0,
+      "rearSideContact": 6.1,
+      "bottomSideContact": 12.75,
+      "topSideContact": 10.0,
+      "floorLongitudinalRail": 2.6,
+      "floorCrossBand": 6.0,
+      "frontScrewHoleEdge": 2.8,
+      "frontWasherEdge": 1.75
+    },
+    "scope": "B-rep material and contact geometry only; no stiffness, fatigue or vibration proof."
+  },
+  "scope": "Current exact spine/carriers/native board, five 7 mm drive boxes. HDD and rear-fan fastening occur with shell absent. Top fan is fastened to a detached lid. Driver shaft is diameter 6 mm; fingertip is only a static diameter 14 mm short cylinder, not a hand model. M2.5x6 engagement assumes a 1.6 mm PCB and no washer. Does not prove heat-set insert fit, full hand access, wire route or physical assembly."
+}

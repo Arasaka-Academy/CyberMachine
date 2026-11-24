@@ -1,0 +1,384 @@
+{
+  "checkedAt": "2026-11-24T09:40:12.620251+00:00",
+  "passed": true,
+  "designSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "ioSourceSha256": "47fdf6153820d1faa0c3f7b9908fea01bab277e9fdef47b5cffcfa0dd18ba9fb",
+  "boardSourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "shellStepSha256": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+  "candidateStepSha256": {
+    "shell": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+    "lid": "303d34d4755666c38407dae94e18b2df3cba128a5fbf653428c5e55a00e1fb44",
+    "spine": "f069fb06ee6fe190415cf6f28d11d1163eaca68d341ad0ad6b3805a7b05e1cbb",
+    "rear-fan-frame": "e3a3360eaab6b383f6a9dbf4a43f76302620e5463d55038b39f004e3adcb710d",
+    "carrier": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a"
+  },
+  "ports": [
+    {
+      "id": "ethernet-1g",
+      "label": "1G 网口",
+      "nativeNames": [
+        "native-699"
+      ],
+      "nativeFrontFace": 25,
+      "measuredNativeFrontY": 33.04999999999998,
+      "nativeFrontFaceBoundsMm": [
+        11.029999999999992,
+        33.04999999999998,
+        135.27999999999997,
+        26.499999999999993,
+        33.04999999999998,
+        148.12
+      ],
+      "throatAreaMm2": 233.73777335529238,
+      "outerAreaMm2": 297.26927719318985,
+      "throatBoundsMm": [
+        10.43,
+        0.0,
+        134.67999999999998,
+        27.1,
+        0.0,
+        148.72
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 6962.14973999999,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.5999999999999943,
+          "profileBoundsMm": [
+            11.029999999999992,
+            33.04999999999998,
+            135.27999999999997,
+            26.499999999999993,
+            33.04999999999998,
+            148.12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethernet-2-5g",
+      "label": "2.5G 网口",
+      "nativeNames": [
+        "native-700"
+      ],
+      "nativeFrontFace": 25,
+      "measuredNativeFrontY": 33.04999999999998,
+      "nativeFrontFaceBoundsMm": [
+        32.029999999999994,
+        33.04999999999998,
+        135.27999999999997,
+        47.49999999999999,
+        33.04999999999998,
+        148.12
+      ],
+      "throatAreaMm2": 233.73777335529232,
+      "outerAreaMm2": 297.2692771931899,
+      "throatBoundsMm": [
+        31.43,
+        0.0,
+        134.67999999999998,
+        48.1,
+        0.0,
+        148.72
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 6962.14973999999,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.5999999999999943,
+          "profileBoundsMm": [
+            32.029999999999994,
+            33.04999999999998,
+            135.27999999999997,
+            47.49999999999999,
+            33.04999999999998,
+            148.12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usb-a",
+      "label": "双 USB-A",
+      "nativeNames": [
+        "native-708",
+        "native-709",
+        "native-710",
+        "native-711",
+        "native-712",
+        "native-713",
+        "native-714"
+      ],
+      "nativeFrontFace": 230,
+      "measuredNativeFrontY": 32.999999999999986,
+      "nativeFrontFaceBoundsMm": [
+        52.324999999999996,
+        32.999999999999986,
+        136.28,
+        65.42499999999998,
+        32.999999999999986,
+        150.5
+      ],
+      "throatAreaMm2": 208.46897335529223,
+      "outerAreaMm2": 268.4204771931897,
+      "throatBoundsMm": [
+        51.925000000000004,
+        0.0,
+        135.87999999999997,
+        65.825,
+        0.0,
+        150.89999999999998
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 2502.5000000000073,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.6999999999999886,
+          "profileBoundsMm": [
+            52.625,
+            33.0,
+            136.57999999999998,
+            65.125,
+            33.0,
+            142.3
+          ]
+        },
+        {
+          "sweptVolumeMm3": 2502.5000000000073,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.7000000000000028,
+          "profileBoundsMm": [
+            52.625,
+            33.0,
+            144.47999999999996,
+            65.125,
+            33.0,
+            150.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hdmi",
+      "label": "HDMI",
+      "nativeNames": [
+        "native-698"
+      ],
+      "nativeFrontFace": 6,
+      "measuredNativeFrontY": 33.4,
+      "nativeFrontFaceBoundsMm": [
+        70.62200999999999,
+        33.4,
+        135.7,
+        85.62200999999999,
+        33.4,
+        141.25
+      ],
+      "throatAreaMm2": 108.47678790248781,
+      "outerAreaMm2": 153.78379683494887,
+      "throatBoundsMm": [
+        69.82201,
+        0.0,
+        134.89999999999998,
+        86.42201,
+        0.0,
+        142.05
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 2751.0671651233124,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.5071067811798254,
+          "profileBoundsMm": [
+            70.62200999999999,
+            33.4,
+            135.7,
+            85.62200999999999,
+            33.4,
+            141.25
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-button",
+      "label": "板载按钮",
+      "nativeNames": [
+        "native-687"
+      ],
+      "nativeFrontFace": 111,
+      "measuredNativeFrontY": 33.44006999999998,
+      "nativeFrontFaceBoundsMm": [
+        91.17954999999999,
+        33.44006999999998,
+        137.03,
+        94.11954999999999,
+        33.44006999999998,
+        139.97
+      ],
+      "throatAreaMm2": 13.854423602330991,
+      "outerAreaMm2": 30.19070540099779,
+      "throatBoundsMm": [
+        90.54955000000001,
+        0.0,
+        136.4,
+        94.74955,
+        0.0,
+        140.6
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 250.5110929980932,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.5999999999999784,
+          "profileBoundsMm": [
+            91.14955,
+            33.44007,
+            137.0,
+            94.14955,
+            33.44007,
+            140.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usb-c",
+      "label": "USB-C 刷机口",
+      "nativeNames": [
+        "native-usbc-shell"
+      ],
+      "nativeFrontFace": 115,
+      "measuredNativeFrontY": 34.35000000000001,
+      "nativeFrontFaceBoundsMm": [
+        100.35591334070998,
+        34.349999999999994,
+        135.13,
+        103.51591334071,
+        34.35000013459151,
+        144.07
+      ],
+      "throatAreaMm2": 37.636586456490846,
+      "outerAreaMm2": 65.40720454901391,
+      "throatBoundsMm": [
+        99.855913,
+        0.0,
+        134.63,
+        104.015913,
+        0.0,
+        144.57
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 949.0066035803211,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.49999999999998085,
+          "profileBoundsMm": [
+            100.355913,
+            34.35,
+            135.13,
+            103.515913,
+            34.35,
+            144.07
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dc",
+      "label": "12V DC",
+      "nativeNames": [
+        "native-701"
+      ],
+      "nativeFrontFace": 52,
+      "measuredNativeFrontY": 34.349999999999994,
+      "nativeFrontFaceBoundsMm": [
+        107.67703534540698,
+        34.34999999999961,
+        136.050000000003,
+        117.33499999999697,
+        34.35000000000099,
+        145.3
+      ],
+      "throatAreaMm2": 50.265482457436676,
+      "outerAreaMm2": 78.5398163397448,
+      "throatBoundsMm": [
+        108.515,
+        0.0,
+        136.35,
+        116.515,
+        0.0,
+        144.35
+      ],
+      "gauges": [
+        {
+          "sweptVolumeMm3": 1206.2046818687586,
+          "shellOverlapMm3": 0.0,
+          "shellMinDistanceMm": 0.7499999999999877,
+          "profileBoundsMm": [
+            109.265,
+            34.35,
+            137.1,
+            115.765,
+            34.35,
+            143.6
+          ]
+        }
+      ]
+    }
+  ],
+  "openUsbcShell": {
+    "faces": 862,
+    "closed": false,
+    "boundsMm": [
+      100.09591334070997,
+      34.34999994862687,
+      133.09999999999798,
+      103.77591344070999,
+      48.3500001010956,
+      144.07
+    ],
+    "printedPartDistances": [
+      {
+        "part": "shell",
+        "distanceMm": 3.5707101997950574
+      },
+      {
+        "part": "lid",
+        "distanceMm": 25.242680127118057
+      },
+      {
+        "part": "spine",
+        "distanceMm": 9.551876687783047
+      },
+      {
+        "part": "rear-fan-frame",
+        "distanceMm": 89.9228697273391
+      },
+      {
+        "part": "carrier-1",
+        "distanceMm": 69.96890477128949
+      },
+      {
+        "part": "carrier-2",
+        "distanceMm": 49.90249493356178
+      },
+      {
+        "part": "carrier-3",
+        "distanceMm": 31.655827232113577
+      },
+      {
+        "part": "carrier-4",
+        "distanceMm": 20.27241417151156
+      },
+      {
+        "part": "carrier-5",
+        "distanceMm": 20.269036281992253
+      }
+    ]
+  },
+  "negativeControlBlockedUsbcOverlapMm3": 83.54391008134867,
+  "frontOpenAreaMm2": 1190.8805547042748,
+  "baselineFrontOpenAreaMm2": 1644.8080964914873,
+  "scope": "Fresh native front-face planes and continuous straight gauges through the case wall. The USB-C open shell is checked by exact surface distance, not treated as a valid solid. The gauges are connector-mouth/tool envelopes; they do not model actual cable boots, latches, full insertion travel, button force/travel, or printing deviations."
+}

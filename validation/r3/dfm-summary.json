@@ -1,0 +1,423 @@
+{
+  "process": "PETG FDM",
+  "machineEnvelopeMm": [
+    256,
+    256,
+    256
+  ],
+  "nozzleMm": 0.4,
+  "layerMm": 0.2,
+  "generalPracticeOnly": true,
+  "results": [
+    {
+      "name": "shell",
+      "status": "ok",
+      "exitCode": 0,
+      "codes": {
+        "printing.overhang_angle": 9,
+        "printing.bridge_length": 4,
+        "printing.gap": 2,
+        "overhangs": 1,
+        "elephant_foot": 1,
+        "rules_general": 1
+      },
+      "errors": [],
+      "warnings": [
+        {
+          "code": "printing.overhang_angle",
+          "value": 2.151907077,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 505",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 5.901908587,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 501",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 25.384615385,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 246",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 25.384615385,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 250",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 25.384615385,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 254",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 25.384615385,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 258",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 25.384615385,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 262",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 25.384615385,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "shell/shell/face 266",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": null,
+          "limit": null,
+          "unit": "deg",
+          "location": "measurements.rules",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 15.469999814,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "shell/shell/face 477",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 15.469999814,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "shell/shell/face 485",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 12.999998856,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "shell/shell/face 503",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 12.699999845,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "shell/shell/face 493",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.7,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "shell/shell/face 539",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.7,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "shell/shell/face 540",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        }
+      ]
+    },
+    {
+      "name": "lid-print",
+      "status": "ok",
+      "exitCode": 0,
+      "codes": {
+        "printing.bridge_length": 1,
+        "printing.gap": 8,
+        "elephant_foot": 1,
+        "rules_general": 1
+      },
+      "errors": [],
+      "warnings": [
+        {
+          "code": "printing.bridge_length",
+          "value": 13.801953695,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 160",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 14",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 18",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 20",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 24",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 30",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 34",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 36",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.35,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "lid-print/lid-print/face 40",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        }
+      ]
+    },
+    {
+      "name": "spine-print",
+      "status": "ok",
+      "exitCode": 0,
+      "codes": {
+        "printing.overhang_angle": 5,
+        "printing.bridge_length": 5,
+        "printing.gap": 1,
+        "overhangs": 1,
+        "elephant_foot": 1,
+        "rules_general": 1
+      },
+      "errors": [],
+      "warnings": [
+        {
+          "code": "printing.overhang_angle",
+          "value": 0.0,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "spine-print/spine-print/face 77",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 0.0,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "spine-print/spine-print/face 52",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 0.0,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "spine-print/spine-print/face 69",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 0.0,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "spine-print/spine-print/face 60",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 0.0,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "spine-print/spine-print/face 213",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 19.899998496,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "spine-print/spine-print/face 94",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 17.899998005,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "spine-print/spine-print/face 85",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 17.899998005,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "spine-print/spine-print/face 88",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 17.899998005,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "spine-print/spine-print/face 91",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 9.149999608,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "spine-print/spine-print/face 81",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.gap",
+          "value": 0.45,
+          "limit": 0.762,
+          "unit": "mm",
+          "location": "spine-print/spine-print/face 6",
+          "hint": "open the gap to at least 0.762 mm or close it"
+        }
+      ]
+    },
+    {
+      "name": "carrier-print",
+      "status": "ok",
+      "exitCode": 0,
+      "codes": {
+        "printing.overhang_angle": 4,
+        "printing.bridge_length": 2,
+        "overhangs": 1,
+        "rules_general": 1
+      },
+      "errors": [],
+      "warnings": [
+        {
+          "code": "printing.overhang_angle",
+          "value": 4.285714286,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "carrier-print/carrier-print/face 38",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 4.285714286,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "carrier-print/carrier-print/face 47",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 8.571428571,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "carrier-print/carrier-print/face 37",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.overhang_angle",
+          "value": 8.571428571,
+          "limit": 45.0,
+          "unit": "deg",
+          "location": "carrier-print/carrier-print/face 46",
+          "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 20.999999752,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "carrier-print/carrier-print/face 39",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        },
+        {
+          "code": "printing.bridge_length",
+          "value": 17.999999785,
+          "limit": 5.0,
+          "unit": "mm",
+          "location": "carrier-print/carrier-print/face 48",
+          "hint": "add a support or a pillar so no span exceeds 5 mm"
+        }
+      ]
+    },
+    {
+      "name": "rear-fan-frame-print",
+      "status": "ok",
+      "exitCode": 0,
+      "codes": {
+        "elephant_foot": 1,
+        "rules_general": 1
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "checkedAt": "2026-11-24T09:44:10.413422+00:00",
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "ioSourceSha256": "47fdf6153820d1faa0c3f7b9908fea01bab277e9fdef47b5cffcfa0dd18ba9fb",
+  "checkerSha256": "5a7d4e46da642b59367da4a98dc2f52b8b5d5ba2890f05a14dd505061cc16909",
+  "candidateStepSha256": {
+    "shell": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+    "lid-print": "407e82cfdf7ea2665f05fe8f664688b6dc1ca192bbf8c3a94ffe4db22bdccd1a",
+    "spine-print": "99733843fce723f1c9257157ac82e1e35b216d92c23ea126455ef5d50bb08b4c",
+    "carrier-print": "4172ac67f81ad845c505b04f5eb7e02db8d2833923271507f9387835d68755d3",
+    "rear-fan-frame-print": "bc54dffcb631952d24fa9d5a040b7c24fc88706ba235bc93c65c5f4d5e16eed7"
+  }
+}

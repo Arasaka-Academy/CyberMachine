@@ -1,0 +1,7 @@
+plate,part,quantity,orientation,support
+1,shell,1,bottom down,tree(auto)
+2,lid,1,top face down,normal(auto)
+3,spine,1,upright,tree(auto)
+4,rear-fan-frame,1,rear face down,disabled
+4,carrier,2,large frame face down,tree(auto)
+5,carrier,3,large frame face down,tree(auto)

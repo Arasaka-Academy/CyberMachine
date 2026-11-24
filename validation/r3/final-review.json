@@ -1,0 +1,657 @@
+{
+  "checkedAt": "2026-11-24T11:14:56.776417+00:00",
+  "revision": "R3 Final 2026-11-24",
+  "digitalReleasePassed": true,
+  "physicalAcceptancePassed": false,
+  "geometryChangedThisTurn": false,
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "metadataSha256": "ebc2fb1c26d79a353bc13185fee5c2ba2f8ab0e51ef988410af3ca965504d28b",
+  "stepHashReadbackCount": 12,
+  "meshReportSha256": "24ec3e1ce1fa03f3c85dafd1b060e7e93ad7929369ed8a610d46d162d05cc11f",
+  "printingReportSha256": "78eb426b1f24b733a552241ffcc95ad8158d15880f11a5434552c33ab57d4159",
+  "printingAuditSha256": "6d6446c2b988dd509d2aaa1515841b30a3a5fa9d95b4f2622ef92915c2743c64",
+  "nativeProjectReload": {
+    "method": "Bambu Studio 02.08.02.61 CLI: load saved 3MF and reslice all five plates without external settings.",
+    "passed": true,
+    "sourceProjectSha256": "eec4f1e6189c633a41f6d964716eebf542358161d0a209b52ef5a121f0195709",
+    "reopenedProjectSha256": "3d8e0d6d3a37a8d67bb3d27b8bb9f9d0135cbddecefcaa24ae8af1561d587757",
+    "projectSettingsEqual": true,
+    "pieceCount": 9,
+    "plateCount": 5,
+    "maxWorldVertexDriftMm": 1.9999999949504854e-06,
+    "triangleIndicesEqual": true,
+    "objectSettings": [
+      {
+        "name": "shell_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "lid-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "normal(auto)"
+      },
+      {
+        "name": "spine-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "rear-fan-frame-print_1",
+        "enable_support": "0",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "carrier-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "carrier-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "carrier-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "carrier-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      },
+      {
+        "name": "carrier-print_1",
+        "enable_support": "1",
+        "extruder": "1",
+        "support_type": "tree(auto)"
+      }
+    ],
+    "reslicedPathsAudit": {
+      "checkedAt": "2026-11-24T11:12:43.324404+00:00",
+      "passed": true,
+      "checkerSha256": "09105b6cdaeb565d7b9242dad89323df948ee5021cbbe0266cd6f973c395f407",
+      "inputSha256": {
+        "validation/r3/printing.json": "91b99891394160f6d58bf48208054b88f8601853884ecfa7c4d1277583945d9a",
+        "outputs/print-r3/result.json": "5d59000cddb7d633735c5549af2bfc3d955c04ea1b60729ab202901dad98c57d",
+        "outputs/print-r3/print-plan.json": "4ce6584c72fe575164d3dc67938d17ba8ed30f43ac32dccce10699b839a28b92",
+        "outputs/print-r3/CyberMachine-r3-print-candidate.gcode.3mf": "3d8e0d6d3a37a8d67bb3d27b8bb9f9d0135cbddecefcaa24ae8af1561d587757",
+        "outputs/print-r3/plate_1.gcode": "ad08c1d97e431aaeb8c77941ec480c6b38b68fb324676c729468e4cf32d704f6",
+        "outputs/print-r3/plate_2.gcode": "8d7b6fe570cda85828fcf552001d0fc1013351f83ffa60f2cb9764b3db74912a",
+        "outputs/print-r3/plate_3.gcode": "7644476a2e00325209f9f4334f45ec4a20601ae706c35d4f0764d7d52f42d4b0",
+        "outputs/print-r3/plate_4.gcode": "31a12d8117eaabdd82ed2cd1e5ae8b659aae3c252e02e3117fd8eb88cb455590",
+        "outputs/print-r3/plate_5.gcode": "f03c7321dd807ea1a1b83476e8c6f8d56052e25d3087b601fb31e1001e16bc43",
+        "outputs/print-r3/presets/filament.json": "4ea276e9424bb4b0cde0191cca432b14f2fe675c13751c2803a35458bf17b51d",
+        "outputs/print-r3/presets/process.json": "24f36c24691af9b8f76abefd7aac0777fe0eb7f1228504275d79facfb0195904",
+        "outputs/print-r3/presets/machine.json": "abda54f9d006273f8af74a2ca9335685710fd1e941a14bf68a76e1a616538f00"
+      },
+      "plateCount": 5,
+      "pieceCount": 9,
+      "presetHashes": {
+        "filament.json": "4ea276e9424bb4b0cde0191cca432b14f2fe675c13751c2803a35458bf17b51d",
+        "process.json": "24f36c24691af9b8f76abefd7aac0777fe0eb7f1228504275d79facfb0195904",
+        "machine.json": "abda54f9d006273f8af74a2ca9335685710fd1e941a14bf68a76e1a616538f00"
+      },
+      "nominalExcludedRectangleMm": [
+        [
+          0,
+          0
+        ],
+        [
+          18,
+          28
+        ]
+      ],
+      "nominalBedMm": [
+        256,
+        256,
+        250
+      ],
+      "plates": [
+        {
+          "plate": 1,
+          "objectCount": 1,
+          "objects": {
+            "185": {
+              "name": "shell_1",
+              "sourceFile": "shell.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 7.7888739759053145,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  51.308,
+                  18.156026782956005,
+                  0.2
+                ],
+                [
+                  214.692,
+                  202.692,
+                  174.0
+                ]
+              ]
+            }
+          },
+          "embeddedGcodeEqualsExternal": true,
+          "gcodeSha256": "ad08c1d97e431aaeb8c77941ec480c6b38b68fb324676c729468e4cf32d704f6",
+          "supportPathEstimatedG": 7.7888739759053145,
+          "supportPathBoundsMm": [
+            [
+              68.3079258720339,
+              18.406026782956005,
+              0.2
+            ],
+            [
+              197.7040741279661,
+              160.6970741279661,
+              150.8
+            ]
+          ],
+          "depositionCenterlineBoundsMm": [
+            [
+              51.558,
+              18.406026782956005,
+              0.2
+            ],
+            [
+              214.442,
+              202.442,
+              174.0
+            ]
+          ],
+          "nominalMaterialBoundsMm": [
+            [
+              51.308,
+              18.156026782956005,
+              0.2
+            ],
+            [
+              214.692,
+              202.692,
+              174.0
+            ]
+          ],
+          "depositionCommands": 420219,
+          "depositionArcCommands": 82588,
+          "minimumBedEdgeMarginAfterHalfLineWidthMm": 18.156026782956005,
+          "minimumExcludeRectangleAabbClearanceAfterHalfLineWidthMm": 44.03309783560543,
+          "excludedAreaIntersectingDepositionAabbCount": 0,
+          "separateObjectExpandedPathAabbCollisions": [],
+          "pairwisePathAabbGaps": []
+        },
+        {
+          "plate": 2,
+          "objectCount": 1,
+          "objects": {
+            "186": {
+              "name": "lid-print_1",
+              "sourceFile": "lid-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "normal(auto)",
+              "supportPathEstimatedG": 9.617581385169647,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  51.308,
+                  49.314,
+                  0.2
+                ],
+                [
+                  214.692,
+                  202.692,
+                  24.6
+                ]
+              ]
+            }
+          },
+          "embeddedGcodeEqualsExternal": true,
+          "gcodeSha256": "8d7b6fe570cda85828fcf552001d0fc1013351f83ffa60f2cb9764b3db74912a",
+          "supportPathEstimatedG": 9.617581385169647,
+          "supportPathBoundsMm": [
+            [
+              59.308655707015525,
+              57.33304840071274,
+              0.2
+            ],
+            [
+              206.68797681857058,
+              194.831,
+              16.4
+            ]
+          ],
+          "depositionCenterlineBoundsMm": [
+            [
+              51.558,
+              49.564,
+              0.2
+            ],
+            [
+              214.442,
+              202.442,
+              24.6
+            ]
+          ],
+          "nominalMaterialBoundsMm": [
+            [
+              51.308,
+              49.314,
+              0.2
+            ],
+            [
+              214.692,
+              202.692,
+              24.6
+            ]
+          ],
+          "depositionCommands": 178811,
+          "depositionArcCommands": 51379,
+          "minimumBedEdgeMarginAfterHalfLineWidthMm": 41.30799999999999,
+          "minimumExcludeRectangleAabbClearanceAfterHalfLineWidthMm": 44.03309783560543,
+          "excludedAreaIntersectingDepositionAabbCount": 0,
+          "separateObjectExpandedPathAabbCollisions": [],
+          "pairwisePathAabbGaps": []
+        },
+        {
+          "plate": 3,
+          "objectCount": 1,
+          "objects": {
+            "187": {
+              "name": "spine-print_1",
+              "sourceFile": "spine-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 1.7486322411894464,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  56.73734321306764,
+                  68.063,
+                  0.2
+                ],
+                [
+                  199.187,
+                  183.942,
+                  125.4
+                ]
+              ]
+            }
+          },
+          "embeddedGcodeEqualsExternal": true,
+          "gcodeSha256": "7644476a2e00325209f9f4334f45ec4a20601ae706c35d4f0764d7d52f42d4b0",
+          "supportPathEstimatedG": 1.7486322411894464,
+          "supportPathBoundsMm": [
+            [
+              56.98734321306764,
+              147.12740740079636,
+              0.2
+            ],
+            [
+              195.92255718892724,
+              164.51709427078083,
+              14.0
+            ]
+          ],
+          "depositionCenterlineBoundsMm": [
+            [
+              56.98734321306764,
+              68.313,
+              0.2
+            ],
+            [
+              198.937,
+              183.692,
+              125.4
+            ]
+          ],
+          "nominalMaterialBoundsMm": [
+            [
+              56.73734321306764,
+              68.063,
+              0.2
+            ],
+            [
+              199.187,
+              183.942,
+              125.4
+            ]
+          ],
+          "depositionCommands": 292587,
+          "depositionArcCommands": 55315,
+          "minimumBedEdgeMarginAfterHalfLineWidthMm": 56.73734321306764,
+          "minimumExcludeRectangleAabbClearanceAfterHalfLineWidthMm": 59.02521286704522,
+          "excludedAreaIntersectingDepositionAabbCount": 0,
+          "separateObjectExpandedPathAabbCollisions": [],
+          "pairwisePathAabbGaps": []
+        },
+        {
+          "plate": 4,
+          "objectCount": 3,
+          "objects": {
+            "188": {
+              "name": "rear-fan-frame-print_1",
+              "sourceFile": "rear-fan-frame-print.stl",
+              "enableSupport": "0",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 0,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  5.308,
+                  53.308,
+                  0.2
+                ],
+                [
+                  140.692,
+                  182.692,
+                  5.4
+                ]
+              ]
+            },
+            "189": {
+              "name": "carrier-print_1",
+              "sourceFile": "carrier-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 0.48955034203591236,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  146.308,
+                  13.308,
+                  0.2
+                ],
+                [
+                  253.98486750875495,
+                  104.192,
+                  14.2
+                ]
+              ]
+            },
+            "190": {
+              "name": "carrier-print_1",
+              "sourceFile": "carrier-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 0.48955012820635385,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  146.308,
+                  123.308,
+                  0.2
+                ],
+                [
+                  253.9842732841832,
+                  214.192,
+                  14.2
+                ]
+              ]
+            }
+          },
+          "embeddedGcodeEqualsExternal": true,
+          "gcodeSha256": "31a12d8117eaabdd82ed2cd1e5ae8b659aae3c252e02e3117fd8eb88cb455590",
+          "supportPathEstimatedG": 0.9791004702422662,
+          "supportPathBoundsMm": [
+            [
+              242.579,
+              29.97994493676566,
+              0.2
+            ],
+            [
+              253.73486750875495,
+              195.37223892062687,
+              11.6
+            ]
+          ],
+          "depositionCenterlineBoundsMm": [
+            [
+              5.558,
+              13.558,
+              0.2
+            ],
+            [
+              253.73486750875495,
+              213.942,
+              14.2
+            ]
+          ],
+          "nominalMaterialBoundsMm": [
+            [
+              5.308,
+              13.308,
+              0.2
+            ],
+            [
+              253.98486750875495,
+              214.192,
+              14.2
+            ]
+          ],
+          "depositionCommands": 58979,
+          "depositionArcCommands": 9751,
+          "minimumBedEdgeMarginAfterHalfLineWidthMm": 2.015132491245055,
+          "minimumExcludeRectangleAabbClearanceAfterHalfLineWidthMm": 25.308,
+          "excludedAreaIntersectingDepositionAabbCount": 0,
+          "separateObjectExpandedPathAabbCollisions": [],
+          "pairwisePathAabbGaps": [
+            {
+              "left": "189",
+              "right": "190",
+              "expandedPathAabbGapMm": 19.116000000000014
+            },
+            {
+              "left": "189",
+              "right": "188",
+              "expandedPathAabbGapMm": 5.6159999999999854
+            },
+            {
+              "left": "190",
+              "right": "188",
+              "expandedPathAabbGapMm": 5.6159999999999854
+            }
+          ]
+        },
+        {
+          "plate": 5,
+          "objectCount": 3,
+          "objects": {
+            "191": {
+              "name": "carrier-print_1",
+              "sourceFile": "carrier-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 0.48955021984759317,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  15.308,
+                  28.308,
+                  0.2
+                ],
+                [
+                  122.98486750875492,
+                  119.192,
+                  14.2
+                ]
+              ]
+            },
+            "192": {
+              "name": "carrier-print_1",
+              "sourceFile": "carrier-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 0.4895502198475931,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  136.308,
+                  28.308,
+                  0.2
+                ],
+                [
+                  243.98486750875495,
+                  119.192,
+                  14.2
+                ]
+              ]
+            },
+            "193": {
+              "name": "carrier-print_1",
+              "sourceFile": "carrier-print.stl",
+              "enableSupport": "1",
+              "savedSupportType": "tree(auto)",
+              "supportPathEstimatedG": 0.48955012820635385,
+              "expandedMaterialPathBoundsMm": [
+                [
+                  75.808,
+                  138.308,
+                  0.2
+                ],
+                [
+                  183.4842732841832,
+                  229.192,
+                  14.2
+                ]
+              ]
+            }
+          },
+          "embeddedGcodeEqualsExternal": true,
+          "gcodeSha256": "f03c7321dd807ea1a1b83476e8c6f8d56052e25d3087b601fb31e1001e16bc43",
+          "supportPathEstimatedG": 1.4686505679015402,
+          "supportPathBoundsMm": [
+            [
+              111.579,
+              44.97994493676566,
+              0.2
+            ],
+            [
+              243.73486750875495,
+              210.37223892062687,
+              11.6
+            ]
+          ],
+          "depositionCenterlineBoundsMm": [
+            [
+              15.558,
+              28.558,
+              0.2
+            ],
+            [
+              243.73486750875495,
+              228.942,
+              14.2
+            ]
+          ],
+          "nominalMaterialBoundsMm": [
+            [
+              15.308,
+              28.308,
+              0.2
+            ],
+            [
+              243.98486750875495,
+              229.192,
+              14.2
+            ]
+          ],
+          "depositionCommands": 60996,
+          "depositionArcCommands": 8091,
+          "minimumBedEdgeMarginAfterHalfLineWidthMm": 12.015132491245055,
+          "minimumExcludeRectangleAabbClearanceAfterHalfLineWidthMm": 0.4770000000000003,
+          "excludedAreaIntersectingDepositionAabbCount": 0,
+          "separateObjectExpandedPathAabbCollisions": [],
+          "pairwisePathAabbGaps": [
+            {
+              "left": "193",
+              "right": "192",
+              "expandedPathAabbGapMm": 19.116
+            },
+            {
+              "left": "193",
+              "right": "191",
+              "expandedPathAabbGapMm": 19.116
+            },
+            {
+              "left": "192",
+              "right": "191",
+              "expandedPathAabbGapMm": 13.323132491245076
+            }
+          ]
+        }
+      ],
+      "supportPathEstimatedG": 21.602838640408216,
+      "limits": [
+        "Read-only digital audit; no slicer or printer invoked.",
+        "Envelope includes half each G-code LINE_WIDTH in XY; physical bead shape is unmeasured.",
+        "Arc bounds use analytic cardinal extrema with a conservative maximum rounded endpoint radius.",
+        "Excluded-zone proof uses conservative per-command expanded AABBs; Custom/Flush machine preparation is excluded.",
+        "Separate object AABBs cover deposited model, brim and support paths; by-layer mode verified.",
+        "Does not prove support removal, print quality, assembly fit, strength or thermal behavior."
+      ]
+    },
+    "limits": [
+      "Native GUI unavailable: cgWindowNotFound; GUI opening and actual printing unverified.",
+      "Reslicing changed some paths and estimates; audit refers to resliced paths rather than byte equivalence."
+    ]
+  },
+  "files": [
+    {
+      "path": "hardware/enclosure/r3/cad/CyberMachine-r3-final-20261124-enclosure.step",
+      "bytes": 64005371,
+      "sha256": "ea33a794ceb44bdcf79cbfea612aeef17034b11b4541faab7ed3d885eff4e00f"
+    },
+    {
+      "path": "hardware/enclosure/r3/print/CyberMachine-r3-final-20261124-p1s-petg.3mf",
+      "bytes": 8121671,
+      "sha256": "eec4f1e6189c633a41f6d964716eebf542358161d0a209b52ef5a121f0195709"
+    },
+    {
+      "path": "hardware/enclosure/r3/print/CyberMachine-r3-final-20261124-stl.zip",
+      "bytes": 632725,
+      "sha256": "bf064aeae8d454b403b1f9d4724c5bd164decacca55a2663c22918ac986c280f"
+    },
+    {
+      "path": "hardware/enclosure/r3/print/plate-list.csv",
+      "bytes": 270,
+      "sha256": "d4de65a801489958ca79eb408a24efb1724df9d9d63adaddf99795d9d0b99b78"
+    },
+    {
+      "path": "docs/design/r3/final-guide.md",
+      "bytes": 8785,
+      "sha256": "781ed74fc996320328cd8156bc74ad0033d73d9e35ab30a3598b074f3720909e"
+    },
+    {
+      "path": "docs/design/r3/final-cover.png",
+      "bytes": 117662,
+      "sha256": "fcab17b2ffb0fb9f0292325b22fd211850428904c013fa9336c388025dcab735"
+    },
+    {
+      "path": "docs/design/r3/final-assembly.png",
+      "bytes": 171989,
+      "sha256": "3f1c9cf25f3069cd95b4fc57954e7c98b3900320cd68a67347542731cc21f873"
+    }
+  ],
+  "carrierServiceReview": {
+    "carrierStepSha256": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a",
+    "spineStepSha256": "f069fb06ee6fe190415cf6f28d11d1163eaca68d341ad0ad6b3805a7b05e1cbb",
+    "downward5_85MmOverlapMm3": 0,
+    "downward6MmOverlapMm3": 9.54942,
+    "actualSataDisengagementVerified": false,
+    "method": "Independent OCCT review of exported STEP by mechanical review agent."
+  },
+  "checks": [
+    "Source/metadata and 12 STEP SHA256 bindings read back.",
+    "Nine STL connectivity, edge closure and winding checks rerun.",
+    "Old 3MF rejected missing persistent lid normal support; fixed project passes.",
+    "Five plates resliced and audited, embedded and external G-code match.",
+    "Saved native 3MF loaded by Bambu Studio CLI without external presets; all five plates resliced and separately audited.",
+    "R2 dark/light builds completed without changing tracked legacy artifacts."
+  ],
+  "limits": [
+    "GUI unavailable: cgWindowNotFound.",
+    "Historical CAD interference reports were hash-bound and reviewed, not relabelled as newly executed.",
+    "Actual disk connector depth, heat-set inserts, fit, strength, cabling, power and thermal behavior need physical tests."
+  ]
+}

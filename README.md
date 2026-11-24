@@ -4,11 +4,11 @@ CyberMachine 是一个 NAS 设备硬件设计仓库，保存机箱结构、可�
 
 **[在线查看 3D 交互结构图](https://arasaka-academy.github.io/CyberMachine/)** · [3D 装配教学](https://arasaka-academy.github.io/CyberMachine/docs/assembly/r2/) · [浅色主题](https://arasaka-academy.github.io/CyberMachine/docs/anatomy/r2/index-light.html) · [发布说明](docs/github-pages.md)
 
-当前设计基于 **Radxa Taco V1.61 + Raspberry Pi CM5**，采用五盘位 2.5 英寸 SATA 硬盘布局，支持 7 mm 与 9.5 mm 厚度硬盘。CyberMachine 是设备与项目名称，Radxa Taco 是所用主板平台。
+当前设计基于 **Radxa Taco V1.61 + Raspberry Pi CM5**，采用五盘位 2.5 英寸 SATA 硬盘布局。R3候选五盘均固定为用户确认的7 mm；R1/R2保留原7/9.5 mm资料。CyberMachine 是设备与项目名称，Radxa Taco 是所用主板平台。
 
 ![CyberMachine R1 五盘 NAS 设计总览](docs/images/r1/overview.png)
 
-## 设计概况
+## R1设计概况
 
 | 项目 | 规格 |
 | --- | --- |
@@ -23,10 +23,25 @@ CyberMachine 是一个 NAS 设备硬件设计仓库，保存机箱结构、可�
 
 | 版本 | 仓库现有资料 | 验证边界 |
 | --- | --- | --- |
-| R1 | CAD 源码、机箱 STEP、3MF、STL、装配说明与数字验证报告 | 有几何、干涉、网格与切片记录；实物打印和装配仍需验证 |
+| R1 | CAD 源码、机箱 STEP、3MF、STL、装配说明与数字验证报告 | 有几何、干涉、网格与切片历史记录；已有安装问题反馈，未完成实物验收 |
 | R2 | 交互结构图、每盘四点固定示意、五章 3D 装配教学与练习、操作预览及数字审计 | 主板采用原厂 STEP；尚无 R2 制造 STEP、打印项目或实物试装 |
+| R3 Final 2026-11-24 | [独立装配指南](docs/design/r3/final-guide.md)、[五盘原生3MF](hardware/enclosure/r3/print/CyberMachine-r3-final-20261124-p1s-petg.3mf)、[总成STEP](hardware/enclosure/r3/cad/CyberMachine-r3-final-20261124-enclosure.step)、[STL ZIP](hardware/enclosure/r3/print/CyberMachine-r3-final-20261124-stl.zip)、[3D审阅](docs/design/r3/index.html) | 9件主体、5盘P1S/PETG数字定稿；实物打印、配合、强度与散热待验证 |
 
 R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料时按 R1 装配说明操作，交互图的展示位移不能作为装配行程。
+
+2026-11-23 已收到实际安装反馈：R1 零件与装配步骤过多，主板正反面元件妨碍固定件安装。R3 采用一体底壳、整体上盖和箱外预装内骨架，取消横跨板底的托板。此前的数字检查没有覆盖实物焊脚高度、完整工具空间与制造公差；不能据此否定安装反馈。主板净空的新检查与限制见 [R3 验证记录](validation/r3/README.md)。
+
+2026-11-24 根据「板背元件顶住支架」继续精修。R3 按原厂前端面重做七组 I/O，纠正按钮标注并补回竖向 USB-C 开孔和开放壳。内骨架改为桁架，盘托改为接触框与螺丝短肩。页面新增 I/O 近景与仅看骨架，仍保留8个主要打印件和19个铜套。精修前报告见 [候选基线](validation/r3/baseline-2026-11-23.json)，项目校正规则见 [viz3d-lessons.md](viz3d-lessons.md)。
+
+同日为R3上盖增加92×14 mm薄型风扇，顶部进风、后部排风。上盖集成格栅与2 mm硬定位座，总高改为194 mm，散热器设计包络上方留5.2 mm，主体打印件仍为8件。14 mm须包含原厂软角垫；R1的92×25 mm顶扇不适配当前R3高度。顶扇随上盖拆下，拆盖需先断电并断开风扇插头。几何与提盖检查见[R3验证](validation/r3/README.md)；实际供电、走线、散热和装配待验证。
+
+顶扇与格栅现已移至上盖中心(72,100) mm；当前加宽候选前后各留26 mm、左右各留31 mm。顶部改为七道同心断环，前后通风口改为对称分段圆端槽；侧面保留完整留白。新增「背面」取景查看统一孔阵。实际STEP截片同时比较总开孔面积和后扇扫掠圆内开口，结果见[通风图案检查](validation/r3/vents.json)。图案没有增加打印主件，总高与主板基准不变。
+
+用户确认7 mm硬盘后，R3统一为五块7 mm盘，保留SATA、负X接触面和侧螺孔基准。内框纵肋增至3.6 mm、斜撑增至8 mm，底框加高至6 mm并增加跨X横梁。主板立柱增加避让盘托的斜坡根筋，后扇立柱增至6 mm并增加四角撑。该轮8件候选作为打印优化基线保留；居中顶扇与通风图案保持。实体截面与净空见[加固检查](validation/r3/frame.json)，打印件强度和振动尚需实测。
+
+上一轮打印优化得到9件候选：主架保持一体并采用45°尖拱，后风扇框独立平放，与风扇共用原四颗M3×35。该基线有19个铜套，整套切片估算约20小时、615克PETG，主架支撑路径由48.46降至1.77克。记录保存在[锁盖修改前基线](validation/r3/baseline-before-lid-fixing.json)。
+
+当前锁盖加固候选保留9个主体件，改为四颗顶部M3×25、连壁厚座和盖内压套。为给M3孔壁与真实PCB直提通道留出空间，外形从144×144×194改为154×144×194 mm；主板、SATA和盘位基准保持。止口绕过厚座且保持闭合，外观缝0.30 mm、单侧间隙0.35 mm。壳底四脚增加连壁筋，主架前脚增加根板并内移侧梁。铜套改为21个（M3×17、M2.5×4）。拆盖须先完整旋出四颗盖锁螺丝。前后主通风槽采用水平等宽6 mm横带，槽端齐平于Z67/73，保留圆端和外端对称轮廓。新五盘实际切片估算21.23小时、653.48 g PETG，比锁盖前增加约1.25小时、39.01 g。当前证据见[数字验证](validation/r3/README.md)，朝向、五金与试装次序见[打印说明](docs/design/r3/printing.md)；实物强度、配合和散热仍待验证。
 
 ## 仓库结构
 
@@ -35,24 +50,31 @@ R1 托脚方案与 R2 四点螺丝固定方案有区别。使用 R1 打印资料
 ├── README.md                 # 项目概况与入口
 ├── AGENTS.md                 # 仓库维护与 Agent 工作约定
 ├── SHA256SUMS.txt            # 正式文件的完整性清单
+├── viz3d-lessons.md          # 三维设计校正规则与检查入口
 ├── .gitattributes            # 跨平台换行及原始文件字节规则
 ├── hardware/enclosure/r1/
 │   ├── src/                  # CAD、验证、渲染及打包源码
 │   ├── cad/                  # 可编辑 STEP
 │   └── print/                # 3MF、STL ZIP、打印盘清单
+├── hardware/enclosure/r3/
+│   ├── src/                  # 参数CAD与候选验证；输出写入outputs/
+│   ├── cad/                  # R3 Final 2026-11-24总成STEP
+│   └── print/                # 同轮五盘3MF、STL ZIP和盘清单
 ├── docs/
 │   ├── assembly/r1.md        # 装配、五金与打印说明
 │   ├── assembly/r2/          # 离线三维教程、模型、源码与 30 秒预览
 │   ├── images/r1/            # R1 设计与打印预览
 │   ├── images/r2/            # R2 结构图与装配教学预览
-│   └── anatomy/r2/           # 离线 HTML、SVG、使用说明及 src/
+│   ├── anatomy/r2/           # 离线 HTML、SVG、使用说明及 src/
+│   └── design/r3/            # R3 一体机箱设计审阅、约束与源码
 ├── references/radxa-taco/    # 原厂主板参考资料
 └── validation/
     ├── r1/                   # 原 R1 数字验证报告
-    └── r2/                   # 图形、装配数字验证与历史日志
+    ├── r2/                   # 图形、装配数字验证与历史日志
+    └── r3/                   # 新读取主板的净空与候选设计验证
 ```
 
-目录与普通文件名使用英文；Python 文件名使用下划线，其他普通文件使用连字符。独立下载的模型与打印文件带 `CyberMachine-r1-` 前缀，便于离开仓库目录后识别项目与版本。
+目录与普通文件名使用英文；Python 文件名使用下划线，其他普通文件使用连字符。独立下载的模型与打印文件带对应的 `CyberMachine-r1-` 或 `CyberMachine-r3-final-20261124-` 前缀。
 
 ## 文件入口
 

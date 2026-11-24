@@ -1,0 +1,2095 @@
+{
+  "checkedAt": "2026-11-24T11:07:16.802057+00:00",
+  "passed": true,
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "checkerSha256": "36a5fddcbd545155b6d1731e1fffd630a5c95e15ef4689fcede5b7562ee7a38f",
+  "ioSourceSha256": "47fdf6153820d1faa0c3f7b9908fea01bab277e9fdef47b5cffcfa0dd18ba9fb",
+  "meshReportSha256": "24ec3e1ce1fa03f3c85dafd1b060e7e93ad7929369ed8a610d46d162d05cc11f",
+  "metadataSha256": "ebc2fb1c26d79a353bc13185fee5c2ba2f8ab0e51ef988410af3ca965504d28b",
+  "process": "P1S 0.4mm / Generic PETG / 0.20mm / 4 walls / 25% gyroid",
+  "supportStrategy": "Automatic tree supports; lid normal supports; flat fan frame support disabled. 0.2mm contact Z gap.",
+  "bedType": "Textured PEI Plate",
+  "installedSlicer": "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+  "presetSourceHashes": {
+    "machine/Bambu Lab P1S 0.4 nozzle.json": "ce54a60c2b4677f6f64286e26967f133e2b54a91e2375cb5923940071ddee526",
+    "machine/fdm_bbl_3dp_001_common.json": "2ca207f457c1f9b3eb25a1801adb2eaa8ddc5620f5a8945abb51a3fcddab5e47",
+    "machine/fdm_machine_common.json": "26ef8ee697849323e67d8e1a9026c175cebe3397e38c5091dddb5cd3fc52e94c",
+    "machine/Bambu Lab P1S 0.4 nozzle template machine_start_gcode.json": "ecfedd58ee4775dec2dafe0a14c1adbcd1fe3c83d2f85e9a252cceec05d2730e",
+    "machine/Bambu Lab P1S 0.4 nozzle template machine_end_gcode.json": "766999ac6456c7ddd82aa47a3dbd9ef71d1e9333483305999b3530befe22ab7d",
+    "machine/Bambu Lab P1S 0.4 nozzle template time_lapse_gcode.json": "af84ee5b92597644c2a27ee45a0c811b748bcc8230b7c378a16d1fd405b46f44",
+    "machine/Bambu Lab P1S 0.4 nozzle template change_filament_gcode.json": "3194e4322c3b8953a187e11a0ccc198949244065fb5caf62a67443f8acc54dde",
+    "machine/Bambu Lab P1S 0.4 nozzle template layer_change_gcode.json": "f0ca694af70aec99a72501da294b8c73b8d655e8adab004325b27d2df83b98f1",
+    "filament/P1P/Generic PETG @BBL P1P.json": "a79a42593ac97ca140b839f3a6696bbe2a4328b380a4752204ae0fd47bd1d03a",
+    "filament/Generic PETG @base.json": "6f6c6f213537cf75ab87f5eae7454a876ca268208d70f6b241c5396224a95b1a",
+    "filament/fdm_filament_pet.json": "3ed1b36367fe6df800103a9deaaa036f9d79c7afda3f3a17514dff23aa96c7d8",
+    "filament/fdm_filament_common.json": "8c7105b7d59a28f600c43a946f067b8b4d707b9711c0bf6b88e9166e48878548",
+    "filament/fdm_filament_template_direct_dual.json": "e0f564b83f3ef70cce4de1401dd7cd855d6fbd834343cb8f4292f2a1ac3efc51",
+    "process/0.20mm Standard @BBL X1C.json": "e4d3f211b6ef87e9612c96f3ac2d18413e0610fff7eeb815a76420344a3b0a19",
+    "process/fdm_process_single_0.20.json": "cdda8d56d67f62a0faa892cb6efc605ebb5c745bf742f6ead4daaeb6627c182a",
+    "process/fdm_process_single_common.json": "05b38ac1318e465e817978b36da51754f928da0172738a20bb3a8d4a69eb4769",
+    "process/fdm_process_common.json": "d7981c4b92854f251b8697e1bb621c63fe393f263fb8024ab63c401525d543d7"
+  },
+  "presetHashes": {
+    "filament.json": "4ea276e9424bb4b0cde0191cca432b14f2fe675c13751c2803a35458bf17b51d",
+    "process.json": "24f36c24691af9b8f76abefd7aac0777fe0eb7f1228504275d79facfb0195904",
+    "machine.json": "abda54f9d006273f8af74a2ca9335685710fd1e941a14bf68a76e1a616538f00"
+  },
+  "candidateStlSha256": {
+    "shell": "a2b54d8eaa9f5fbc116dc25ba32d1021bf81c6306f0a2d2ee3345bf495c23ea7",
+    "lid-print": "b158251693a4eae054a9bdbcf762d5140acbbb8e8de09d2fcfd5ce23af15edd1",
+    "spine-print": "4efcd186cd1add584af99cd6fdfc0bf333f13aa1e4691453abc02806f7d9beb7",
+    "rear-fan-frame-print": "32f22a2f6df704157122b58a10a65aba7f833653a00c24f8a419c0180695adac",
+    "carrier-print": "9adf300defdc44fb545bbce71121dbb82d5c245439d3f4dc9dbc23d61a724434"
+  },
+  "printTransforms": {
+    "shell": {
+      "source": "shell",
+      "rotationDegXYZ": [
+        0,
+        0,
+        0
+      ],
+      "translationMm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bedFace": "bottom Z0",
+      "quantity": 1
+    },
+    "lid-print": {
+      "source": "lid",
+      "rotationDegXYZ": [
+        180,
+        0,
+        0
+      ],
+      "translationMm": [
+        5.0,
+        172.00000000000003,
+        194.00000000000003
+      ],
+      "bedFace": "outer top Z194",
+      "quantity": 1
+    },
+    "spine-print": {
+      "source": "spine",
+      "rotationDegXYZ": [
+        0,
+        0,
+        0
+      ],
+      "translationMm": [
+        -5.5,
+        -31.5,
+        -8.0
+      ],
+      "bedFace": "base Z8",
+      "quantity": 1
+    },
+    "carrier-print": {
+      "source": "carrier",
+      "rotationDegXYZ": [
+        0,
+        -90,
+        0
+      ],
+      "translationMm": [
+        114.0,
+        -39.099999999999994,
+        -24.300000000000004
+      ],
+      "bedFace": "negative-X large side X24.3",
+      "quantity": 5
+    },
+    "rear-fan-frame-print": {
+      "source": "rear-fan-frame",
+      "rotationDegXYZ": [
+        -90,
+        0,
+        0
+      ],
+      "translationMm": [
+        -9.75,
+        -8.000000000000028,
+        142.0
+      ],
+      "bedFace": "rear Y142",
+      "quantity": 1
+    }
+  },
+  "pieceCount": 9,
+  "plateCount": 5,
+  "plates": [
+    {
+      "plate": 1,
+      "name": "01 Shell upright",
+      "objectCount": 1,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 144.0,
+            "height": 174.0,
+            "width": 154.0,
+            "x": 56.0,
+            "y": 56.0,
+            "z": 0.0
+          },
+          "id": 15,
+          "name": "shell_1",
+          "triangle_count": 27554
+        }
+      ],
+      "resultSceneOriginMm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localObjectBoundsMm": [
+        {
+          "depth": 144.0,
+          "height": 174.0,
+          "width": 154.0,
+          "x": 56.0,
+          "y": 56.0,
+          "z": 0.0
+        }
+      ],
+      "estimatedSeconds": 38206.92578125,
+      "totalFilamentG": 353.3651428222656,
+      "featureTimesSeconds": {
+        "Bottom surface": 534.1602783203125,
+        "Bridge": 954.9507446289062,
+        "Brim": 119.96064758300781,
+        "Custom": 360.27874755859375,
+        "Flush": 29.0,
+        "Gap infill": 3513.773193359375,
+        "Inner wall": 13374.3994140625,
+        "Internal solid infill": 2682.4208984375,
+        "Outer wall": 8670.5849609375,
+        "Overhang wall": 70.07939147949219,
+        "Sparse infill": 881.3135986328125,
+        "Support": 747.849609375,
+        "Support interface": 11.020927429199219,
+        "Top surface": 561.658447265625,
+        "Travel": 5694.197265625,
+        "Undefined": 5680.837890625
+      },
+      "pathEstimate": {
+        "filamentDiameterMm": 1.75,
+        "filamentDensityGcm3": 1.27,
+        "slicerVersion": "02.08.02.61",
+        "modelEstimatedSeconds": 37831.0,
+        "totalEstimatedSeconds": 38206.0,
+        "depositedPathBoundsMm": [
+          [
+            51.558,
+            18.458594848879606,
+            0.2
+          ],
+          [
+            214.442,
+            202.442,
+            174.0
+          ]
+        ],
+        "supportPathBoundsMm": [
+          [
+            68.3079258720339,
+            18.458594848879606,
+            0.2
+          ],
+          [
+            197.7040741279661,
+            160.6970741279661,
+            150.8
+          ]
+        ],
+        "depositedPathEstimatedG": {
+          "Custom": 0.09591783062738804,
+          "Support": 7.7178977443078205,
+          "Brim": 0.6571494308630175,
+          "Outer wall": 83.48946913186322,
+          "Inner wall": 167.1321340072111,
+          "Bottom surface": 4.991472631174752,
+          "Internal solid infill": 36.178738964064536,
+          "Sparse infill": 6.24653160210522,
+          "Support interface": 0.04477703983864907,
+          "Floating vertical shell": 0.18645372399710483,
+          "Bridge": 7.224131080485922,
+          "Overhang wall": 0.11186997391435637,
+          "Gap infill": 33.547747785272556,
+          "Top surface": 5.740811163367032
+        },
+        "supportPathEstimatedG": 7.762674784146469,
+        "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+      },
+      "warning": "",
+      "gcodeSha256": "85fa551c9f0fc41bac5978a59cad71a8f5d3f01dff44c82829b1f473767788f0"
+    },
+    {
+      "plate": 2,
+      "name": "02 Lid top down",
+      "objectCount": 1,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 144.0,
+            "height": 24.699996948242188,
+            "width": 153.99998474121094,
+            "x": 363.20001220703125,
+            "y": 56.0,
+            "z": -1.9539925233402755e-14
+          },
+          "id": 35,
+          "name": "lid-print_1",
+          "triangle_count": 13542
+        }
+      ],
+      "resultSceneOriginMm": [
+        307.20001220703125,
+        0.0,
+        -1.9539925233402755e-14
+      ],
+      "localObjectBoundsMm": [
+        {
+          "depth": 144.0,
+          "height": 24.699996948242188,
+          "width": 153.99998474121094,
+          "x": 56.0,
+          "y": 56.0,
+          "z": 0.0
+        }
+      ],
+      "estimatedSeconds": 12491.3671875,
+      "totalFilamentG": 120.35576629638672,
+      "featureTimesSeconds": {
+        "Bottom surface": 454.8607482910156,
+        "Bridge": 795.569091796875,
+        "Brim": 120.14688110351562,
+        "Custom": 362.4024353027344,
+        "Flush": 29.0,
+        "Gap infill": 405.031005859375,
+        "Inner wall": 3072.7685546875,
+        "Internal solid infill": 2198.537841796875,
+        "Outer wall": 1394.0479736328125,
+        "Overhang wall": 310.260986328125,
+        "Sparse infill": 834.5711059570312,
+        "Support": 663.316162109375,
+        "Support interface": 234.56951904296875,
+        "Support transition": 69.88915252685547,
+        "Top surface": 628.7979736328125,
+        "Travel": 933.7924194335938,
+        "Undefined": 918.3204345703125
+      },
+      "pathEstimate": {
+        "filamentDiameterMm": 1.75,
+        "filamentDensityGcm3": 1.27,
+        "slicerVersion": "02.08.02.61",
+        "modelEstimatedSeconds": 12115.0,
+        "totalEstimatedSeconds": 12491.0,
+        "depositedPathBoundsMm": [
+          [
+            51.558,
+            49.564,
+            0.2
+          ],
+          [
+            214.442,
+            202.442,
+            24.6
+          ]
+        ],
+        "supportPathBoundsMm": [
+          [
+            59.308655707015525,
+            57.33305135408787,
+            0.2
+          ],
+          [
+            206.68797681857058,
+            194.831,
+            16.4
+          ]
+        ],
+        "depositedPathEstimatedG": {
+          "Custom": 0.09591783062738804,
+          "Support": 7.548801023797867,
+          "Brim": 0.6586192341555231,
+          "Outer wall": 16.619037358481513,
+          "Inner wall": 40.68597754479058,
+          "Gap infill": 4.634004502091705,
+          "Bottom surface": 3.4513175504773237,
+          "Internal solid infill": 25.629592824723993,
+          "Sparse infill": 5.526217805459852,
+          "Support transition": 0.39757644488377625,
+          "Support interface": 1.6712055660293317,
+          "Floating vertical shell": 2.359064953739538,
+          "Bridge": 5.7443383735794225,
+          "Overhang wall": 0.31097257162818975,
+          "Top surface": 5.023101016523804
+        },
+        "supportPathEstimatedG": 9.617583034710975,
+        "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+      },
+      "warning": "",
+      "gcodeSha256": "39ae92e140f3b0873639d7101c4fc492d123b4e634230943fb5a3327c4848500"
+    },
+    {
+      "plate": 3,
+      "name": "03 Main frame upright",
+      "objectCount": 1,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 106.49979400634766,
+            "height": 125.39999389648438,
+            "width": 132.99993896484375,
+            "x": 675.9000244140625,
+            "y": 74.75020599365234,
+            "z": 0.0
+          },
+          "id": 55,
+          "name": "spine-print_1",
+          "triangle_count": 11244
+        }
+      ],
+      "resultSceneOriginMm": [
+        614.4000244140625,
+        0.00020599365234375,
+        0.0
+      ],
+      "localObjectBoundsMm": [
+        {
+          "depth": 106.49979400634766,
+          "height": 125.39999389648438,
+          "width": 132.99993896484375,
+          "x": 61.5,
+          "y": 74.75,
+          "z": 0.0
+        }
+      ],
+      "estimatedSeconds": 16195.6982421875,
+      "totalFilamentG": 113.8093490600586,
+      "featureTimesSeconds": {
+        "Bottom surface": 147.91671752929688,
+        "Bridge": 196.30093383789062,
+        "Brim": 112.42486572265625,
+        "Custom": 362.1531066894531,
+        "Flush": 29.0,
+        "Gap infill": 602.9130859375,
+        "Inner wall": 5910.564453125,
+        "Internal solid infill": 904.7740478515625,
+        "Outer wall": 3030.6201171875,
+        "Overhang wall": 75.9737777709961,
+        "Sparse infill": 1531.287841796875,
+        "Support": 355.0816345214844,
+        "Support interface": 20.90753173828125,
+        "Top surface": 263.82025146484375,
+        "Travel": 2666.33642578125,
+        "Undefined": 2651.26318359375
+      },
+      "pathEstimate": {
+        "filamentDiameterMm": 1.75,
+        "filamentDensityGcm3": 1.27,
+        "slicerVersion": "02.08.02.61",
+        "modelEstimatedSeconds": 15819.0,
+        "totalEstimatedSeconds": 16195.0,
+        "depositedPathBoundsMm": [
+          [
+            56.96707873480872,
+            68.313,
+            0.2
+          ],
+          [
+            198.937,
+            183.692,
+            125.4
+          ]
+        ],
+        "supportPathBoundsMm": [
+          [
+            56.96707873480872,
+            146.9865175347749,
+            0.2
+          ],
+          [
+            195.92300903273602,
+            164.51709427078083,
+            14.0
+          ]
+        ],
+        "depositedPathEstimatedG": {
+          "Custom": 0.09591783062738804,
+          "Support": 1.631296447736248,
+          "Brim": 0.559111174690089,
+          "Outer wall": 23.55147101361218,
+          "Inner wall": 64.48483234313126,
+          "Gap infill": 3.610900993919049,
+          "Bottom surface": 0.5151097557550842,
+          "Internal solid infill": 5.836093553639928,
+          "Sparse infill": 9.385559115948503,
+          "Overhang wall": 0.09811300487724327,
+          "Floating vertical shell": 1.1322998794728945,
+          "Bridge": 1.317476094044943,
+          "Top surface": 1.4722429044881156,
+          "Support interface": 0.11888743237254347
+        },
+        "supportPathEstimatedG": 1.7501838801087914,
+        "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+      },
+      "warning": "",
+      "gcodeSha256": "c57c884fb8e9f7d225344bde4e95b4c637932fe730fb3219e7980c8c374a818f"
+    },
+    {
+      "plate": 4,
+      "name": "04 Fan frame and two carriers",
+      "objectCount": 3,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 120.0,
+            "height": 5.5,
+            "width": 126.0,
+            "x": 10.0,
+            "y": -247.1999969482422,
+            "z": 8.881784197001252e-16
+          },
+          "id": 75,
+          "name": "rear-fan-frame-print_1",
+          "triangle_count": 1088
+        },
+        {
+          "bbox": {
+            "depth": 81.50001525878906,
+            "height": 14.299999237060547,
+            "width": 94.1500015258789,
+            "x": 151.0,
+            "y": -287.20001220703125,
+            "z": 0.0
+          },
+          "id": 95,
+          "name": "carrier-print_1",
+          "triangle_count": 2068
+        },
+        {
+          "bbox": {
+            "depth": 81.5,
+            "height": 14.299999237060547,
+            "width": 94.1500015258789,
+            "x": 151.0,
+            "y": -177.1999969482422,
+            "z": 0.0
+          },
+          "id": 115,
+          "name": "carrier-print_1",
+          "triangle_count": 2068
+        }
+      ],
+      "resultSceneOriginMm": [
+        0.0,
+        -307.1999969482422,
+        8.881784197001252e-16
+      ],
+      "localObjectBoundsMm": [
+        {
+          "depth": 120.0,
+          "height": 5.5,
+          "width": 126.0,
+          "x": 10.0,
+          "y": 60.0,
+          "z": 0.0
+        },
+        {
+          "depth": 81.50001525878906,
+          "height": 14.299999237060547,
+          "width": 94.1500015258789,
+          "x": 151.0,
+          "y": 19.999984741210938,
+          "z": -8.881784197001252e-16
+        },
+        {
+          "depth": 81.5,
+          "height": 14.299999237060547,
+          "width": 94.1500015258789,
+          "x": 151.0,
+          "y": 130.0,
+          "z": -8.881784197001252e-16
+        }
+      ],
+      "estimatedSeconds": 4801.05712890625,
+      "totalFilamentG": 33.495872497558594,
+      "featureTimesSeconds": {
+        "Bottom surface": 291.4626159667969,
+        "Bridge": 38.2371711730957,
+        "Brim": 238.35598754882812,
+        "Custom": 362.9654235839844,
+        "Flush": 29.0,
+        "Gap infill": 35.90209197998047,
+        "Inner wall": 1068.81298828125,
+        "Internal solid infill": 929.1939086914062,
+        "Outer wall": 534.1917114257812,
+        "Overhang wall": 16.1422176361084,
+        "Sparse infill": 138.31643676757812,
+        "Support": 208.80064392089844,
+        "Support interface": 9.942578315734863,
+        "Top surface": 303.75762939453125,
+        "Travel": 611.4105834960938,
+        "Undefined": 595.6851196289062
+      },
+      "pathEstimate": {
+        "filamentDiameterMm": 1.75,
+        "filamentDensityGcm3": 1.27,
+        "slicerVersion": "02.08.02.61",
+        "modelEstimatedSeconds": 4424.0,
+        "totalEstimatedSeconds": 4801.0,
+        "depositedPathBoundsMm": [
+          [
+            5.558,
+            13.558,
+            0.2
+          ],
+          [
+            253.73582194984152,
+            213.942,
+            14.2
+          ]
+        ],
+        "supportPathBoundsMm": [
+          [
+            242.579,
+            29.981575100015906,
+            0.2
+          ],
+          [
+            253.73582194984152,
+            195.37223892062687,
+            11.6
+          ]
+        ],
+        "depositedPathEstimatedG": {
+          "Custom": 0.09591783062738804,
+          "Support": 0.9289895131554241,
+          "Brim": 1.2593122852294958,
+          "Outer wall": 4.7366480054708076,
+          "Inner wall": 11.88506222249491,
+          "Bottom surface": 1.0838246268690679,
+          "Gap infill": 0.06895590883254431,
+          "Internal solid infill": 10.067634291905904,
+          "Sparse infill": 0.8820876184446383,
+          "Top surface": 2.009482370028706,
+          "Floating vertical shell": 0.10489143243585726,
+          "Bridge": 0.26824719585841283,
+          "Overhang wall": 0.05467353002256904,
+          "Support interface": 0.05013343973759232
+        },
+        "supportPathEstimatedG": 0.9791229528930164,
+        "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+      },
+      "warning": "",
+      "gcodeSha256": "7be7f73db67a5c3f47cd4dc55d330b5c5b1046a566e42368af0ac4f05b1d12d5"
+    },
+    {
+      "plate": 5,
+      "name": "05 Three carriers flat",
+      "objectCount": 3,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 81.50001525878906,
+            "height": 14.299999237060547,
+            "width": 94.14998626708984,
+            "x": 327.20001220703125,
+            "y": -272.20001220703125,
+            "z": 0.0
+          },
+          "id": 135,
+          "name": "carrier-print_1",
+          "triangle_count": 2068
+        },
+        {
+          "bbox": {
+            "depth": 81.50001525878906,
+            "height": 14.299999237060547,
+            "width": 94.14998626708984,
+            "x": 448.20001220703125,
+            "y": -272.20001220703125,
+            "z": 0.0
+          },
+          "id": 155,
+          "name": "carrier-print_1",
+          "triangle_count": 2068
+        },
+        {
+          "bbox": {
+            "depth": 81.5,
+            "height": 14.299999237060547,
+            "width": 94.14998626708984,
+            "x": 387.70001220703125,
+            "y": -162.1999969482422,
+            "z": 0.0
+          },
+          "id": 175,
+          "name": "carrier-print_1",
+          "triangle_count": 2068
+        }
+      ],
+      "resultSceneOriginMm": [
+        307.20001220703125,
+        -307.20001220703125,
+        0.0
+      ],
+      "localObjectBoundsMm": [
+        {
+          "depth": 81.50001525878906,
+          "height": 14.299999237060547,
+          "width": 94.14998626708984,
+          "x": 20.0,
+          "y": 35.0,
+          "z": 0.0
+        },
+        {
+          "depth": 81.50001525878906,
+          "height": 14.299999237060547,
+          "width": 94.14998626708984,
+          "x": 141.0,
+          "y": 35.0,
+          "z": 0.0
+        },
+        {
+          "depth": 81.5,
+          "height": 14.299999237060547,
+          "width": 94.14998626708984,
+          "x": 80.5,
+          "y": 145.00001525878906,
+          "z": 0.0
+        }
+      ],
+      "estimatedSeconds": 4743.33984375,
+      "totalFilamentG": 32.4541130065918,
+      "featureTimesSeconds": {
+        "Bottom surface": 350.6820373535156,
+        "Brim": 203.50498962402344,
+        "Custom": 362.9933166503906,
+        "Flush": 29.0,
+        "Gap infill": 7.422263145446777,
+        "Inner wall": 819.7325439453125,
+        "Internal solid infill": 1168.2366943359375,
+        "Outer wall": 504.7521057128906,
+        "Overhang wall": 24.21334457397461,
+        "Sparse infill": 4.978546619415283,
+        "Support": 313.2030944824219,
+        "Support interface": 14.91512393951416,
+        "Top surface": 309.86822509765625,
+        "Travel": 645.0416259765625,
+        "Undefined": 629.301025390625
+      },
+      "pathEstimate": {
+        "filamentDiameterMm": 1.75,
+        "filamentDensityGcm3": 1.27,
+        "slicerVersion": "02.08.02.61",
+        "modelEstimatedSeconds": 4367.0,
+        "totalEstimatedSeconds": 4743.0,
+        "depositedPathBoundsMm": [
+          [
+            15.558,
+            28.558,
+            0.2
+          ],
+          [
+            243.73582194984152,
+            228.942,
+            14.2
+          ]
+        ],
+        "supportPathBoundsMm": [
+          [
+            111.579,
+            44.9815751000159,
+            0.2
+          ],
+          [
+            243.73582194984152,
+            210.37223892062687,
+            11.6
+          ]
+        ],
+        "depositedPathEstimatedG": {
+          "Custom": 0.09591783062738804,
+          "Support": 1.3934953430495882,
+          "Brim": 1.0504464436939034,
+          "Outer wall": 4.269712949601174,
+          "Inner wall": 9.238034498829368,
+          "Bottom surface": 1.418633787461792,
+          "Gap infill": 0.05048393693142013,
+          "Internal solid infill": 12.547498925212373,
+          "Sparse infill": 0.02961899843862001,
+          "Top surface": 2.203045163176317,
+          "Overhang wall": 0.08201029503385358,
+          "Support interface": 0.07520015960638865
+        },
+        "supportPathEstimatedG": 1.468695502655977,
+        "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+      },
+      "warning": "",
+      "gcodeSha256": "cf613f89bb4bc188fa35d96c312fb719207f9e2d2c0aa12b8bb8227c39509628"
+    }
+  ],
+  "totalEstimatedSeconds": 76438.38818359375,
+  "modelEstimatedSeconds": 74556.0,
+  "timeEstimateBasis": "Bambu header total estimated time, including preset preparation estimates; actual heating, calibration and handling times vary.",
+  "totalFilamentG": 653.4802436828613,
+  "supportPathEstimatedG": 21.578260154515227,
+  "projectPath": "outputs/print-r3/CyberMachine-r3-print-candidate.gcode.3mf",
+  "projectSha256": "eec4f1e6189c633a41f6d964716eebf542358161d0a209b52ef5a121f0195709",
+  "resultSha256": "bc71f5d83417193286a18bdcef2b46f1a5e0581ccd51819e416b120174928819",
+  "limits": [
+    "Slice estimates only; no print started and no printer contacted.",
+    "Actual support removal, print finish, fit, insert strength, stiffness and thermal performance require physical trials.",
+    "Use actual printer, plate, dried filament and nozzle settings before printing; stock Generic PETG is a comparison preset."
+  ],
+  "previousComparison": {
+    "sha256": "cdebd9caf6de992fb8298ef93079e03dbdc003cd82dd6b645390aef90f92b8c8",
+    "records": {
+      "checkedAt": "2026-11-24T08:48:24.919861+00:00",
+      "passed": true,
+      "sourceSha256": "ff58c7002702e0d752e21d99c66f3dce58b0e8c40b854c8477aeaadb0b69e5c1",
+      "checkerSha256": "99543bf160a9b4d3cb536637eaf7b7afc251e01c1bc19b32ae89f0c62cc54916",
+      "ioSourceSha256": "47fdf6153820d1faa0c3f7b9908fea01bab277e9fdef47b5cffcfa0dd18ba9fb",
+      "meshReportSha256": "0a21d3055d58d60ca1e7e25c09ddabd59d1b8969502fb8a2075312901f9b5341",
+      "metadataSha256": "6989c3018174bd0030f0a96828adcbfcdca5eac77ad18054a89234e6e4b72492",
+      "process": "P1S 0.4mm / Generic PETG / 0.20mm / 4 walls / 25% gyroid",
+      "supportStrategy": "Automatic tree supports; lid normal supports; flat fan frame support disabled. 0.2mm contact Z gap.",
+      "bedType": "Textured PEI Plate",
+      "installedSlicer": "/Applications/BambuStudio.app/Contents/MacOS/BambuStudio",
+      "presetSourceHashes": {
+        "machine/Bambu Lab P1S 0.4 nozzle.json": "ce54a60c2b4677f6f64286e26967f133e2b54a91e2375cb5923940071ddee526",
+        "machine/fdm_bbl_3dp_001_common.json": "2ca207f457c1f9b3eb25a1801adb2eaa8ddc5620f5a8945abb51a3fcddab5e47",
+        "machine/fdm_machine_common.json": "26ef8ee697849323e67d8e1a9026c175cebe3397e38c5091dddb5cd3fc52e94c",
+        "machine/Bambu Lab P1S 0.4 nozzle template machine_start_gcode.json": "ecfedd58ee4775dec2dafe0a14c1adbcd1fe3c83d2f85e9a252cceec05d2730e",
+        "machine/Bambu Lab P1S 0.4 nozzle template machine_end_gcode.json": "766999ac6456c7ddd82aa47a3dbd9ef71d1e9333483305999b3530befe22ab7d",
+        "machine/Bambu Lab P1S 0.4 nozzle template time_lapse_gcode.json": "af84ee5b92597644c2a27ee45a0c811b748bcc8230b7c378a16d1fd405b46f44",
+        "machine/Bambu Lab P1S 0.4 nozzle template change_filament_gcode.json": "3194e4322c3b8953a187e11a0ccc198949244065fb5caf62a67443f8acc54dde",
+        "machine/Bambu Lab P1S 0.4 nozzle template layer_change_gcode.json": "f0ca694af70aec99a72501da294b8c73b8d655e8adab004325b27d2df83b98f1",
+        "filament/P1P/Generic PETG @BBL P1P.json": "a79a42593ac97ca140b839f3a6696bbe2a4328b380a4752204ae0fd47bd1d03a",
+        "filament/Generic PETG @base.json": "6f6c6f213537cf75ab87f5eae7454a876ca268208d70f6b241c5396224a95b1a",
+        "filament/fdm_filament_pet.json": "3ed1b36367fe6df800103a9deaaa036f9d79c7afda3f3a17514dff23aa96c7d8",
+        "filament/fdm_filament_common.json": "8c7105b7d59a28f600c43a946f067b8b4d707b9711c0bf6b88e9166e48878548",
+        "filament/fdm_filament_template_direct_dual.json": "e0f564b83f3ef70cce4de1401dd7cd855d6fbd834343cb8f4292f2a1ac3efc51",
+        "process/0.20mm Standard @BBL X1C.json": "e4d3f211b6ef87e9612c96f3ac2d18413e0610fff7eeb815a76420344a3b0a19",
+        "process/fdm_process_single_0.20.json": "cdda8d56d67f62a0faa892cb6efc605ebb5c745bf742f6ead4daaeb6627c182a",
+        "process/fdm_process_single_common.json": "05b38ac1318e465e817978b36da51754f928da0172738a20bb3a8d4a69eb4769",
+        "process/fdm_process_common.json": "d7981c4b92854f251b8697e1bb621c63fe393f263fb8024ab63c401525d543d7"
+      },
+      "presetHashes": {
+        "filament.json": "4ea276e9424bb4b0cde0191cca432b14f2fe675c13751c2803a35458bf17b51d",
+        "process.json": "24f36c24691af9b8f76abefd7aac0777fe0eb7f1228504275d79facfb0195904",
+        "machine.json": "abda54f9d006273f8af74a2ca9335685710fd1e941a14bf68a76e1a616538f00"
+      },
+      "candidateStlSha256": {
+        "shell": "599034f4a8511f303db715866cf19a4433d26a412d8f6dce2dcea0dead8b0813",
+        "lid-print": "b158251693a4eae054a9bdbcf762d5140acbbb8e8de09d2fcfd5ce23af15edd1",
+        "spine-print": "4efcd186cd1add584af99cd6fdfc0bf333f13aa1e4691453abc02806f7d9beb7",
+        "rear-fan-frame-print": "32f22a2f6df704157122b58a10a65aba7f833653a00c24f8a419c0180695adac",
+        "carrier-print": "9adf300defdc44fb545bbce71121dbb82d5c245439d3f4dc9dbc23d61a724434"
+      },
+      "printTransforms": {
+        "shell": {
+          "source": "shell",
+          "rotationDegXYZ": [
+            0,
+            0,
+            0
+          ],
+          "translationMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bedFace": "bottom Z0",
+          "quantity": 1
+        },
+        "lid-print": {
+          "source": "lid",
+          "rotationDegXYZ": [
+            180,
+            0,
+            0
+          ],
+          "translationMm": [
+            5.0,
+            172.00000000000003,
+            194.00000000000003
+          ],
+          "bedFace": "outer top Z194",
+          "quantity": 1
+        },
+        "spine-print": {
+          "source": "spine",
+          "rotationDegXYZ": [
+            0,
+            0,
+            0
+          ],
+          "translationMm": [
+            -5.5,
+            -31.5,
+            -8.0
+          ],
+          "bedFace": "base Z8",
+          "quantity": 1
+        },
+        "carrier-print": {
+          "source": "carrier",
+          "rotationDegXYZ": [
+            0,
+            -90,
+            0
+          ],
+          "translationMm": [
+            114.0,
+            -39.099999999999994,
+            -24.300000000000004
+          ],
+          "bedFace": "negative-X large side X24.3",
+          "quantity": 5
+        },
+        "rear-fan-frame-print": {
+          "source": "rear-fan-frame",
+          "rotationDegXYZ": [
+            -90,
+            0,
+            0
+          ],
+          "translationMm": [
+            -9.75,
+            -8.000000000000028,
+            142.0
+          ],
+          "bedFace": "rear Y142",
+          "quantity": 1
+        }
+      },
+      "pieceCount": 9,
+      "plateCount": 5,
+      "plates": [
+        {
+          "plate": 1,
+          "name": "01 Shell upright",
+          "objectCount": 1,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 144.0,
+                "height": 174.0,
+                "width": 154.0,
+                "x": 56.0,
+                "y": 56.0,
+                "z": 0.0
+              },
+              "id": 15,
+              "name": "shell_1",
+              "triangle_count": 27554
+            }
+          ],
+          "resultSceneOriginMm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "localObjectBoundsMm": [
+            {
+              "depth": 144.0,
+              "height": 174.0,
+              "width": 154.0,
+              "x": 56.0,
+              "y": 56.0,
+              "z": 0.0
+            }
+          ],
+          "estimatedSeconds": 38458.17578125,
+          "totalFilamentG": 352.4801330566406,
+          "featureTimesSeconds": {
+            "Bottom surface": 534.1602783203125,
+            "Bridge": 954.9478759765625,
+            "Brim": 119.96031188964844,
+            "Custom": 360.27874755859375,
+            "Flush": 29.0,
+            "Gap infill": 3521.2353515625,
+            "Inner wall": 13362.93359375,
+            "Internal solid infill": 2682.178466796875,
+            "Outer wall": 8711.8271484375,
+            "Overhang wall": 64.6618881225586,
+            "Sparse infill": 881.2774047851562,
+            "Support": 747.845458984375,
+            "Support interface": 11.020700454711914,
+            "Top surface": 562.2496948242188,
+            "Travel": 5913.40380859375,
+            "Undefined": 5900.04443359375
+          },
+          "pathEstimate": {
+            "filamentDiameterMm": 1.75,
+            "filamentDensityGcm3": 1.27,
+            "slicerVersion": "02.08.02.61",
+            "modelEstimatedSeconds": 38082.0,
+            "totalEstimatedSeconds": 38458.0,
+            "depositedPathBoundsMm": [
+              [
+                51.558,
+                18.458594848879606,
+                0.2
+              ],
+              [
+                214.442,
+                202.442,
+                174.0
+              ]
+            ],
+            "supportPathBoundsMm": [
+              [
+                68.3079258720339,
+                18.458594848879606,
+                0.2
+              ],
+              [
+                197.7040741279661,
+                160.6970741279661,
+                150.8
+              ]
+            ],
+            "depositedPathEstimatedG": {
+              "Custom": 0.09591783062738804,
+              "Support": 7.717898171966943,
+              "Brim": 0.6571494308630175,
+              "Outer wall": 83.35999945791488,
+              "Inner wall": 166.56401126069753,
+              "Bottom surface": 4.991472631174752,
+              "Internal solid infill": 36.178738933517565,
+              "Sparse infill": 6.246531479916915,
+              "Support interface": 0.04477697874448944,
+              "Floating vertical shell": 0.18645375454418464,
+              "Bridge": 7.224131080485919,
+              "Overhang wall": 0.10708529316128043,
+              "Gap infill": 33.36503824739585,
+              "Top surface": 5.740858144775789
+            },
+            "supportPathEstimatedG": 7.762675150711432,
+            "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+          },
+          "warning": "",
+          "gcodeSha256": "719bc2a462f5eb04fe3c51857dd6685b30e001d4f68a630f869a0ef9103294b4"
+        },
+        {
+          "plate": 2,
+          "name": "02 Lid top down",
+          "objectCount": 1,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 144.0,
+                "height": 24.699996948242188,
+                "width": 153.99998474121094,
+                "x": 363.20001220703125,
+                "y": 56.0,
+                "z": -1.9539925233402755e-14
+              },
+              "id": 35,
+              "name": "lid-print_1",
+              "triangle_count": 13542
+            }
+          ],
+          "resultSceneOriginMm": [
+            307.20001220703125,
+            0.0,
+            -1.9539925233402755e-14
+          ],
+          "localObjectBoundsMm": [
+            {
+              "depth": 144.0,
+              "height": 24.699996948242188,
+              "width": 153.99998474121094,
+              "x": 56.0,
+              "y": 56.0,
+              "z": 0.0
+            }
+          ],
+          "estimatedSeconds": 12491.46875,
+          "totalFilamentG": 120.35576629638672,
+          "featureTimesSeconds": {
+            "Bottom surface": 454.8607482910156,
+            "Bridge": 795.569091796875,
+            "Brim": 120.14688110351562,
+            "Custom": 362.4024353027344,
+            "Flush": 29.0,
+            "Gap infill": 405.02984619140625,
+            "Inner wall": 3072.7685546875,
+            "Internal solid infill": 2198.549560546875,
+            "Outer wall": 1394.0479736328125,
+            "Overhang wall": 310.260986328125,
+            "Sparse infill": 834.5270385742188,
+            "Support": 663.316162109375,
+            "Support interface": 234.56951904296875,
+            "Support transition": 69.88867950439453,
+            "Top surface": 628.7979736328125,
+            "Travel": 933.9236450195312,
+            "Undefined": 918.45166015625
+          },
+          "pathEstimate": {
+            "filamentDiameterMm": 1.75,
+            "filamentDensityGcm3": 1.27,
+            "slicerVersion": "02.08.02.61",
+            "modelEstimatedSeconds": 12115.0,
+            "totalEstimatedSeconds": 12491.0,
+            "depositedPathBoundsMm": [
+              [
+                51.558,
+                49.564,
+                0.2
+              ],
+              [
+                214.442,
+                202.442,
+                24.6
+              ]
+            ],
+            "supportPathBoundsMm": [
+              [
+                59.308655707015525,
+                57.33305135408787,
+                0.2
+              ],
+              [
+                206.68797681857058,
+                194.831,
+                16.4
+              ]
+            ],
+            "depositedPathEstimatedG": {
+              "Custom": 0.09591783062738804,
+              "Support": 7.548801023797867,
+              "Brim": 0.6586192341555231,
+              "Outer wall": 16.619037358481513,
+              "Inner wall": 40.68597754479058,
+              "Gap infill": 4.634004471544626,
+              "Bottom surface": 3.4513175504773237,
+              "Internal solid infill": 25.629592824724142,
+              "Sparse infill": 5.52621786655401,
+              "Support transition": 0.39757647543085606,
+              "Support interface": 1.6712055660293317,
+              "Floating vertical shell": 2.359064953739538,
+              "Bridge": 5.7443383735794225,
+              "Overhang wall": 0.31097257162818975,
+              "Top surface": 5.023101016523804
+            },
+            "supportPathEstimatedG": 9.617583065258055,
+            "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+          },
+          "warning": "",
+          "gcodeSha256": "c3f524280c0d9604266c29fc39318f366c1ef6f6be01ae318dabbb218a4241c2"
+        },
+        {
+          "plate": 3,
+          "name": "03 Main frame upright",
+          "objectCount": 1,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 106.49979400634766,
+                "height": 125.39999389648438,
+                "width": 132.99993896484375,
+                "x": 675.9000244140625,
+                "y": 74.75020599365234,
+                "z": 0.0
+              },
+              "id": 55,
+              "name": "spine-print_1",
+              "triangle_count": 11244
+            }
+          ],
+          "resultSceneOriginMm": [
+            614.4000244140625,
+            0.00020599365234375,
+            0.0
+          ],
+          "localObjectBoundsMm": [
+            {
+              "depth": 106.49979400634766,
+              "height": 125.39999389648438,
+              "width": 132.99993896484375,
+              "x": 61.5,
+              "y": 74.75,
+              "z": 0.0
+            }
+          ],
+          "estimatedSeconds": 16197.3466796875,
+          "totalFilamentG": 113.8093490600586,
+          "featureTimesSeconds": {
+            "Bottom surface": 147.91671752929688,
+            "Bridge": 196.30093383789062,
+            "Brim": 112.42486572265625,
+            "Custom": 362.1531066894531,
+            "Flush": 29.0,
+            "Gap infill": 602.8843994140625,
+            "Inner wall": 5910.0205078125,
+            "Internal solid infill": 904.7740478515625,
+            "Outer wall": 3027.44384765625,
+            "Overhang wall": 75.9737777709961,
+            "Sparse infill": 1531.2620849609375,
+            "Support": 355.0816345214844,
+            "Support interface": 20.90753173828125,
+            "Top surface": 263.82025146484375,
+            "Travel": 2671.762939453125,
+            "Undefined": 2656.689697265625
+          },
+          "pathEstimate": {
+            "filamentDiameterMm": 1.75,
+            "filamentDensityGcm3": 1.27,
+            "slicerVersion": "02.08.02.61",
+            "modelEstimatedSeconds": 15821.0,
+            "totalEstimatedSeconds": 16197.0,
+            "depositedPathBoundsMm": [
+              [
+                56.96707873480872,
+                68.313,
+                0.2
+              ],
+              [
+                198.937,
+                183.692,
+                125.4
+              ]
+            ],
+            "supportPathBoundsMm": [
+              [
+                56.96707873480872,
+                146.9865175347749,
+                0.2
+              ],
+              [
+                195.92300903273602,
+                164.51709427078083,
+                14.0
+              ]
+            ],
+            "depositedPathEstimatedG": {
+              "Custom": 0.09591783062738804,
+              "Support": 1.631296447736248,
+              "Brim": 0.559111174690089,
+              "Outer wall": 23.55147101361218,
+              "Inner wall": 64.48483222094298,
+              "Gap infill": 3.610900993919049,
+              "Bottom surface": 0.5151097557550842,
+              "Internal solid infill": 5.836093553639928,
+              "Sparse infill": 9.385559115948503,
+              "Overhang wall": 0.09811300487724327,
+              "Floating vertical shell": 1.1322998794728945,
+              "Bridge": 1.317476094044943,
+              "Top surface": 1.4722429044881156,
+              "Support interface": 0.11888743237254347
+            },
+            "supportPathEstimatedG": 1.7501838801087914,
+            "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+          },
+          "warning": "",
+          "gcodeSha256": "dc3240ec340bad3c536f47484b8bb55645efc078d5efeeeffea3247be5fa0710"
+        },
+        {
+          "plate": 4,
+          "name": "04 Fan frame and two carriers",
+          "objectCount": 3,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 120.0,
+                "height": 5.5,
+                "width": 126.0,
+                "x": 10.0,
+                "y": -247.1999969482422,
+                "z": 8.881784197001252e-16
+              },
+              "id": 75,
+              "name": "rear-fan-frame-print_1",
+              "triangle_count": 1088
+            },
+            {
+              "bbox": {
+                "depth": 81.50001525878906,
+                "height": 14.299999237060547,
+                "width": 94.1500015258789,
+                "x": 151.0,
+                "y": -287.20001220703125,
+                "z": 0.0
+              },
+              "id": 95,
+              "name": "carrier-print_1",
+              "triangle_count": 2068
+            },
+            {
+              "bbox": {
+                "depth": 81.5,
+                "height": 14.299999237060547,
+                "width": 94.1500015258789,
+                "x": 151.0,
+                "y": -177.1999969482422,
+                "z": 0.0
+              },
+              "id": 115,
+              "name": "carrier-print_1",
+              "triangle_count": 2068
+            }
+          ],
+          "resultSceneOriginMm": [
+            0.0,
+            -307.1999969482422,
+            8.881784197001252e-16
+          ],
+          "localObjectBoundsMm": [
+            {
+              "depth": 120.0,
+              "height": 5.5,
+              "width": 126.0,
+              "x": 10.0,
+              "y": 60.0,
+              "z": 0.0
+            },
+            {
+              "depth": 81.50001525878906,
+              "height": 14.299999237060547,
+              "width": 94.1500015258789,
+              "x": 151.0,
+              "y": 19.999984741210938,
+              "z": -8.881784197001252e-16
+            },
+            {
+              "depth": 81.5,
+              "height": 14.299999237060547,
+              "width": 94.1500015258789,
+              "x": 151.0,
+              "y": 130.0,
+              "z": -8.881784197001252e-16
+            }
+          ],
+          "estimatedSeconds": 4801.05712890625,
+          "totalFilamentG": 33.495872497558594,
+          "featureTimesSeconds": {
+            "Bottom surface": 291.4626159667969,
+            "Bridge": 38.2371711730957,
+            "Brim": 238.35598754882812,
+            "Custom": 362.9654235839844,
+            "Flush": 29.0,
+            "Gap infill": 35.90209197998047,
+            "Inner wall": 1068.81298828125,
+            "Internal solid infill": 929.1939086914062,
+            "Outer wall": 534.1917114257812,
+            "Overhang wall": 16.1422176361084,
+            "Sparse infill": 138.31643676757812,
+            "Support": 208.80064392089844,
+            "Support interface": 9.942578315734863,
+            "Top surface": 303.75762939453125,
+            "Travel": 611.4105834960938,
+            "Undefined": 595.6851196289062
+          },
+          "pathEstimate": {
+            "filamentDiameterMm": 1.75,
+            "filamentDensityGcm3": 1.27,
+            "slicerVersion": "02.08.02.61",
+            "modelEstimatedSeconds": 4424.0,
+            "totalEstimatedSeconds": 4801.0,
+            "depositedPathBoundsMm": [
+              [
+                5.558,
+                13.558,
+                0.2
+              ],
+              [
+                253.73582194984152,
+                213.942,
+                14.2
+              ]
+            ],
+            "supportPathBoundsMm": [
+              [
+                242.579,
+                29.981575100015906,
+                0.2
+              ],
+              [
+                253.73582194984152,
+                195.37223892062687,
+                11.6
+              ]
+            ],
+            "depositedPathEstimatedG": {
+              "Custom": 0.09591783062738804,
+              "Support": 0.9289895131554241,
+              "Brim": 1.2593122852294958,
+              "Outer wall": 4.7366480054708076,
+              "Inner wall": 11.88506222249491,
+              "Bottom surface": 1.0838246268690679,
+              "Gap infill": 0.06895590883254431,
+              "Internal solid infill": 10.067634291905904,
+              "Sparse infill": 0.8820876184446383,
+              "Top surface": 2.009482370028706,
+              "Floating vertical shell": 0.10489143243585726,
+              "Bridge": 0.26824719585841283,
+              "Overhang wall": 0.05467353002256904,
+              "Support interface": 0.05013343973759232
+            },
+            "supportPathEstimatedG": 0.9791229528930164,
+            "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+          },
+          "warning": "",
+          "gcodeSha256": "7be7f73db67a5c3f47cd4dc55d330b5c5b1046a566e42368af0ac4f05b1d12d5"
+        },
+        {
+          "plate": 5,
+          "name": "05 Three carriers flat",
+          "objectCount": 3,
+          "objects": [
+            {
+              "bbox": {
+                "depth": 81.50001525878906,
+                "height": 14.299999237060547,
+                "width": 94.14998626708984,
+                "x": 327.20001220703125,
+                "y": -272.20001220703125,
+                "z": 0.0
+              },
+              "id": 135,
+              "name": "carrier-print_1",
+              "triangle_count": 2068
+            },
+            {
+              "bbox": {
+                "depth": 81.50001525878906,
+                "height": 14.299999237060547,
+                "width": 94.14998626708984,
+                "x": 448.20001220703125,
+                "y": -272.20001220703125,
+                "z": 0.0
+              },
+              "id": 155,
+              "name": "carrier-print_1",
+              "triangle_count": 2068
+            },
+            {
+              "bbox": {
+                "depth": 81.5,
+                "height": 14.299999237060547,
+                "width": 94.14998626708984,
+                "x": 387.70001220703125,
+                "y": -162.1999969482422,
+                "z": 0.0
+              },
+              "id": 175,
+              "name": "carrier-print_1",
+              "triangle_count": 2068
+            }
+          ],
+          "resultSceneOriginMm": [
+            307.20001220703125,
+            -307.20001220703125,
+            0.0
+          ],
+          "localObjectBoundsMm": [
+            {
+              "depth": 81.50001525878906,
+              "height": 14.299999237060547,
+              "width": 94.14998626708984,
+              "x": 20.0,
+              "y": 35.0,
+              "z": 0.0
+            },
+            {
+              "depth": 81.50001525878906,
+              "height": 14.299999237060547,
+              "width": 94.14998626708984,
+              "x": 141.0,
+              "y": 35.0,
+              "z": 0.0
+            },
+            {
+              "depth": 81.5,
+              "height": 14.299999237060547,
+              "width": 94.14998626708984,
+              "x": 80.5,
+              "y": 145.00001525878906,
+              "z": 0.0
+            }
+          ],
+          "estimatedSeconds": 4743.33984375,
+          "totalFilamentG": 32.4541130065918,
+          "featureTimesSeconds": {
+            "Bottom surface": 350.6820373535156,
+            "Brim": 203.50498962402344,
+            "Custom": 362.9933166503906,
+            "Flush": 29.0,
+            "Gap infill": 7.422263145446777,
+            "Inner wall": 819.7325439453125,
+            "Internal solid infill": 1168.2366943359375,
+            "Outer wall": 504.7521057128906,
+            "Overhang wall": 24.21334457397461,
+            "Sparse infill": 4.978546619415283,
+            "Support": 313.2030944824219,
+            "Support interface": 14.91512393951416,
+            "Top surface": 309.86822509765625,
+            "Travel": 645.0416259765625,
+            "Undefined": 629.301025390625
+          },
+          "pathEstimate": {
+            "filamentDiameterMm": 1.75,
+            "filamentDensityGcm3": 1.27,
+            "slicerVersion": "02.08.02.61",
+            "modelEstimatedSeconds": 4367.0,
+            "totalEstimatedSeconds": 4743.0,
+            "depositedPathBoundsMm": [
+              [
+                15.558,
+                28.558,
+                0.2
+              ],
+              [
+                243.73582194984152,
+                228.942,
+                14.2
+              ]
+            ],
+            "supportPathBoundsMm": [
+              [
+                111.579,
+                44.9815751000159,
+                0.2
+              ],
+              [
+                243.73582194984152,
+                210.37223892062687,
+                11.6
+              ]
+            ],
+            "depositedPathEstimatedG": {
+              "Custom": 0.09591783062738804,
+              "Support": 1.3934953430495882,
+              "Brim": 1.0504464436939034,
+              "Outer wall": 4.269712949601174,
+              "Inner wall": 9.238034498829368,
+              "Bottom surface": 1.418633787461792,
+              "Gap infill": 0.05048393693142013,
+              "Internal solid infill": 12.547498925212373,
+              "Sparse infill": 0.02961899843862001,
+              "Top surface": 2.203045163176317,
+              "Overhang wall": 0.08201029503385358,
+              "Support interface": 0.07520015960638865
+            },
+            "supportPathEstimatedG": 1.468695502655977,
+            "boundary": "FEATURE path deposition, excluding E-only purge. Not measured support mass or a fraction of total spool use."
+          },
+          "warning": "",
+          "gcodeSha256": "cf613f89bb4bc188fa35d96c312fb719207f9e2d2c0aa12b8bb8227c39509628"
+        }
+      ],
+      "totalEstimatedSeconds": 76691.38818359375,
+      "modelEstimatedSeconds": 74809.0,
+      "timeEstimateBasis": "Bambu header total estimated time, including preset preparation estimates; actual heating, calibration and handling times vary.",
+      "totalFilamentG": 652.5952339172363,
+      "supportPathEstimatedG": 21.57826055162727,
+      "projectPath": "outputs/print-r3/CyberMachine-r3-print-candidate.gcode.3mf",
+      "projectSha256": "499d56a969452a14d10c62750530d52247e9dce0c4583e6da7a1d0f6bca0385d",
+      "resultSha256": "f3b52889e5305a1bd742f0a6cb67d79fb8ea499e8097acb056afa71e9eaf66ca",
+      "limits": [
+        "Slice estimates only; no print started and no printer contacted.",
+        "Actual support removal, print finish, fit, insert strength, stiffness and thermal performance require physical trials.",
+        "Use actual printer, plate, dried filament and nozzle settings before printing; stock Generic PETG is a comparison preset."
+      ],
+      "previousComparison": {
+        "sha256": "60d434d4ecf65b9e864bd37b1cdd955d38065711454a63f020aadb359b9000b1",
+        "records": [
+          {
+            "name": "baseline-carrier",
+            "estimatedSeconds": 5913.27197265625,
+            "totalFilamentG": 19.00014305114746,
+            "supportPathEstimatedG": 9.006148041926892,
+            "depositedPathEstimatedG": 19.000133049469618,
+            "supportExtrusionFraction": 0.4740044724149074,
+            "featureTimesSeconds": {
+              "Bottom surface": 12.542703628540039,
+              "Bridge": 8.697015762329102,
+              "Brim": 30.19951629638672,
+              "Custom": 362.2268371582031,
+              "Flush": 29.0,
+              "Gap infill": 402.38671875,
+              "Inner wall": 1003.3949584960938,
+              "Internal solid infill": 38.55244064331055,
+              "Outer wall": 988.0489501953125,
+              "Overhang wall": 16.16050910949707,
+              "Sparse infill": 4.028133392333984,
+              "Support": 2333.01904296875,
+              "Support interface": 60.58678436279297,
+              "Support transition": 16.600008010864258,
+              "Top surface": 38.490821838378906,
+              "Travel": 584.7224731445312,
+              "Undefined": 569.542236328125
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 81.5,
+                  "height": 94.1500015258789,
+                  "width": 14.30000114440918,
+                  "x": 120.8499984741211,
+                  "y": 87.25000762939453,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "carrier-upright.stl",
+                "triangle_count": 2068
+              }
+            ],
+            "gcodeSha256": "292cd0ee15a4436927c3b6946e260f6b76c7e8108b75f637b9363396f31283da",
+            "resultSha256": "2c75b7895adf3dcc314390ea712522f5899b27c36979e9ae51f0179b6c095c9a",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "baseline-spine",
+            "estimatedSeconds": 21477.693359375,
+            "totalFilamentG": 163.58448791503906,
+            "supportPathEstimatedG": 48.45969085222367,
+            "depositedPathEstimatedG": 163.58445746523253,
+            "supportExtrusionFraction": 0.2962365227303032,
+            "featureTimesSeconds": {
+              "Bottom surface": 110.41727447509766,
+              "Bridge": 160.88632202148438,
+              "Brim": 76.8314208984375,
+              "Custom": 362.0197448730469,
+              "Flush": 29.0,
+              "Gap infill": 576.54443359375,
+              "Inner wall": 5866.5947265625,
+              "Internal solid infill": 846.2799682617188,
+              "Outer wall": 2979.954345703125,
+              "Overhang wall": 127.50721740722656,
+              "Sparse infill": 1571.97998046875,
+              "Support": 4644.6181640625,
+              "Support interface": 285.950439453125,
+              "Support transition": 80.06072235107422,
+              "Top surface": 285.91949462890625,
+              "Travel": 3482.02978515625,
+              "Undefined": 3466.946533203125
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 110.49974822998047,
+                  "height": 125.39999389648438,
+                  "width": 132.99984741210938,
+                  "x": 61.50007629394531,
+                  "y": 72.75013732910156,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "spine.stl",
+                "triangle_count": 11578
+              }
+            ],
+            "gcodeSha256": "4479cf11f09db2e2cce13d42c9fcde5ecb66b5e963522c41b32d03f643275eb7",
+            "resultSha256": "2095fbfcf427d0aa636ac64494bab707660edfceeec6d4816ecaba18dca3c8da",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "carrier-tree",
+            "estimatedSeconds": 2207.250244140625,
+            "totalFilamentG": 10.909259796142578,
+            "supportPathEstimatedG": 0.5212734844265312,
+            "depositedPathEstimatedG": 10.909254330345483,
+            "supportExtrusionFraction": 0.0477826869409894,
+            "featureTimesSeconds": {
+              "Bottom surface": 116.98686981201172,
+              "Brim": 66.63744354248047,
+              "Custom": 362.4704284667969,
+              "Flush": 29.0,
+              "Gap infill": 2.6540722846984863,
+              "Inner wall": 498.9093322753906,
+              "Internal solid infill": 389.10919189453125,
+              "Outer wall": 299.7585754394531,
+              "Overhang wall": 8.071113586425781,
+              "Sparse infill": 1.4081388711929321,
+              "Support": 116.23999786376953,
+              "Support interface": 7.077268600463867,
+              "Top surface": 106.8229751586914,
+              "Travel": 217.57418823242188,
+              "Undefined": 202.08346557617188
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 94.1500015258789,
+                  "height": 14.299999237060547,
+                  "width": 81.5,
+                  "x": 87.25,
+                  "y": 80.92500305175781,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "carrier-negative-x-down.stl",
+                "triangle_count": 2068
+              }
+            ],
+            "gcodeSha256": "ffa1bbfb519972a369cf971c88403fa0dd18d5a8001911a21e036dc15c942221",
+            "resultSha256": "3c7290e18460a286b5f85b827be18b37190610196f6f63e2193c97b796a723cf",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "flat-carrier",
+            "estimatedSeconds": 2180.884033203125,
+            "totalFilamentG": 11.546483993530273,
+            "supportPathEstimatedG": 1.1930848415662594,
+            "depositedPathEstimatedG": 11.546483185688265,
+            "supportExtrusionFraction": 0.10332885107779609,
+            "featureTimesSeconds": {
+              "Bottom surface": 116.98686981201172,
+              "Brim": 61.808589935302734,
+              "Custom": 362.4878234863281,
+              "Flush": 29.0,
+              "Gap infill": 2.6244795322418213,
+              "Inner wall": 435.5316467285156,
+              "Internal solid infill": 389.1104431152344,
+              "Outer wall": 260.93511962890625,
+              "Overhang wall": 8.071113586425781,
+              "Sparse infill": 1.4081388711929321,
+              "Support": 170.0275421142578,
+              "Support interface": 45.17878341674805,
+              "Support transition": 12.33700942993164,
+              "Top surface": 103.71715545654297,
+              "Travel": 197.14979553222656,
+              "Undefined": 181.65907287597656
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 94.1500015258789,
+                  "height": 14.299999237060547,
+                  "width": 81.5,
+                  "x": 87.25,
+                  "y": 80.92500305175781,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "carrier-negative-x-down.stl",
+                "triangle_count": 2068
+              }
+            ],
+            "gcodeSha256": "26e4085424e033bc77718f28a4bd761fc07f17d206041e0625744f7cbe53d03b",
+            "resultSha256": "2c9a8ccc515283039cf129f742b2015fab01f468aa71ced8e22eb011e00ea7a1",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "lid",
+            "estimatedSeconds": 10241.2001953125,
+            "totalFilamentG": 103.83174896240234,
+            "supportPathEstimatedG": 7.18910167491156,
+            "depositedPathEstimatedG": 103.83173496177335,
+            "supportExtrusionFraction": 0.06923800009272982,
+            "featureTimesSeconds": {
+              "Bottom surface": 417.3104248046875,
+              "Bridge": 752.8541870117188,
+              "Brim": 116.14693450927734,
+              "Custom": 362.3282775878906,
+              "Flush": 29.0,
+              "Gap infill": 390.1524353027344,
+              "Inner wall": 2488.259521484375,
+              "Internal solid infill": 1973.110595703125,
+              "Outer wall": 1146.56640625,
+              "Overhang wall": 208.20211791992188,
+              "Sparse infill": 549.9968872070312,
+              "Support": 487.1300048828125,
+              "Support interface": 163.48350524902344,
+              "Support transition": 58.05909729003906,
+              "Top surface": 574.099853515625,
+              "Travel": 539.9774169921875,
+              "Undefined": 524.6240234375
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 144.0,
+                  "height": 24.699996948242188,
+                  "width": 144.0,
+                  "x": 56.0,
+                  "y": 56.0000114440918,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "lid-top-down.stl",
+                "triangle_count": 9172
+              }
+            ],
+            "gcodeSha256": "63cc31ecf18bb1a33298e8323cfa3b68d74ca86df66e18c542204d3f10273b80",
+            "resultSha256": "a80fd04e36ad3e4d76cb88f2ec04b38054632fe28cbbd6a8f2cde31d9764b2cf",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "lid-tree",
+            "estimatedSeconds": 11299.4033203125,
+            "totalFilamentG": 101.71483612060547,
+            "supportPathEstimatedG": 5.072149546174734,
+            "depositedPathEstimatedG": 101.71478200826535,
+            "supportExtrusionFraction": 0.04986639548382035,
+            "featureTimesSeconds": {
+              "Bottom surface": 417.3103942871094,
+              "Bridge": 752.8541870117188,
+              "Brim": 116.14693450927734,
+              "Custom": 362.3282775878906,
+              "Flush": 29.0,
+              "Gap infill": 390.1502380371094,
+              "Inner wall": 2488.259521484375,
+              "Internal solid infill": 1973.05908203125,
+              "Outer wall": 1146.56640625,
+              "Overhang wall": 208.20211791992188,
+              "Sparse infill": 549.9921875,
+              "Support": 1018.83056640625,
+              "Support interface": 60.845863342285156,
+              "Top surface": 577.099853515625,
+              "Travel": 1223.8349609375,
+              "Undefined": 1208.4813232421875
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 144.0,
+                  "height": 24.699996948242188,
+                  "width": 144.0,
+                  "x": 56.0,
+                  "y": 56.0000114440918,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "lid-top-down.stl",
+                "triangle_count": 9172
+              }
+            ],
+            "gcodeSha256": "4c5a9975bbef3ad77a9c231a63d15fcda128c47328b87be5979da0db4ff624c1",
+            "resultSha256": "545159796520869e254ab71a8f5020e575bee86aac9506fdf757fd0bf19443aa",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "prototype-bridge",
+            "estimatedSeconds": 872.5333862304688,
+            "totalFilamentG": 3.6500601768493652,
+            "supportPathEstimatedG": 0.0,
+            "depositedPathEstimatedG": 3.6500593260843806,
+            "supportExtrusionFraction": 0.0,
+            "featureTimesSeconds": {
+              "Bottom surface": 7.01408052444458,
+              "Bridge": 5.422571182250977,
+              "Brim": 64.03732299804688,
+              "Custom": 362.2523498535156,
+              "Flush": 29.0,
+              "Gap infill": 14.874956130981445,
+              "Inner wall": 154.7799530029297,
+              "Internal solid infill": 42.57638168334961,
+              "Outer wall": 59.966651916503906,
+              "Sparse infill": 33.037071228027344,
+              "Top surface": 27.81269645690918,
+              "Travel": 87.00274658203125,
+              "Undefined": 71.76000213623047
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 11.5,
+                  "height": 4.0,
+                  "width": 126.0,
+                  "x": 65.0,
+                  "y": 122.25,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "fan-bridge-prototype-print.stl",
+                "triangle_count": 1030
+              }
+            ],
+            "gcodeSha256": "19ea961cd2a197ec23b73318a6615ba0e56c8a0fdaabf2f42e077b10680240a5",
+            "resultSha256": "6da2f0cff68cdd273e2faacdc9d0935f4bf24cb45adc7d4a0f11f5cea975fc93",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "prototype-bridge-main",
+            "estimatedSeconds": 17255.431640625,
+            "totalFilamentG": 126.18070983886719,
+            "supportPathEstimatedG": 6.869124893301091,
+            "depositedPathEstimatedG": 126.18068239164337,
+            "supportExtrusionFraction": 0.05443879968869162,
+            "featureTimesSeconds": {
+              "Bottom surface": 110.41729736328125,
+              "Bridge": 163.69863891601562,
+              "Brim": 98.84976196289062,
+              "Custom": 362.0197448730469,
+              "Flush": 29.0,
+              "Gap infill": 615.6768798828125,
+              "Inner wall": 6198.2861328125,
+              "Internal solid infill": 864.2936401367188,
+              "Outer wall": 3121.478759765625,
+              "Overhang wall": 73.23526000976562,
+              "Sparse infill": 1587.7052001953125,
+              "Support": 777.206298828125,
+              "Support interface": 57.9163818359375,
+              "Support transition": 31.324399948120117,
+              "Top surface": 275.1963195800781,
+              "Travel": 2900.423828125,
+              "Undefined": 2885.340576171875
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 110.49974822998047,
+                  "height": 125.39999389648438,
+                  "width": 132.99984741210938,
+                  "x": 61.50007629394531,
+                  "y": 72.75013732910156,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "spine-bridge-roofs-prototype.stl",
+                "triangle_count": 10366
+              }
+            ],
+            "gcodeSha256": "c3d99e43a8490b63a02b6d2724700eb4654bb82fc5b331e490fd1f238a2d7e9e",
+            "resultSha256": "f2fb79c2556c43d7404f5fd4b15ff1dad978a113333fd8ae300a0688ac7c0e47",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "prototype-fanframe",
+            "estimatedSeconds": 1807.2347412109375,
+            "totalFilamentG": 11.87466812133789,
+            "supportPathEstimatedG": 0.0,
+            "depositedPathEstimatedG": 11.874666134820677,
+            "supportExtrusionFraction": 0.0,
+            "featureTimesSeconds": {
+              "Bottom surface": 57.673553466796875,
+              "Bridge": 38.23008728027344,
+              "Brim": 102.75868225097656,
+              "Custom": 362.2360534667969,
+              "Flush": 29.0,
+              "Gap infill": 32.3641471862793,
+              "Inner wall": 468.19488525390625,
+              "Internal solid infill": 150.51527404785156,
+              "Outer wall": 165.424560546875,
+              "Sparse infill": 134.99960327148438,
+              "Top surface": 95.37254333496094,
+              "Travel": 185.84451293945312,
+              "Undefined": 170.5217742919922
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 120.0,
+                  "height": 4.0,
+                  "width": 126.0,
+                  "x": 65.0,
+                  "y": 68.00000762939453,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "fanframe-prototype-print.stl",
+                "triangle_count": 2052
+              }
+            ],
+            "gcodeSha256": "376ecdc482bd507cb40a065f2aaa89fb108e699fce25bc1a781c47e8a38bdf38",
+            "resultSha256": "a3c731f107e4c13b7f70ee8eb53c638c9e32476ed57c9c5b6ec9d485d3ade412",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "prototype-main",
+            "estimatedSeconds": 16869.67578125,
+            "totalFilamentG": 120.48005676269531,
+            "supportPathEstimatedG": 7.793047256855953,
+            "depositedPathEstimatedG": 120.48002588399677,
+            "supportExtrusionFraction": 0.06468331326853653,
+            "featureTimesSeconds": {
+              "Bottom surface": 105.6452865600586,
+              "Bridge": 166.63490295410156,
+              "Brim": 99.06996154785156,
+              "Custom": 362.0130920410156,
+              "Flush": 29.0,
+              "Gap infill": 611.0933837890625,
+              "Inner wall": 5933.0791015625,
+              "Internal solid infill": 822.2056884765625,
+              "Outer wall": 3026.02587890625,
+              "Overhang wall": 74.5580062866211,
+              "Sparse infill": 1464.78369140625,
+              "Support": 911.18212890625,
+              "Support interface": 58.185482025146484,
+              "Support transition": 31.714441299438477,
+              "Top surface": 254.4105987548828,
+              "Travel": 2933.87548828125,
+              "Undefined": 2918.80224609375
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 106.49974822998047,
+                  "height": 125.39999389648438,
+                  "width": 132.99984741210938,
+                  "x": 61.50007629394531,
+                  "y": 74.75013732910156,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "spine-fanframe-roofs-prototype.stl",
+                "triangle_count": 10408
+              }
+            ],
+            "gcodeSha256": "87ebed49e2719be55e3ea014612a1b3b912446fa9e4e87908c3ccdbe9eb53e26",
+            "resultSha256": "4c1f4635b2510b8be3c0caacd84e4a212d9eeae68224067a496a711d83226b58",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "rear-down-spine",
+            "estimatedSeconds": 21841.98828125,
+            "totalFilamentG": 175.10162353515625,
+            "supportPathEstimatedG": 60.781307226862,
+            "depositedPathEstimatedG": 175.10159712600975,
+            "supportExtrusionFraction": 0.34712023319308427,
+            "featureTimesSeconds": {
+              "Bottom surface": 57.25083541870117,
+              "Bridge": 215.20111083984375,
+              "Brim": 57.593021392822266,
+              "Custom": 362.4932556152344,
+              "Flush": 29.0,
+              "Gap infill": 480.0110778808594,
+              "Inner wall": 5523.66162109375,
+              "Internal solid infill": 725.2291259765625,
+              "Outer wall": 2528.05126953125,
+              "Overhang wall": 502.856689453125,
+              "Sparse infill": 1373.5751953125,
+              "Support": 5596.52392578125,
+              "Support interface": 815.5531616210938,
+              "Support transition": 282.3222961425781,
+              "Top surface": 338.704833984375,
+              "Travel": 2964.8115234375,
+              "Undefined": 2949.259033203125
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 125.39999389648438,
+                  "height": 110.49974822998047,
+                  "width": 132.99984741210938,
+                  "x": 61.50006866455078,
+                  "y": 65.30001068115234,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "spine-rear-down.stl",
+                "triangle_count": 11578
+              }
+            ],
+            "gcodeSha256": "7bac118d5f185358f3698c5868aa57057a2437ac2e753515a19a0c10c2569a4a",
+            "resultSha256": "396058e05c73af7f1034383c495768efbe8a584fbcba6be107c7d1cc02309ae6",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "shell",
+            "estimatedSeconds": 43377.1875,
+            "totalFilamentG": 361.2206115722656,
+            "supportPathEstimatedG": 39.056755488139544,
+            "depositedPathEstimatedG": 361.22061246243146,
+            "supportExtrusionFraction": 0.10812438199993811,
+            "featureTimesSeconds": {
+              "Bottom surface": 498.2616882324219,
+              "Bridge": 869.7071533203125,
+              "Brim": 69.6078872680664,
+              "Custom": 360.3214111328125,
+              "Flush": 29.0,
+              "Gap infill": 3434.962646484375,
+              "Inner wall": 12527.44140625,
+              "Internal solid infill": 2404.274169921875,
+              "Outer wall": 8339.8916015625,
+              "Overhang wall": 64.7756576538086,
+              "Sparse infill": 603.0930786132812,
+              "Support": 5017.67822265625,
+              "Support interface": 238.2331085205078,
+              "Support transition": 69.36461639404297,
+              "Top surface": 506.3007507324219,
+              "Travel": 8360.6044921875,
+              "Undefined": 8347.1953125
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 144.0,
+                  "height": 174.0,
+                  "width": 144.0,
+                  "x": 56.0,
+                  "y": 56.0000114440918,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "shell-upright.stl",
+                "triangle_count": 26986
+              }
+            ],
+            "gcodeSha256": "c9ae15d290173e22e4545809c027c4fcb4dc09cfad1ad5522963c19df94db610",
+            "resultSha256": "bbb20d36f2e7459a5f097c6e8c3c249f7b3535e5045ad0452372cf13a2b9eb34",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          },
+          {
+            "name": "shell-tree",
+            "estimatedSeconds": 35927.9765625,
+            "totalFilamentG": 330.18865966796875,
+            "supportPathEstimatedG": 7.762484414745028,
+            "depositedPathEstimatedG": 330.18860771104397,
+            "supportExtrusionFraction": 0.02350924360642438,
+            "featureTimesSeconds": {
+              "Bottom surface": 498.2617492675781,
+              "Bridge": 869.7070922851562,
+              "Brim": 115.96122741699219,
+              "Custom": 360.3214111328125,
+              "Flush": 29.0,
+              "Gap infill": 3434.96630859375,
+              "Inner wall": 12527.44140625,
+              "Internal solid infill": 2404.27392578125,
+              "Outer wall": 8339.8916015625,
+              "Overhang wall": 64.7756576538086,
+              "Sparse infill": 603.092041015625,
+              "Support": 747.9156494140625,
+              "Support interface": 11.078537940979004,
+              "Top surface": 503.2994079589844,
+              "Travel": 5418.27685546875,
+              "Undefined": 5404.86865234375
+            },
+            "warning": "",
+            "objects": [
+              {
+                "bbox": {
+                  "depth": 144.0,
+                  "height": 174.0,
+                  "width": 144.0,
+                  "x": 56.0,
+                  "y": 56.0000114440918,
+                  "z": 0.0
+                },
+                "id": 5,
+                "name": "shell-upright.stl",
+                "triangle_count": 26986
+              }
+            ],
+            "gcodeSha256": "8b6fec6594d44e7590b42b609e7501629eaba5283c3a5e295dd027753796f8f0",
+            "resultSha256": "b2cdb00ad2c19bbf082652ff5c688b6535c1c1a8762030743aa098746b53f4f0",
+            "boundary": "Bambu estimates and G-code deposition by feature; no physical print or support-removal validation."
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-24T09:32:42.860Z",
+  "browser": "158.0.8127.36",
+  "fileHashes": {
+    "index.html": "ef73ba297b7ebf159abb74f540748343fa649bf6f549359a20f149e76c06962c",
+    "index-light.html": "ee40f4403e8701ed97b9818e64fea780938cd0d3c20bb480ba532d936ef4cf38"
+  },
+  "checks": [
+    "dark: offline, thicknesses, components, bays, keyboard, theme, reduced motion, 390px, lesson link",
+    "-light: offline, thicknesses, components, bays, keyboard, theme, reduced motion, 390px, lesson link"
+  ],
+  "errors": [],
+  "networkRequests": []
+}

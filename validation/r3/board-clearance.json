@@ -1,0 +1,282 @@
+{
+  "checkedAt": "2026-11-24T09:41:28.188995+00:00",
+  "source": "references/radxa-taco/radxa_taco_3d_stp_v1.61.stp",
+  "sha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "nativeSolids": 730,
+  "pcbBounds": [
+    9.184182757151993,
+    35.679467140282,
+    133.4,
+    122.89075123932099,
+    120.550346709674,
+    135.0
+  ],
+  "nativeBounds": [
+    9.184182757151993,
+    32.999999899999985,
+    122.70031588321267,
+    122.89075123932099,
+    120.550346709674,
+    150.5000001
+  ],
+  "checks": [
+    {
+      "kind": "support",
+      "hole": 1,
+      "center": [
+        20.1,
+        60.2
+      ],
+      "z": [
+        116.0,
+        133.4
+      ],
+      "diameter": 5.0,
+      "minDistanceMm": 2.546713330008566,
+      "nearestSolid": 728,
+      "overlaps": []
+    },
+    {
+      "kind": "support",
+      "hole": 2,
+      "center": [
+        12.9,
+        116.95
+      ],
+      "z": [
+        116.0,
+        133.4
+      ],
+      "diameter": 5.0,
+      "minDistanceMm": 2.6240973661985927,
+      "nearestSolid": 287,
+      "overlaps": []
+    },
+    {
+      "kind": "support",
+      "hole": 3,
+      "center": [
+        105.0,
+        60.2
+      ],
+      "z": [
+        116.0,
+        133.4
+      ],
+      "diameter": 5.0,
+      "minDistanceMm": 1.868012967161449,
+      "nearestSolid": 587,
+      "overlaps": []
+    },
+    {
+      "kind": "support",
+      "hole": 4,
+      "center": [
+        119.45,
+        116.9
+      ],
+      "z": [
+        116.0,
+        133.4
+      ],
+      "diameter": 5.0,
+      "minDistanceMm": 4.524452494701466,
+      "nearestSolid": 632,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-head",
+      "hole": 1,
+      "center": [
+        20.1,
+        60.2
+      ],
+      "z": [
+        135.0,
+        136.5
+      ],
+      "diameter": 4.5,
+      "minDistanceMm": 2.231350242951335,
+      "nearestSolid": 728,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-head",
+      "hole": 2,
+      "center": [
+        12.9,
+        116.95
+      ],
+      "z": [
+        135.0,
+        136.5
+      ],
+      "diameter": 4.5,
+      "minDistanceMm": 2.2785456209652004,
+      "nearestSolid": 287,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-head",
+      "hole": 3,
+      "center": [
+        105.0,
+        60.2
+      ],
+      "z": [
+        135.0,
+        136.5
+      ],
+      "diameter": 4.5,
+      "minDistanceMm": 1.2032593299663852,
+      "nearestSolid": 587,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-head",
+      "hole": 4,
+      "center": [
+        119.45,
+        116.9
+      ],
+      "z": [
+        135.0,
+        136.5
+      ],
+      "diameter": 4.5,
+      "minDistanceMm": 5.04342722169572,
+      "nearestSolid": 632,
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "hole": 1,
+      "center": [
+        20.1,
+        60.2
+      ],
+      "z": [
+        136.5,
+        178.5
+      ],
+      "diameter": 6.0,
+      "minDistanceMm": 1.4813502429513354,
+      "nearestSolid": 728,
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "hole": 2,
+      "center": [
+        12.9,
+        116.95
+      ],
+      "z": [
+        136.5,
+        178.5
+      ],
+      "diameter": 6.0,
+      "minDistanceMm": 1.5285456209652075,
+      "nearestSolid": 287,
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "hole": 3,
+      "center": [
+        105.0,
+        60.2
+      ],
+      "z": [
+        136.5,
+        178.5
+      ],
+      "diameter": 6.0,
+      "minDistanceMm": 1.1028032531491918,
+      "nearestSolid": 587,
+      "overlaps": []
+    },
+    {
+      "kind": "driver-shaft",
+      "hole": 4,
+      "center": [
+        119.45,
+        116.9
+      ],
+      "z": [
+        136.5,
+        178.5
+      ],
+      "diameter": 6.0,
+      "minDistanceMm": 5.092058671256215,
+      "nearestSolid": 632,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-shank",
+      "hole": 1,
+      "center": [
+        20.1,
+        60.2
+      ],
+      "z": [
+        128.9,
+        136.5
+      ],
+      "diameter": 2.5,
+      "minDistanceMm": 0.09999999999999154,
+      "nearestSolid": 0,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-shank",
+      "hole": 2,
+      "center": [
+        12.9,
+        116.95
+      ],
+      "z": [
+        128.9,
+        136.5
+      ],
+      "diameter": 2.5,
+      "minDistanceMm": 0.09999999999999068,
+      "nearestSolid": 0,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-shank",
+      "hole": 3,
+      "center": [
+        105.0,
+        60.2
+      ],
+      "z": [
+        128.9,
+        136.5
+      ],
+      "diameter": 2.5,
+      "minDistanceMm": 0.09999999999999268,
+      "nearestSolid": 0,
+      "overlaps": []
+    },
+    {
+      "kind": "screw-shank",
+      "hole": 4,
+      "center": [
+        119.45,
+        116.9
+      ],
+      "z": [
+        128.9,
+        136.5
+      ],
+      "diameter": 2.5,
+      "minDistanceMm": 0.09999999999997658,
+      "nearestSolid": 0,
+      "overlaps": []
+    }
+  ],
+  "negativeControlOverlapMm3": 10.945308805106805,
+  "scope": "Fresh exact B-rep cylinders. Support/head/tool exclude PCB seat contact; shanks also check PCB hole walls. Does not validate absent CM5/cooler/wifi, real solder tails, actual hardware/tool geometry or printed fits."
+}

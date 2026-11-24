@@ -1,0 +1,285 @@
+/* [INPUT]: style.css 的视觉变量与 index.html 的布局。
+ * [OUTPUT]: 手机、窄屏、宽屏与减少动态效果的布局。
+ * [POS]: R3 界面的响应式层，保持三维场景可见。
+ * [PROTOCOL]: Update this header on change, then check AGENTS.md */
+@media(min-width:1500px) {
+  #stage {
+    height:610px
+  }
+  .workspace {
+    grid-template-columns:minmax(0,1fr) 325px
+  }
+  .design-note {
+    padding:37px 32px
+  }
+  .bar.old {
+    width:164px
+  }
+}
+@media(max-width:1100px) {
+  .workspace {
+    grid-template-columns:minmax(0,1fr) 255px
+  }
+  .design-note {
+    padding:25px 22px
+  }
+  h2 {
+    font-size:25px
+  }
+  .view-tabs {
+    padding:0 12px
+  }
+  .view-tabs button {
+    padding:0 11px
+  }
+  .view-tabs button span {
+    display:none
+  }
+  .configuration {
+    align-items:flex-start;
+    flex-direction:column;
+    gap:13px
+  }
+  #stage {
+    height:500px
+  }
+  .bar.old {
+    width:111px
+  }
+}
+@media(max-width:760px) {
+  .io-controls {
+    padding:15px 17px 12px;
+  }
+  .io-controls>div {
+    align-items:flex-start;
+  }
+  .io-controls .config-label {
+    padding-top:7px;
+  }
+  .ports button {
+    font-size:9px;
+  }
+  .masthead {
+    height:67px;
+    margin:0 21px
+  }
+  .wordmark {
+    font-size:11px;
+    gap:10px;
+    letter-spacing:.13em
+  }
+  .mark {
+    font-size:23px
+  }
+  .mark span {
+    left:11px;
+    top:10px;
+    width:4px;
+    height:4px
+  }
+  .revision {
+    font-size:8px;
+    padding:3px 5px
+  }
+  .top-actions {
+    gap:12px
+  }
+  .status {
+    font-size:9px
+  }
+  .icon-button {
+    height:28px;
+    width:28px;
+    font-size:18px;
+    line-height:23px
+  }
+  main {
+    padding:28px 20px 23px
+  }
+  .intro {
+    display:block;
+    margin-bottom:25px
+  }
+  .intro .eyebrow {
+    font-size:9px;
+    margin-bottom:13px
+  }
+  h1 {
+    font-size:29px;
+    line-height:1.45;
+    letter-spacing:-.035em
+  }
+  .mobile-break {
+    display:block
+  }
+  .intro-note {
+    font-size:10px;
+    text-align:left;
+    line-height:1.8;
+    margin-top:13px
+  }
+  .intro-note span {
+    font-size:9px
+  }
+  .workspace {
+    display:block
+  }
+  .view-tabs {
+    height:49px;
+    padding:0 7px;
+    justify-content:space-between
+  }
+  .view-tabs button {
+    font-size:10px;
+    padding:0 8px
+  }
+  .view-tabs button[aria-pressed=true]:after {
+    left:8px;
+    right:8px
+  }
+  #stage {
+    height:405px
+  }
+  .stage-tag {
+    top:20px;
+    left:20px
+  }
+  .stage-tag span {
+    font-size:10px
+  }
+  .stage-tag small {
+    font-size:8px
+  }
+  .scene-tools {
+    top:15px;
+    right:15px
+  }
+  .scene-tools button {
+    height:26px;
+    min-width:26px;
+    padding:0 7px
+  }
+  .stage-hint {
+    font-size:8px;
+    left:20px;
+    bottom:18px
+  }
+  .axis {
+    right:20px;
+    bottom:17px
+  }
+  .configuration {
+    padding:16px 17px;
+    gap:15px;
+    flex-direction:row;
+    flex-wrap:wrap
+  }
+  .config-group {
+    gap:9px
+  }
+  .config-label {
+    font-size:9px
+  }
+  .fixed-spec {
+    font-size:9px;
+    padding:6px 8px
+  }
+  .bays {
+    gap:4px
+  }
+  .bays button {
+    width:27px;
+    height:27px;
+    font-size:9px
+  }
+  .design-note {
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:26px 23px 23px
+  }
+  .design-note .eyebrow {
+    margin-bottom:14px
+  }
+  h2 {
+    font-size:25px;
+    line-height:1.45;
+    margin-bottom:13px
+  }
+  h2 br {
+    display:none
+  }
+  .note-copy {
+    font-size:11px;
+    margin-bottom:17px
+  }
+  .fact-list {
+    margin-bottom:21px
+  }
+  .fact {
+    font-size:10px;
+    padding:10px 0
+  }
+  .comparison {
+    padding-top:0
+  }
+  .comparison-title span {
+    display:inline;
+    margin-left:7px
+  }
+  .count-row {
+    margin-bottom:10px
+  }
+  .bar.old {
+    width:175px
+  }
+  .comparison>p {
+    font-size:9px;
+    margin-bottom:17px
+  }
+  .selected-info {
+    font-size:9px
+  }
+  .principles {
+    display:block;
+    padding:26px 0 7px
+  }
+  .principles article {
+    gap:17px;
+    margin-bottom:23px
+  }
+  .principles article>span {
+    font-size:9px
+  }
+  h3 {
+    font-size:11px;
+    margin-bottom:6px
+  }
+  .principles p {
+    font-size:10px;
+    max-width:100%
+  }
+  footer {
+    display:block;
+    padding-top:18px
+  }
+  footer p {
+    font-size:9px
+  }
+  footer a {
+    font-size:10px;
+    display:inline-block;
+    margin-top:14px
+  }
+  .explode-control {
+    padding:15px 18px 12px
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  * {
+    scroll-behavior:auto!important
+  }
+  .loader {
+    animation:none
+  }
+}

@@ -1,0 +1,2944 @@
+{
+  "description": "First R3 candidate; preserved before 2026-11-24 refinement",
+  "reports": {
+    "geometry": {
+      "date": "2026-11-23",
+      "status": "candidate",
+      "toleranceVolumeMm3": 0.0001,
+      "parts": {
+        "shell": {
+          "valid": true,
+          "solids": 1,
+          "boundsMm": [
+            0.0,
+            28.0,
+            0.0,
+            144.0,
+            172.0,
+            174.0000000000016
+          ],
+          "volumeMm3": 283282.63245633664
+        },
+        "lid": {
+          "valid": true,
+          "solids": 1,
+          "boundsMm": [
+            0.0,
+            28.0,
+            169.3,
+            144.0,
+            172.0,
+            190.0
+          ],
+          "volumeMm3": 89548.84313248345
+        },
+        "spine": {
+          "valid": true,
+          "solids": 1,
+          "boundsMm": [
+            5.5,
+            31.5,
+            8.0,
+            138.5,
+            142.0,
+            133.4
+          ],
+          "volumeMm3": 109383.40411338623
+        },
+        "carrier": {
+          "valid": true,
+          "solids": 1,
+          "boundsMm": [
+            24.3,
+            39.099999999999994,
+            19.85,
+            38.6,
+            120.6,
+            114.0
+          ],
+          "volumeMm3": 15393.050740064096
+        }
+      },
+      "conflicts": [],
+      "scope": "Exact OCCT solid booleans. Nonzero intentional seating contact is not permitted as overlap.",
+      "notVerified": [
+        "actual solder tails",
+        "specific HDD connector geometry and insertion depth",
+        "specific cooler and CM5 attachment",
+        "fastener thread strength",
+        "slicing and support removal",
+        "physical assembly",
+        "temperature vibration and noise"
+      ],
+      "sourceSha256": "ce3048c023bf72616ed49128c970f5d1fa4328f358106d42b4788f4fdd7713a8",
+      "candidateStepSha256": {
+        "shell": "ef8916cbacb0f87d30f947e78b5534f311d12916549a4117ea1b0da816b1e584",
+        "lid": "9c39bf4aa4afb9ca198dc1e0f34137f864247164952042361ca3b9984d03ad7c",
+        "spine": "c9867cdba4ac16eefe57017628f2a6b341c3a1f5c1dea451add415f88c3792c7",
+        "carrier": "cd46206bfa0b7dd61bdca58cf0a14cb50fa683faaf4c3bfdaf0268b1aa11935a"
+      },
+      "boardSourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+      "boardSolids": 730,
+      "boardBoundsMm": [
+        9.184182757151993,
+        32.9999999,
+        122.70031588321267,
+        122.89075123932099,
+        120.550346709674,
+        150.5000001
+      ],
+      "nativeBoardVolumeMm3": 36295.938284162825,
+      "boardChecks": [
+        {
+          "part": "shell",
+          "boardOverlapMm3": 0.0,
+          "electronicsMinDistanceMm": 2.340939982143935
+        },
+        {
+          "part": "lid",
+          "boardOverlapMm3": 0.0,
+          "electronicsMinDistanceMm": 18.80000000000001
+        },
+        {
+          "part": "spine",
+          "boardOverlapMm3": 0.0,
+          "electronicsMinDistanceMm": 1.8680129671614563
+        }
+      ],
+      "printedPairs": [
+        {
+          "a": "shell",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "shell",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "shell",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "shell",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "shell",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "shell",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "shell",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "lid",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "lid",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "lid",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "lid",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "lid",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "lid",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "spine",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "spine",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "spine",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "spine",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "spine",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-1",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-1",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-1",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-1",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-2",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-2",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-2",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-3",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-3",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "carrier-4",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        }
+      ],
+      "driveModes": [
+        {
+          "mode": "7",
+          "bay": 1,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "7",
+          "bay": 2,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "7",
+          "bay": 3,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "7",
+          "bay": 4,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "7",
+          "bay": 5,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "9.5",
+          "bay": 1,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "9.5",
+          "bay": 2,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "9.5",
+          "bay": 3,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "9.5",
+          "bay": 4,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "9.5",
+          "bay": 5,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "mixed",
+          "bay": 1,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "mixed",
+          "bay": 2,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "mixed",
+          "bay": 3,
+          "thicknessMm": 9.5
+        },
+        {
+          "mode": "mixed",
+          "bay": 4,
+          "thicknessMm": 7
+        },
+        {
+          "mode": "mixed",
+          "bay": 5,
+          "thicknessMm": 9.5
+        }
+      ],
+      "purchasedEnvelopeChecks": [
+        {
+          "a": "fan-envelope",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-envelope",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cm5-envelope",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "cooler-envelope",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-15.5",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-19.5-120.5",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-15.5",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "fan-head-124.5-120.5",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-1",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-2",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-3",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-4",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "shell",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "lid",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "spine",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "carrier-1",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "carrier-2",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "carrier-3",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "carrier-4",
+          "overlapMm3": 0.0
+        },
+        {
+          "a": "drive-5",
+          "b": "carrier-5",
+          "overlapMm3": 0.0
+        }
+      ],
+      "cartridgeLift": {
+        "stepMm": 10,
+        "rangeMm": [
+          0,
+          200
+        ],
+        "samples": [
+          {
+            "liftMm": 0,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 10,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 20,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 30,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 40,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 50,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 60,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 70,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 80,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 90,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 100,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 110,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 120,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 130,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 140,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 150,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 160,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 170,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 180,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 190,
+            "overlapMm3": 0.0
+          },
+          {
+            "liftMm": 200,
+            "overlapMm3": 0.0
+          }
+        ],
+        "includes": "Exact printed pieces, five 9.5 mm HDD envelopes, fan/CM5/cooler design envelopes, four fan screw heads, conservative solid envelope of all native board components.",
+        "limitations": "Discrete poses only. Zero overlap of conservative solid envelopes proves clearance at these poses; a nonzero envelope result needs exact-solid follow-up. Wiring, screw heads, solder tails and actual mating depths are excluded."
+      },
+      "passed": true,
+      "checkedAt": "2026-11-23T15:07:00.543234+00:00"
+    },
+    "board-clearance": {
+      "checkedAt": "2026-11-23T14:53:42.230980+00:00",
+      "source": "references/radxa-taco/radxa_taco_3d_stp_v1.61.stp",
+      "sha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+      "nativeSolids": 730,
+      "pcbBounds": [
+        9.184182757151993,
+        35.679467140282,
+        133.4,
+        122.89075123932099,
+        120.550346709674,
+        135.0
+      ],
+      "nativeBounds": [
+        9.184182757151993,
+        32.999999899999985,
+        122.70031588321267,
+        122.89075123932099,
+        120.550346709674,
+        150.5000001
+      ],
+      "checks": [
+        {
+          "kind": "support",
+          "hole": 1,
+          "center": [
+            20.1,
+            60.2
+          ],
+          "z": [
+            116.0,
+            133.4
+          ],
+          "diameter": 5.0,
+          "minDistanceMm": 2.546713330008566,
+          "nearestSolid": 728,
+          "overlaps": []
+        },
+        {
+          "kind": "support",
+          "hole": 2,
+          "center": [
+            12.9,
+            116.95
+          ],
+          "z": [
+            116.0,
+            133.4
+          ],
+          "diameter": 5.0,
+          "minDistanceMm": 2.6240973661985927,
+          "nearestSolid": 287,
+          "overlaps": []
+        },
+        {
+          "kind": "support",
+          "hole": 3,
+          "center": [
+            105.0,
+            60.2
+          ],
+          "z": [
+            116.0,
+            133.4
+          ],
+          "diameter": 5.0,
+          "minDistanceMm": 1.868012967161449,
+          "nearestSolid": 587,
+          "overlaps": []
+        },
+        {
+          "kind": "support",
+          "hole": 4,
+          "center": [
+            119.45,
+            116.9
+          ],
+          "z": [
+            116.0,
+            133.4
+          ],
+          "diameter": 5.0,
+          "minDistanceMm": 4.524452494701466,
+          "nearestSolid": 632,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-head",
+          "hole": 1,
+          "center": [
+            20.1,
+            60.2
+          ],
+          "z": [
+            135.0,
+            136.5
+          ],
+          "diameter": 4.5,
+          "minDistanceMm": 2.231350242951335,
+          "nearestSolid": 728,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-head",
+          "hole": 2,
+          "center": [
+            12.9,
+            116.95
+          ],
+          "z": [
+            135.0,
+            136.5
+          ],
+          "diameter": 4.5,
+          "minDistanceMm": 2.2785456209652004,
+          "nearestSolid": 287,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-head",
+          "hole": 3,
+          "center": [
+            105.0,
+            60.2
+          ],
+          "z": [
+            135.0,
+            136.5
+          ],
+          "diameter": 4.5,
+          "minDistanceMm": 1.2032593299663852,
+          "nearestSolid": 587,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-head",
+          "hole": 4,
+          "center": [
+            119.45,
+            116.9
+          ],
+          "z": [
+            135.0,
+            136.5
+          ],
+          "diameter": 4.5,
+          "minDistanceMm": 5.04342722169572,
+          "nearestSolid": 632,
+          "overlaps": []
+        },
+        {
+          "kind": "driver-shaft",
+          "hole": 1,
+          "center": [
+            20.1,
+            60.2
+          ],
+          "z": [
+            136.5,
+            178.5
+          ],
+          "diameter": 6.0,
+          "minDistanceMm": 1.4813502429513354,
+          "nearestSolid": 728,
+          "overlaps": []
+        },
+        {
+          "kind": "driver-shaft",
+          "hole": 2,
+          "center": [
+            12.9,
+            116.95
+          ],
+          "z": [
+            136.5,
+            178.5
+          ],
+          "diameter": 6.0,
+          "minDistanceMm": 1.5285456209652075,
+          "nearestSolid": 287,
+          "overlaps": []
+        },
+        {
+          "kind": "driver-shaft",
+          "hole": 3,
+          "center": [
+            105.0,
+            60.2
+          ],
+          "z": [
+            136.5,
+            178.5
+          ],
+          "diameter": 6.0,
+          "minDistanceMm": 1.1028032531491918,
+          "nearestSolid": 587,
+          "overlaps": []
+        },
+        {
+          "kind": "driver-shaft",
+          "hole": 4,
+          "center": [
+            119.45,
+            116.9
+          ],
+          "z": [
+            136.5,
+            178.5
+          ],
+          "diameter": 6.0,
+          "minDistanceMm": 5.092058671256215,
+          "nearestSolid": 632,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-shank",
+          "hole": 1,
+          "center": [
+            20.1,
+            60.2
+          ],
+          "z": [
+            128.9,
+            136.5
+          ],
+          "diameter": 2.5,
+          "minDistanceMm": 0.09999999999999154,
+          "nearestSolid": 0,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-shank",
+          "hole": 2,
+          "center": [
+            12.9,
+            116.95
+          ],
+          "z": [
+            128.9,
+            136.5
+          ],
+          "diameter": 2.5,
+          "minDistanceMm": 0.09999999999999068,
+          "nearestSolid": 0,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-shank",
+          "hole": 3,
+          "center": [
+            105.0,
+            60.2
+          ],
+          "z": [
+            128.9,
+            136.5
+          ],
+          "diameter": 2.5,
+          "minDistanceMm": 0.09999999999999268,
+          "nearestSolid": 0,
+          "overlaps": []
+        },
+        {
+          "kind": "screw-shank",
+          "hole": 4,
+          "center": [
+            119.45,
+            116.9
+          ],
+          "z": [
+            128.9,
+            136.5
+          ],
+          "diameter": 2.5,
+          "minDistanceMm": 0.09999999999997658,
+          "nearestSolid": 0,
+          "overlaps": []
+        }
+      ],
+      "negativeControlOverlapMm3": 10.945308805106805,
+      "scope": "Fresh exact B-rep cylinders. Support/head/tool exclude PCB seat contact; shanks also check PCB hole walls. Does not validate absent CM5/cooler/wifi, real solder tails, actual hardware/tool geometry or printed fits."
+    },
+    "mating": {
+      "checkedAt": "2026-11-23T15:11:53.835538+00:00",
+      "inputs": {
+        "shell.step": "ef8916cbacb0f87d30f947e78b5534f311d12916549a4117ea1b0da816b1e584",
+        "lid.step": "9c39bf4aa4afb9ca198dc1e0f34137f864247164952042361ca3b9984d03ad7c"
+      },
+      "overlapMm3": 0.0,
+      "seatContactAreaMm2": 76.80000000000008,
+      "externalGapMm": 0.30000000000001137,
+      "spigotSingleSideGapMm": 0.3500000000000001,
+      "scope": "Exact B-rep nominal mating only. Printed shrinkage, warpage and fit feel are not measured."
+    },
+    "dfm-summary": {
+      "process": "PETG FDM",
+      "machineEnvelopeMm": [
+        256,
+        256,
+        256
+      ],
+      "nozzleMm": 0.4,
+      "layerMm": 0.2,
+      "generalPracticeOnly": true,
+      "results": [
+        {
+          "name": "shell",
+          "status": "ok",
+          "exitCode": 0,
+          "codes": {
+            "printing.overhang_angle": 9,
+            "printing.bridge_length": 5,
+            "printing.gap": 1,
+            "printing.knife_edge": 4,
+            "overhangs": 1,
+            "elephant_foot": 1,
+            "rules_general": 1
+          },
+          "errors": [],
+          "warnings": [
+            {
+              "code": "printing.overhang_angle",
+              "value": 4.285714286,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 96",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 4.285714286,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 101",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 4.285714286,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 109",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 4.285714286,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 117",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 4.285714286,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 125",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 8.571428571,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 98",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 8.571428571,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 105",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 8.571428571,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "shell/shell/face 113",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": null,
+              "limit": null,
+              "unit": "deg",
+              "location": "measurements.rules",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 27.799999675,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "shell/shell/face 103",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 16.229999805,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "shell/shell/face 119",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 16.229999805,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "shell/shell/face 127",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 15.669999812,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "shell/shell/face 111",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 12.399999849,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "shell/shell/face 97",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.gap",
+              "value": 0.7,
+              "limit": 0.762,
+              "unit": "mm",
+              "location": "shell/shell/face 23",
+              "hint": "open the gap to at least 0.762 mm or close it"
+            },
+            {
+              "code": "printing.knife_edge",
+              "value": 0.0,
+              "limit": 0.8,
+              "unit": "mm",
+              "location": "shell/shell/edge 7",
+              "hint": "blunt it -- a flat or round at least 0.8 mm across -- or open its angle to 45 deg or more"
+            },
+            {
+              "code": "printing.knife_edge",
+              "value": 0.0,
+              "limit": 0.8,
+              "unit": "mm",
+              "location": "shell/shell/edge 9",
+              "hint": "blunt it -- a flat or round at least 0.8 mm across -- or open its angle to 45 deg or more"
+            },
+            {
+              "code": "printing.knife_edge",
+              "value": 0.0,
+              "limit": 0.8,
+              "unit": "mm",
+              "location": "shell/shell/edge 11",
+              "hint": "blunt it -- a flat or round at least 0.8 mm across -- or open its angle to 45 deg or more"
+            },
+            {
+              "code": "printing.knife_edge",
+              "value": 0.0,
+              "limit": 0.8,
+              "unit": "mm",
+              "location": "shell/shell/edge 13",
+              "hint": "blunt it -- a flat or round at least 0.8 mm across -- or open its angle to 45 deg or more"
+            }
+          ]
+        },
+        {
+          "name": "lid-print",
+          "status": "ok",
+          "exitCode": 0,
+          "codes": {
+            "printing.overhang_angle": 2,
+            "printing.bridge_length": 1,
+            "printing.gap": 2,
+            "overhangs": 1,
+            "rules_general": 1
+          },
+          "errors": [],
+          "warnings": [
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "lid-print/lid-print/face 39",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "lid-print/lid-print/face 41",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 5.499996948,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "lid-print/lid-print/face 38",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.gap",
+              "value": 0.35,
+              "limit": 0.762,
+              "unit": "mm",
+              "location": "lid-print/lid-print/face 40",
+              "hint": "open the gap to at least 0.762 mm or close it"
+            },
+            {
+              "code": "printing.gap",
+              "value": 0.35,
+              "limit": 0.762,
+              "unit": "mm",
+              "location": "lid-print/lid-print/face 42",
+              "hint": "open the gap to at least 0.762 mm or close it"
+            }
+          ]
+        },
+        {
+          "name": "spine",
+          "status": "ok",
+          "exitCode": 0,
+          "codes": {
+            "printing.overhang_angle": 9,
+            "printing.bridge_length": 6,
+            "printing.gap": 2,
+            "overhangs": 1,
+            "elephant_foot": 1,
+            "rules_general": 1
+          },
+          "errors": [],
+          "warnings": [
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 70",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 78",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 133",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 104",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 102",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 115",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 120",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": 0.0,
+              "limit": 45.0,
+              "unit": "deg",
+              "location": "spine/spine/face 140",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.overhang_angle",
+              "value": null,
+              "limit": null,
+              "unit": "deg",
+              "location": "measurements.rules",
+              "hint": "support it, chamfer it to at least 45 deg from horizontal, or turn the part"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 96.999997739,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "spine/spine/face 74",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 19.099998135,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "spine/spine/face 128",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 19.099998135,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "spine/spine/face 129",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 18.999997371,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "spine/spine/face 116",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 18.099998767,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "spine/spine/face 123",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.bridge_length",
+              "value": 9.749998985,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "spine/spine/face 141",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            },
+            {
+              "code": "printing.gap",
+              "value": 0.1,
+              "limit": 0.762,
+              "unit": "mm",
+              "location": "spine/spine/face 67",
+              "hint": "open the gap to at least 0.762 mm or close it"
+            },
+            {
+              "code": "printing.gap",
+              "value": 0.55,
+              "limit": 0.762,
+              "unit": "mm",
+              "location": "spine/spine/face 52",
+              "hint": "open the gap to at least 0.762 mm or close it"
+            }
+          ]
+        },
+        {
+          "name": "carrier",
+          "status": "ok",
+          "exitCode": 0,
+          "codes": {
+            "printing.bridge_length": 1,
+            "elephant_foot": 1,
+            "rules_general": 1
+          },
+          "errors": [],
+          "warnings": [
+            {
+              "code": "printing.bridge_length",
+              "value": 54.999996044,
+              "limit": 5.0,
+              "unit": "mm",
+              "location": "carrier/carrier/face 10",
+              "hint": "add a support or a pillar so no span exceeds 5 mm"
+            }
+          ]
+        }
+      ],
+      "checkedAt": "2026-11-23T15:05:57.118187+00:00",
+      "sourceSha256": "ce3048c023bf72616ed49128c970f5d1fa4328f358106d42b4788f4fdd7713a8",
+      "candidateStepSha256": {
+        "shell": "ef8916cbacb0f87d30f947e78b5534f311d12916549a4117ea1b0da816b1e584",
+        "lid-print": "93907a5d4ecee79ab2e6d59af5831530fdfa0f0e28238f5a5d5868d40a1621af",
+        "spine": "c9867cdba4ac16eefe57017628f2a6b341c3a1f5c1dea451add415f88c3792c7",
+        "carrier": "cd46206bfa0b7dd61bdca58cf0a14cb50fa683faaf4c3bfdaf0268b1aa11935a"
+      }
+    },
+    "browser": {
+      "checkedAt": "2026-11-23T15:14:32.910Z",
+      "browser": "158.0.8127.36",
+      "htmlSha256": "ff850acc5e3176cf21ac1d5bf0a47ad6aee74fa606e41a5f585d8db418f15a06",
+      "modelSha256": "a890baf8252939f2fc60e921ee6e3ec4725b509fb008b5a158eaf7cb1fa69fbd",
+      "checks": [
+        "offline file URL loads actual CAD and no network resources",
+        "four view presets and both board sides",
+        "deterministic explode slider and arbitrary return",
+        "three thickness modes preserve the SATA X datum; five bay selections",
+        "keyboard scopes to the scene and reset works",
+        "dark theme and free orbit render",
+        "390px layout and every view remain usable",
+        "reduced motion and offscreen render pause",
+        "WebGL fallback retains design facts"
+      ],
+      "errors": [],
+      "runtimeNetworkRequests": [],
+      "measurements": [
+        {
+          "name": "desktop-appearance",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 61.46875,
+            "y": 286.65625,
+            "width": 1027.0625,
+            "height": 530,
+            "top": 286.65625,
+            "right": 1088.53125,
+            "bottom": 816.65625,
+            "left": 61.46875
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "shell",
+              "rectangle": {
+                "left": 324.47039003043596,
+                "right": 697.1014469161064,
+                "top": 74.91533056012038,
+                "bottom": 493.24476907300163
+              },
+              "heightPixels": 418.32943851288127,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "desktop-clearance-top",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 61.46875,
+            "y": 286.65625,
+            "width": 1027.0625,
+            "height": 530,
+            "top": 286.65625,
+            "right": 1088.53125,
+            "bottom": 816.65625,
+            "left": 61.46875
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 261.2038488854615,
+                "right": 732.9077484398588,
+                "top": 114.70483446640533,
+                "bottom": 444.01512144267224
+              },
+              "heightPixels": 329.3102869762669,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "desktop-clearance-bottom",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 61.46875,
+            "y": 286.65625,
+            "width": 1027.0625,
+            "height": 530,
+            "top": 286.65625,
+            "right": 1088.53125,
+            "bottom": 816.65625,
+            "left": 61.46875
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 236.12678643413003,
+                "right": 751.7034208919579,
+                "top": 56.48571119674688,
+                "bottom": 345.99545135166375
+              },
+              "heightPixels": 289.50974015491687,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "desktop-exploded",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 61.46875,
+            "y": 286.65625,
+            "width": 1027.0625,
+            "height": 530,
+            "top": 286.65625,
+            "right": 1088.53125,
+            "bottom": 816.65625,
+            "left": 61.46875
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 423.5352633789833,
+                "right": 609.1357900828731,
+                "top": 174.6420807052941,
+                "bottom": 279.07280056592754
+              },
+              "heightPixels": 104.43071986063345,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "desktop-bench",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 61.46875,
+            "y": 286.65625,
+            "width": 1027.0625,
+            "height": 530,
+            "top": 286.65625,
+            "right": 1088.53125,
+            "bottom": 816.65625,
+            "left": 61.46875
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 301.5916845259246,
+                "right": 626.69727468225,
+                "top": 109.95312581617641,
+                "bottom": 295.4710024117182
+              },
+              "heightPixels": 185.5178765955418,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "desktop-dark",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 61.46875,
+            "y": 286.65625,
+            "width": 1027.0625,
+            "height": 530,
+            "top": 286.65625,
+            "right": 1088.53125,
+            "bottom": 816.65625,
+            "left": 61.46875
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "shell",
+              "rectangle": {
+                "left": 324.4642455002104,
+                "right": 697.1056527149916,
+                "top": 74.90986061607596,
+                "bottom": 493.2517942046076
+              },
+              "heightPixels": 418.3419335885317,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mobile-appearance",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 21,
+            "y": 327.28125,
+            "width": 348,
+            "height": 405,
+            "top": 327.28125,
+            "right": 369,
+            "bottom": 732.28125,
+            "left": 21
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "shell",
+              "rectangle": {
+                "left": 42.94122334741467,
+                "right": 301.635216264522,
+                "top": 68.63499244347321,
+                "bottom": 360.2990644097973
+              },
+              "heightPixels": 291.6640719663241,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mobile-exploded",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 21,
+            "y": 327.28125,
+            "width": 348,
+            "height": 405,
+            "top": 327.28125,
+            "right": 369,
+            "bottom": 732.28125,
+            "left": 21
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 111.55114258350658,
+                "right": 240.29878155792852,
+                "top": 139.34358950392786,
+                "bottom": 212.19048346916688
+              },
+              "heightPixels": 72.84689396523902,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.0018099999999999815,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1022599969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mobile-clearance",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 21,
+            "y": 327.28125,
+            "width": 348,
+            "height": 405,
+            "top": 327.28125,
+            "right": 369,
+            "bottom": 732.28125,
+            "left": 21
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 33.88498706366808,
+                "right": 294.474589495075,
+                "top": 115.5040732083392,
+                "bottom": 296.81643673971365
+              },
+              "heightPixels": 181.31236353137444,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mobile-clearance-bottom",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 21,
+            "y": 327.28125,
+            "width": 348,
+            "height": 405,
+            "top": 327.28125,
+            "right": 369,
+            "bottom": 732.28125,
+            "left": 21
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 19.17172429454466,
+                "right": 306.10868561901185,
+                "top": 94.11954394803304,
+                "bottom": 250.07144221772938
+              },
+              "heightPixels": 155.95189826969636,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mobile-bench",
+          "nodes": [
+            "shell",
+            "lid",
+            "spine",
+            "carrier-1",
+            "drive-1",
+            "carrier-2",
+            "drive-2",
+            "carrier-3",
+            "drive-3",
+            "carrier-4",
+            "drive-4",
+            "carrier-5",
+            "drive-5",
+            "taco",
+            "rear-fan",
+            "cm5",
+            "cooler"
+          ],
+          "sceneChildren": 1,
+          "canvas": {
+            "x": 21,
+            "y": 327.28125,
+            "width": 348,
+            "height": 405,
+            "top": 327.28125,
+            "right": 369,
+            "bottom": 732.28125,
+            "left": 21
+          },
+          "rafActive": false,
+          "visible": true,
+          "ready": true,
+          "subject": [
+            {
+              "name": "taco",
+              "rectangle": {
+                "left": 27.17047625448286,
+                "right": 252.29996095175403,
+                "top": 93.80934658906833,
+                "bottom": 223.31829109695616
+              },
+              "heightPixels": 129.50894450788783,
+              "outside": false,
+              "visibleShare": 1
+            }
+          ],
+          "driveBounds": [
+            {
+              "name": "drive-1",
+              "min": [
+                0.0263,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0358,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-2",
+              "min": [
+                0.047799999999999995,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.054799999999999995,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-3",
+              "min": [
+                0.0693,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.0788,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-4",
+              "min": [
+                0.0908,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.09780000000000001,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            },
+            {
+              "name": "drive-5",
+              "min": [
+                0.1123,
+                0.02224999999999998,
+                -0.11134999847412116
+              ],
+              "max": [
+                0.12179999999999999,
+                0.1226999969482422,
+                -0.041500000000000016
+              ]
+            }
+          ]
+        }
+      ],
+      "boundary": "Browser checks only. CAD interference, physical fits, slicing, thermal and tool access require separate evidence."
+    },
+    "repository": {
+      "checkedAt": "2026-11-23T15:13:43.832653+00:00",
+      "pythonSyntaxFiles": 5,
+      "javaScriptSyntaxFiles": 4,
+      "parsedJsonFiles": 25,
+      "parsedSvgFiles": 4,
+      "localLinksChecked": 154,
+      "missingLinks": [],
+      "crossWorkingDirectoryBuilds": [
+        "R2 dark",
+        "R2 light",
+        "R3 offline page"
+      ],
+      "notes": "HTML sources under src are build inputs; local links checked against generated standalone pages."
+    }
+  }
+}

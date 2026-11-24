@@ -1,0 +1,396 @@
+{
+  "checkedAt": "2026-11-24T09:39:28.150139+00:00",
+  "passed": true,
+  "checkerSha256": "bfa7683ec6095b4e780666b48939083af62adc1fd5d1054b0b47e35d2ff29fed",
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "inputs": {
+    "lid.step": "303d34d4755666c38407dae94e18b2df3cba128a5fbf653428c5e55a00e1fb44",
+    "lid-fasteners.step": "f47960fcb31345f728d25822a7ee6b65f00c11518c0cb0f8ab30c889fc759935",
+    "top-fan.step": "ef8528e83778ce2525061fca463eebafa7ce4ed243842a41024fb35d53b2b9bf",
+    "shell.step": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+    "spine.step": "f069fb06ee6fe190415cf6f28d11d1163eaca68d341ad0ad6b3805a7b05e1cbb",
+    "rear-fan-frame.step": "e3a3360eaab6b383f6a9dbf4a43f76302620e5463d55038b39f004e3adcb710d",
+    "carrier.step": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a"
+  },
+  "boardSourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "partCounts": {
+    "frame": 1,
+    "rotor": 1,
+    "screw": 4,
+    "washer": 4,
+    "nut": 4
+  },
+  "frameBoundsMm": [
+    26.0,
+    54.0,
+    175.2,
+    118.0,
+    146.0,
+    189.2
+  ],
+  "frameCenterXYMm": [
+    72.0,
+    100.0
+  ],
+  "lidTopMm": 194.0,
+  "frameEnvelopeCoolerClearanceMm": 5.199999999999989,
+  "modeledFrameCoolerDistanceMm": 5.199999999999989,
+  "completeFanCoolerDistanceMm": 5.199999999999989,
+  "frameRoofGapMm": 2.0,
+  "lidFanOverlapMm3": 0.0,
+  "fasteners": [
+    {
+      "xyMm": [
+        30.75,
+        58.75
+      ],
+      "lidCylindricalSurfaces": [
+        {
+          "radiusMm": 3.15,
+          "zMm": [
+            191.8,
+            194.0
+          ]
+        },
+        {
+          "radiusMm": 1.7,
+          "zMm": [
+            189.2,
+            191.8
+          ]
+        },
+        {
+          "radiusMm": 4.5,
+          "zMm": [
+            189.2,
+            191.2
+          ]
+        }
+      ],
+      "hardwareZMm": {
+        "screw": [
+          171.8,
+          193.5
+        ],
+        "washer": [
+          174.7,
+          175.2
+        ],
+        "nut": [
+          172.9,
+          174.7
+        ]
+      },
+      "screwPastNutMm": 1.0999999999999943,
+      "headDiameterMm": 5.700000000000003,
+      "headBelowRoofMm": 0.5,
+      "nutSocketEnvelope": {
+        "diameterMm": 8,
+        "zMm": [
+          160,
+          172.9
+        ],
+        "lidOverlapMm3": 0.0
+      },
+      "washerFrameBearingAreaMm2": 23.962497965256166,
+      "hardwareCoolerDistanceMm": 6.731303249987198
+    },
+    {
+      "xyMm": [
+        30.75,
+        141.25
+      ],
+      "lidCylindricalSurfaces": [
+        {
+          "radiusMm": 3.15,
+          "zMm": [
+            191.8,
+            194.0
+          ]
+        },
+        {
+          "radiusMm": 4.5,
+          "zMm": [
+            189.2,
+            191.2
+          ]
+        },
+        {
+          "radiusMm": 1.7,
+          "zMm": [
+            189.2,
+            191.8
+          ]
+        }
+      ],
+      "hardwareZMm": {
+        "screw": [
+          171.8,
+          193.5
+        ],
+        "washer": [
+          174.7,
+          175.2
+        ],
+        "nut": [
+          172.9,
+          174.7
+        ]
+      },
+      "screwPastNutMm": 1.0999999999999943,
+      "headDiameterMm": 5.700000000000003,
+      "headBelowRoofMm": 0.5,
+      "nutSocketEnvelope": {
+        "diameterMm": 8,
+        "zMm": [
+          160,
+          172.9
+        ],
+        "lidOverlapMm3": 0.0
+      },
+      "washerFrameBearingAreaMm2": 23.962497965256166,
+      "hardwareCoolerDistanceMm": 37.12395881847607
+    },
+    {
+      "xyMm": [
+        113.25,
+        58.75
+      ],
+      "lidCylindricalSurfaces": [
+        {
+          "radiusMm": 3.15,
+          "zMm": [
+            191.8,
+            194.0
+          ]
+        },
+        {
+          "radiusMm": 4.5,
+          "zMm": [
+            189.2,
+            191.2
+          ]
+        },
+        {
+          "radiusMm": 1.7,
+          "zMm": [
+            189.2,
+            191.8
+          ]
+        }
+      ],
+      "hardwareZMm": {
+        "screw": [
+          171.8,
+          193.5
+        ],
+        "washer": [
+          174.7,
+          175.2
+        ],
+        "nut": [
+          172.9,
+          174.7
+        ]
+      },
+      "screwPastNutMm": 1.0999999999999943,
+      "headDiameterMm": 5.699999999999989,
+      "headBelowRoofMm": 0.5,
+      "nutSocketEnvelope": {
+        "diameterMm": 8,
+        "zMm": [
+          160,
+          172.9
+        ],
+        "lidOverlapMm3": 0.0
+      },
+      "washerFrameBearingAreaMm2": 23.962497965256084,
+      "hardwareCoolerDistanceMm": 12.417943697593541
+    },
+    {
+      "xyMm": [
+        113.25,
+        141.25
+      ],
+      "lidCylindricalSurfaces": [
+        {
+          "radiusMm": 3.15,
+          "zMm": [
+            191.8,
+            194.0
+          ]
+        },
+        {
+          "radiusMm": 4.5,
+          "zMm": [
+            189.2,
+            191.2
+          ]
+        },
+        {
+          "radiusMm": 1.7,
+          "zMm": [
+            189.2,
+            191.8
+          ]
+        }
+      ],
+      "hardwareZMm": {
+        "screw": [
+          171.8,
+          193.5
+        ],
+        "washer": [
+          174.7,
+          175.2
+        ],
+        "nut": [
+          172.9,
+          174.7
+        ]
+      },
+      "screwPastNutMm": 1.0999999999999943,
+      "headDiameterMm": 5.699999999999989,
+      "headBelowRoofMm": 0.5,
+      "nutSocketEnvelope": {
+        "diameterMm": 8,
+        "zMm": [
+          160,
+          172.9
+        ],
+        "lidOverlapMm3": 0.0
+      },
+      "washerFrameBearingAreaMm2": 23.962497965256084,
+      "hardwareCoolerDistanceMm": 38.893515708770195
+    }
+  ],
+  "lidClosureScrewCount": 4,
+  "allFourBossFrameBearingAreaMm2": 196.38095677589786,
+  "grille": {
+    "activeDiameterMm": 84,
+    "slotSegments": 28,
+    "pattern": "seven concentric rings with four axial spokes",
+    "openAreaMm2": 2791.270627631543,
+    "openRatioOfActiveDisk": 0.5036785917174345,
+    "crossRibWidthMm": 4,
+    "radialRibNominalWidthMm": 2.8
+  },
+  "lidLift": {
+    "samples": [
+      {
+        "liftMm": 0,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 1,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 2,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 3,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 4,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 5,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 6,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 7,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 8,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 9,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 10,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 11,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 12,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 13,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 14,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 15,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 16,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 25,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 50,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 100,
+        "overlapMm3": 0.0
+      },
+      {
+        "liftMm": 200,
+        "overlapMm3": 0.0
+      }
+    ],
+    "movingParts": [
+      "lid",
+      "top-fan",
+      "lid-fasteners"
+    ],
+    "prerequisite": "Fully unscrew and remove all four M3 lid screws before physically lifting the lid.",
+    "scope": "Discrete vertical poses, 1 mm steps to 16 mm and larger poses to 200 mm. Smooth screw solids translate with the lid only to check the visual group envelope. Thread engagement and screw withdrawal are not simulated. No continuous swept-volume claim."
+  },
+  "serviceReserve": {
+    "boundsMm": [
+      65.0,
+      148.0,
+      169.3,
+      79.0,
+      162.0,
+      189.20000000000002
+    ],
+    "overlapMm3": 0.0,
+    "scope": "Empty geometric reserve only; actual connector, wiring and service slack are not modeled."
+  },
+  "negativeControl": {
+    "description": "Old 92x25 fan, same upper mounting plane",
+    "coolerEnvelopeOverlapMm3": 15138.000000000031
+  },
+  "limits": [
+    "92 mm fan total thickness must be <=14 mm including any supplied pads.",
+    "Generic fan envelope and rotor, not a measured purchased fan.",
+    "Disconnect power, fully remove four lid screws, initially lift lid, unplug fan, then remove lid. Connector and lift slack need physical verification.",
+    "M3 button-head x20, head <=5.7 diameter / 1.7 high, four OD7 x0.5 washers and AF5.5 x1.8 thin nuts; actual tools and fastening strength untested.",
+    "No thermal, airflow, acoustic, vibration, electrical header capacity or physical print-fit validation."
+  ]
+}

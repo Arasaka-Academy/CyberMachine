@@ -1,0 +1,583 @@
+{
+  "checkedAt": "2026-11-24T09:39:47.064558+00:00",
+  "passed": true,
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "metadataSha256": "ebc2fb1c26d79a353bc13185fee5c2ba2f8ab0e51ef988410af3ca965504d28b",
+  "inputs": {
+    "spine.step": "f069fb06ee6fe190415cf6f28d11d1163eaca68d341ad0ad6b3805a7b05e1cbb",
+    "rear-fan-frame.step": "e3a3360eaab6b383f6a9dbf4a43f76302620e5463d55038b39f004e3adcb710d",
+    "carrier.step": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a",
+    "CyberMachine-r3-candidate.step": "ea33a794ceb44bdcf79cbfea612aeef17034b11b4541faab7ed3d885eff4e00f"
+  },
+  "driveSpecification": {
+    "count": 5,
+    "thicknessMm": 7,
+    "datum": "negative-X",
+    "actualSolids": [
+      {
+        "bay": 1,
+        "sataXmm": 29.0,
+        "boundsMm": [
+          26.3,
+          41.5,
+          22.25,
+          33.3,
+          111.35,
+          122.7
+        ],
+        "thicknessMm": 6.9999999999999964,
+        "spineOverlapMm3": 0.0
+      },
+      {
+        "bay": 2,
+        "sataXmm": 50.5,
+        "boundsMm": [
+          47.8,
+          41.5,
+          22.25,
+          54.8,
+          111.35,
+          122.7
+        ],
+        "thicknessMm": 7.0,
+        "spineOverlapMm3": 0.0
+      },
+      {
+        "bay": 3,
+        "sataXmm": 72.0,
+        "boundsMm": [
+          69.3,
+          41.5,
+          22.25,
+          76.3,
+          111.35,
+          122.7
+        ],
+        "thicknessMm": 7.0,
+        "spineOverlapMm3": 0.0
+      },
+      {
+        "bay": 4,
+        "sataXmm": 93.5,
+        "boundsMm": [
+          90.8,
+          41.5,
+          22.25,
+          97.8,
+          111.35,
+          122.7
+        ],
+        "thicknessMm": 7.0,
+        "spineOverlapMm3": 0.0
+      },
+      {
+        "bay": 5,
+        "sataXmm": 115.0,
+        "boundsMm": [
+          112.3,
+          41.5,
+          22.25,
+          119.3,
+          111.35,
+          122.7
+        ],
+        "thicknessMm": 7.0,
+        "spineOverlapMm3": 0.0
+      }
+    ]
+  },
+  "sections": {
+    "longitudinalFrames": [
+      {
+        "negativeXmm": 17.7,
+        "webThicknessMm": 3.6000000000000014,
+        "diagonalWidthMm": 7.999999999952305,
+        "diagonalCrossSectionAreaMm2": 28.79999999982831
+      },
+      {
+        "negativeXmm": 103.8,
+        "webThicknessMm": 3.6000000000000085,
+        "diagonalWidthMm": 7.999999999952305,
+        "diagonalCrossSectionAreaMm2": 28.799999999828366
+      }
+    ],
+    "baseZmm": [
+      8.0,
+      14.0
+    ],
+    "rearFanUprights": [
+      {
+        "xMm": [
+          9.75,
+          15.75
+        ],
+        "thicknessMm": 6.0
+      },
+      {
+        "xMm": [
+          129.75,
+          135.75
+        ],
+        "thicknessMm": 6.0
+      }
+    ]
+  },
+  "crossbeam": {
+    "boundsMm": [
+      7.0,
+      70.0,
+      8.0,
+      137.0,
+      78.0,
+      14.0
+    ],
+    "requiredVolumeMm3": 6240.0,
+    "missingMaterialMm3": 0.0,
+    "minCarrierDistanceMm": 5.850000000000001
+  },
+  "boardSupportTips": [
+    {
+      "xyMm": [
+        20.1,
+        60.2
+      ],
+      "diameterMm": 5.0,
+      "topZMm": 133.4
+    },
+    {
+      "xyMm": [
+        12.9,
+        116.95
+      ],
+      "diameterMm": 5.0,
+      "topZMm": 133.4
+    },
+    {
+      "xyMm": [
+        105.0,
+        60.2
+      ],
+      "diameterMm": 5.0,
+      "topZMm": 133.4
+    },
+    {
+      "xyMm": [
+        119.45,
+        116.9
+      ],
+      "diameterMm": 5.0,
+      "topZMm": 133.4
+    }
+  ],
+  "rearStopZmm": [
+    22.25,
+    28.25
+  ],
+  "reinforcementRegions": [
+    {
+      "feature": "lower-45deg-ramp",
+      "support": 1,
+      "requiredVolumeMm3": 166.71761890049706,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "upper-root",
+      "support": 1,
+      "requiredVolumeMm3": 506.87718317127985,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "lower-45deg-ramp",
+      "support": 2,
+      "requiredVolumeMm3": 149.84898086969685,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "upper-root",
+      "support": 2,
+      "requiredVolumeMm3": 442.44508821827367,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "lower-45deg-ramp",
+      "support": 3,
+      "requiredVolumeMm3": 172.03117258970403,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "upper-root",
+      "support": 3,
+      "requiredVolumeMm3": 528.662753297265,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "lower-45deg-ramp",
+      "support": 4,
+      "requiredVolumeMm3": 148.95612549170184,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "upper-root",
+      "support": 4,
+      "requiredVolumeMm3": 439.4089086362899,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "rear-fan-corner-gusset",
+      "corner": 1,
+      "requiredVolumeMm3": 612.8694436415905,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "rear-fan-corner-gusset",
+      "corner": 2,
+      "requiredVolumeMm3": 630.0499626913,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "rear-fan-corner-gusset",
+      "corner": 3,
+      "requiredVolumeMm3": 612.9955098708153,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "rear-fan-corner-gusset",
+      "corner": 4,
+      "requiredVolumeMm3": 630.1943176223397,
+      "missingMaterialMm3": 0.0
+    }
+  ],
+  "windowRoofs": [
+    {
+      "webXmm": 17.7,
+      "windowYmm": [
+        43.0,
+        56.2
+      ],
+      "slopeStartZmm": 101.4,
+      "apexZmm": 108.0,
+      "angleFromHorizontalDeg": 45.0,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "webXmm": 17.7,
+      "windowYmm": [
+        64.2,
+        120.0
+      ],
+      "slopeStartZmm": 80.1,
+      "apexZmm": 108.0,
+      "angleFromHorizontalDeg": 45.0,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "webXmm": 103.8,
+      "windowYmm": [
+        43.0,
+        56.2
+      ],
+      "slopeStartZmm": 101.4,
+      "apexZmm": 108.0,
+      "angleFromHorizontalDeg": 45.0,
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "webXmm": 103.8,
+      "windowYmm": [
+        64.2,
+        120.0
+      ],
+      "slopeStartZmm": 80.1,
+      "apexZmm": 108.0,
+      "angleFromHorizontalDeg": 45.0,
+      "missingMaterialMm3": 0.0
+    }
+  ],
+  "rearFanJoint": {
+    "frameBoundsMm": [
+      9.75,
+      136.5,
+      8.0,
+      135.75,
+      142.0,
+      128.0
+    ],
+    "mainFrameOverlapMm3": 0.0,
+    "keys": [
+      {
+        "centerXZmm": [
+          12.75,
+          68.0
+        ],
+        "maleBoundsMm": [
+          11.25,
+          136.5,
+          65.5,
+          14.25,
+          138.0,
+          70.5
+        ],
+        "maleVolumeMm3": 22.499999999999996,
+        "pocketBoundsMm": [
+          10.95,
+          136.2,
+          65.2,
+          14.55,
+          138.0,
+          70.8
+        ],
+        "measuredSideEndFloorClearanceMm": [
+          0.3000000000000007,
+          0.3000000000000007,
+          0.29999999999999716,
+          0.29999999999999716,
+          0.30000000000001137
+        ],
+        "remainingSidewallMm": 1.2,
+        "oversizedKeyFailureControlOverlapMm3": 1.499999999999981
+      },
+      {
+        "centerXZmm": [
+          132.75,
+          68.0
+        ],
+        "maleBoundsMm": [
+          131.25,
+          136.5,
+          65.5,
+          134.25,
+          138.0,
+          70.5
+        ],
+        "maleVolumeMm3": 22.499999999999996,
+        "pocketBoundsMm": [
+          130.95,
+          136.2,
+          65.2,
+          134.55,
+          138.0,
+          70.8
+        ],
+        "measuredSideEndFloorClearanceMm": [
+          0.30000000000001137,
+          0.30000000000001137,
+          0.29999999999999716,
+          0.29999999999999716,
+          0.30000000000001137
+        ],
+        "remainingSidewallMm": 1.2,
+        "oversizedKeyFailureControlOverlapMm3": 1.4999999999999147
+      }
+    ],
+    "bores": [
+      {
+        "centerXZmm": [
+          19.5,
+          15.5
+        ],
+        "mainPilotYmm": [
+          131.6,
+          138.0
+        ],
+        "mainPilotDiameterMm": 4.1,
+        "frameClearanceYmm": [
+          138.0,
+          142.0
+        ],
+        "frameClearanceDiameterMm": 3.4,
+        "screwLengthMm": 35.0,
+        "underHeadYmm": 167.0,
+        "tipYmm": 132.0,
+        "floorAllowanceMm": 0.4
+      },
+      {
+        "centerXZmm": [
+          19.5,
+          120.5
+        ],
+        "mainPilotYmm": [
+          131.6,
+          138.0
+        ],
+        "mainPilotDiameterMm": 4.1,
+        "frameClearanceYmm": [
+          138.0,
+          142.0
+        ],
+        "frameClearanceDiameterMm": 3.4,
+        "screwLengthMm": 35.0,
+        "underHeadYmm": 167.0,
+        "tipYmm": 132.0,
+        "floorAllowanceMm": 0.4
+      },
+      {
+        "centerXZmm": [
+          124.5,
+          15.5
+        ],
+        "mainPilotYmm": [
+          131.6,
+          138.0
+        ],
+        "mainPilotDiameterMm": 4.1,
+        "frameClearanceYmm": [
+          138.0,
+          142.0
+        ],
+        "frameClearanceDiameterMm": 3.4,
+        "screwLengthMm": 35.0,
+        "underHeadYmm": 167.0,
+        "tipYmm": 132.0,
+        "floorAllowanceMm": 0.4
+      },
+      {
+        "centerXZmm": [
+          124.5,
+          120.5
+        ],
+        "mainPilotYmm": [
+          131.6,
+          138.0
+        ],
+        "mainPilotDiameterMm": 4.1,
+        "frameClearanceYmm": [
+          138.0,
+          142.0
+        ],
+        "frameClearanceDiameterMm": 3.4,
+        "screwLengthMm": 35.0,
+        "underHeadYmm": 167.0,
+        "tipYmm": 132.0,
+        "floorAllowanceMm": 0.4
+      }
+    ],
+    "newFasteners": 0,
+    "newInserts": 0
+  },
+  "baseMountRegions": [
+    {
+      "feature": "moved-side-beam",
+      "boundsMm": [
+        13.5,
+        40.6,
+        8.0,
+        19.5,
+        124.0,
+        14.0
+      ],
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "moved-side-beam",
+      "boundsMm": [
+        124.5,
+        40.6,
+        8.0,
+        130.5,
+        124.0,
+        14.0
+      ],
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "front-foot-gusset",
+      "xyMm": [
+        [
+          10.0,
+          36.0
+        ],
+        [
+          24.0,
+          36.0
+        ],
+        [
+          18.0,
+          50.0
+        ]
+      ],
+      "missingMaterialMm3": 0.0
+    },
+    {
+      "feature": "front-foot-gusset",
+      "xyMm": [
+        [
+          134.0,
+          36.0
+        ],
+        [
+          120.0,
+          36.0
+        ],
+        [
+          126.0,
+          50.0
+        ]
+      ],
+      "missingMaterialMm3": 0.0
+    }
+  ],
+  "carrierChecks": [
+    {
+      "bay": 1,
+      "spineOverlapMm3": 0.0,
+      "spineMinDistanceMm": 0.0
+    },
+    {
+      "bay": 2,
+      "spineOverlapMm3": 0.0,
+      "spineMinDistanceMm": 0.0
+    },
+    {
+      "bay": 3,
+      "spineOverlapMm3": 0.0,
+      "spineMinDistanceMm": 0.0
+    },
+    {
+      "bay": 4,
+      "spineOverlapMm3": 0.0,
+      "spineMinDistanceMm": 0.0
+    },
+    {
+      "bay": 5,
+      "spineOverlapMm3": 0.0,
+      "spineMinDistanceMm": 0.0
+    }
+  ],
+  "materialComparison": {
+    "baselineSourceSha256": "87f85cfe7fa9e9f6f94bb14f406e7263fcb081b8b3a0bc9e2ac05c7161618a5e",
+    "baselineMetadataSha256": "c94d7b05cd3503352cc3b592245ad7f6e7c78921bcbc5e31d3238efd91e95de9",
+    "baselineDirectory": "work/lid-fixing-r3/baseline/outputs/redesign-r3",
+    "spine": {
+      "baselineVolumeMm3": 118869.79836642531,
+      "currentVolumeMm3": 119686.35441777795,
+      "netAddedVolumeMm3": 816.5560513526434,
+      "volumeChangePercent": 0.6869331508711385,
+      "removedMaterialMm3": 3602.8520504990506,
+      "addedMaterialMm3": 4419.408101941639,
+      "baselineStepSha256": {
+        "spine.step": "bd600d02e8db5fc55ed54e5d4d207b32dfb9c2b35de0d5abcbc0407cf20e3336",
+        "rear-fan-frame.step": "e3a3360eaab6b383f6a9dbf4a43f76302620e5463d55038b39f004e3adcb710d"
+      },
+      "comparisonBasis": "Direct sequential per-solid STEP differences with volume identity",
+      "mainSpineVolumeMm3": 109040.62166207992,
+      "separateRearFrameVolumeMm3": 10645.732755698029
+    },
+    "carrier": {
+      "baselineVolumeMm3": 8291.7291209461,
+      "currentVolumeMm3": 8291.7291209461,
+      "netAddedVolumeMm3": 0.0,
+      "volumeChangePercent": 0.0,
+      "removedMaterialMm3": 0.0,
+      "addedMaterialMm3": 0.0,
+      "baselineStepSha256": {
+        "carrier.step": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a"
+      },
+      "comparisonBasis": "Direct sequential per-solid STEP differences with volume identity"
+    }
+  },
+  "limits": [
+    "Nominal generic HDD bodies; exact purchased drive mating and screw depth remain unverified.",
+    "Section thickness, material addition and clearance are geometric evidence only.",
+    "No stiffness, fatigue, impact, vibration, physical assembly or thermal validation."
+  ]
+}

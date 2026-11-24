@@ -1,0 +1,31 @@
+<!doctype html>
+<!-- [INPUT]: main.mjs 与 style.css 提供场景和操作。
+     [OUTPUT]: 九件主体与五盘 7 mm 的中文 R3 审阅入口。
+     [POS]: 单文件离线页面的源结构。
+     [PROTOCOL]: Update this header on change, then check AGENTS.md -->
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f2f3ee"><title>CyberMachine R3 · 一体机箱</title></head>
+<body>
+<header class="masthead"><a class="wordmark" href="../../../../README.md" aria-label="CyberMachine 仓库说明"><span class="mark">C<span></span></span>CYBERMACHINE<span class="revision">R3</span></a><div class="top-actions"><span class="status"><i></i>设计候选</span><button id="theme" class="icon-button" aria-label="切换深色主题" title="切换主题">◐</button></div></header>
+<main>
+ <section class="intro"><div><p class="eyebrow">ENCLOSURE / 03</p><h1>更少零件，<br class="mobile-break">更完整的机箱。</h1></div><p class="intro-note">一体外壳 · 箱外预装 · 主板两面避让<br><span>Radxa TACO V1.61 + Raspberry Pi CM5</span></p></section>
+ <div class="workspace">
+  <section class="studio" aria-label="机箱三维设计">
+   <nav class="view-tabs" aria-label="设计视图"><button data-view="appearance" aria-pressed="true"><span>01</span> 外观</button><button data-view="exploded" aria-pressed="false"><span>02</span> 拆解</button><button data-view="clearance" aria-pressed="false"><span>03</span> 主板净空</button><button data-view="bench" aria-pressed="false"><span>04</span> 箱外预装</button></nav>
+   <div id="stage" tabindex="0" role="application" aria-label="三维机箱；拖动旋转，滚轮缩放，数字1到4切换视图，左右键选择盘位或接口，Home复位">
+    <div class="stage-tag"><span id="view-caption">一体外观</span><small id="view-detail">154 × 144 × 194 mm</small></div>
+    <div id="loading" role="status"><span class="loader"></span>正在载入真实 CAD 模型</div>
+    <div id="fallback" hidden><p>当前浏览器无法显示三维模型。</p><p>下方保留结构与尺寸说明；请用支持 WebGL 2 的浏览器打开。</p></div>
+    <div class="scene-tools"><button id="top-view" aria-pressed="false" title="检查顶部风扇格栅">顶部</button><button id="rear-view" aria-pressed="false" title="检查后部排风格栅">背面</button><button id="io-detail" disabled>I/O 细节</button><button id="bones" hidden aria-pressed="false">仅看骨架</button><button id="board-side" hidden>看板背面 ↺</button><button id="reset" aria-label="复位视角" title="复位视角">↺</button></div>
+    <div class="stage-hint">拖动旋转 <span>·</span> 滚轮缩放</div><div class="axis" aria-hidden="true"><b>Z</b><span>↑</span><small>mm</small></div>
+   </div>
+   <div id="io-controls" class="io-controls" hidden><div><span class="config-label">I/O</span><div id="ports" class="ports" role="group" aria-label="选择接口或按钮"></div></div><p>孔口截面与原厂实体对照。插头包胶、卡扣、插入行程与按钮操作需实物核对。</p></div>
+   <div id="explode-control" class="explode-control" hidden><label for="explode">拆解程度 <output id="explode-value">65%</output></label><input id="explode" type="range" min="0" max="100" value="65" aria-label="拆解程度"><p>展示位移用于结构审阅，不代表已验证的安装行程。</p></div>
+   <div class="configuration"><div class="config-group"><span class="config-label">硬盘规格</span><span class="fixed-spec">5 × 7 mm</span></div><div class="config-group bay-group"><span class="config-label">盘位</span><div class="bays" role="group" aria-label="选择盘位"><button data-bay="1" aria-label="选择 1 号盘位" aria-pressed="false">01</button><button data-bay="2" aria-label="选择 2 号盘位" aria-pressed="false">02</button><button data-bay="3" aria-label="选择 3 号盘位" aria-pressed="false">03</button><button data-bay="4" aria-label="选择 4 号盘位" aria-pressed="false">04</button><button data-bay="5" aria-label="选择 5 号盘位" aria-pressed="false">05</button></div></div></div>
+  </section>
+  <aside class="design-note" aria-live="polite"><p class="eyebrow" id="note-number">01 / 一体外观</p><h2 id="note-title">让接缝，<br>回到一道线。</h2><p id="note-copy" class="note-copy">底框、侧板与前后面板合并为一个承力底壳。整体上盖沿内止口定位，让外轮廓连续，锁紧件留在接缝和箱内。</p><div id="note-facts" class="fact-list"></div><div class="comparison"><div class="comparison-title">打印件数量 <span>R1 含垫片、脚垫；R3 仅主体</span></div><div class="count-row"><span>R1</span><div class="bar old"></div><b>33</b></div><div class="count-row"><span>R3</span><div class="bar new"></div><b>9</b></div><p>R3：底壳 + 上盖 + 主骨架 + 后扇框 + 5 盘托；脚垫、五金另计。</p></div><div class="selected-info" id="selected-info">五盘位 × 7 mm · 保留 SATA 原始坐标</div></aside>
+ </div>
+ <section class="principles" aria-label="结构改进"><article><span>01</span><div><h3>外壳负责完整</h3><p>四处内置厚座，四颗 M3 竖向压紧上盖。连续圆角与内止口定位。</p></div></article><article><span>02</span><div><h3>骨架兼顾承力与打印</h3><p>主架开窗收尖顶，底脚连筋接入底框。后扇框平放打印。</p></div></article><article><span>03</span><div><h3>总成在箱外装好</h3><p>主板、五块 7 mm 硬盘和后风扇先预装。整组入箱，减少多方向对孔。</p></div></article></section>
+ <footer><p><b>验证边界</b> 这是 R3 设计候选。原厂 STEP 保留主板元件；CM5、散热器与硬盘采用设计包络。实物焊脚、散热器高度、螺丝与工具空间、打印接缝及温升仍需试装和测量。</p><div class="footer-links"><a href="../README.md">设计说明 ↗</a><a href="../credits.md">模型与来源 ↗</a></div></footer>
+</main><script type="module" src="./main.mjs"></script>
+</body></html>

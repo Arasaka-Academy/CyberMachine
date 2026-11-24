@@ -4,7 +4,7 @@
 
 CyberMachine 是 NAS 设备硬件设计仓库。当前硬件平台是 Radxa Taco V1.61 + Raspberry Pi CM5，设计单位为毫米。
 
-- R1 包含制造设计、CAD 源码和打印资料；R2 当前只有四点螺丝固定方案的交互示意。分别维护版本，不将 R1 打印件标注为 R2。
+- R1 包含制造设计、CAD 源码和打印资料；R2 包含四点螺丝固定交互示意与装配教学；R3 Final 2026-11-24 是一体机箱数字定稿，包含五盘九件打印文件，实物试装待验。分别维护版本。
 - 修改尺寸、孔位、安装方向或坐标基准时，同步检查接口、紧固件、净空、硬盘抽取路径和配套文档。交互图的示意展开位移不代表装配行程。
 - 数字几何、切片和浏览器检查分别记录。实物打印、试装、温升、振动和噪声结论必须有对应的实测证据。
 
@@ -15,22 +15,29 @@ CyberMachine 是 NAS 设备硬件设计仓库。当前硬件平台是 Radxa Taco
 | `hardware/enclosure/r1/src/` | R1 CAD 与辅助流程源码，依赖和中间数据要求见其中的 README |
 | `hardware/enclosure/r1/cad/` | 正式机箱 STEP |
 | `hardware/enclosure/r1/print/` | 正式 3MF、STL ZIP、打印盘清单 |
+| `hardware/enclosure/r3/src/` | R3 候选参数 CAD、导出、验证与离线五盘切片；生成结果写入忽略目录 |
+| `hardware/enclosure/r3/cad/`、`hardware/enclosure/r3/print/` | R3 Final 2026-11-24 数字定稿 STEP、五盘原生 3MF、STL ZIP 和盘清单 |
 | `docs/assembly/` | 按版本保存的装配、五金和打印说明 |
 | `docs/images/r1/`、`docs/images/r2/` | 对应版本的正式预览图 |
 | `docs/anatomy/r2/` | R2 离线 HTML、SVG、使用说明及 `src/` 绘图源码 |
+| `docs/design/r3/` | R3 重构约束、离线三维审阅、九件打印装配说明和页面源码 |
 | `references/radxa-taco/` | 保留原厂名称与内容的主板参考文件 |
 | `validation/r1/`、`validation/r2/` | 对应版本的数字检查、图形审计与历史日志 |
+| `validation/r3/` | R3 新读取主板的实体净空、候选几何与浏览器检查 |
+| `scripts/` | GitHub Pages公开交付打包，核对本地链接并拒绝符号链接 |
 | `work/`、`outputs/` | 被 Git 忽略的中间文件与重新生成的交付候选文件 |
+
+`viz3d-lessons.md` 保存本项目三维设计校正规则及对应检查入口。
 
 ## 命名与维护边界
 
 - 文档正文以中文为主。目录和普通文件使用小写英文与连字符；Python 文件使用下划线。保留 `README.md`、`AGENTS.md`、`SHA256SUMS.txt` 和第三方 `LICENSE` 的通行名称。
-- 独立分发的模型、打印项目与压缩包使用 `CyberMachine-r1-` 项目及版本前缀；新的硬件修订建立独立版本目录，并同步根 README 的状态表。
+- 独立分发的模型、打印项目与压缩包使用 `CyberMachine-r1-` 或 `CyberMachine-r3-final-20261124-` 对应前缀；新的硬件修订建立独立版本目录，并同步根 README 的状态表。
 - 原厂参考资料保留型号、版本与内容。更换参考版本时另存文件，并更新对应引用。
 - `docs/anatomy/r2/src/kit/` 是第三方工具，保留其许可证与原始结构；改动时说明具体原因。
 - 历史日志保留原始正文及日期；整理路径或补充验证时添加有日期的说明，不能将旧结果表述为本次新执行的验证。
 - 代码从自身文件位置定位仓库目录，不依赖个人绝对路径。用户指定的输入路径和工作空间按相应命令参数处理。
-- Git 换行规则由根目录 `.gitattributes` 管理：普通文本使用 LF，原厂 CAD 与打印盘 CSV 保留原始字节，压缩项目及图片、PDF 按二进制处理。提交前核对暂存内容与校验清单，避免 Git 转换原始文件的换行。
+- Git 换行规则由根目录 `.gitattributes` 管理：普通文本使用 LF，原厂 CAD 与打印盘 CSV 保留原始字节，压缩项目及图片、PDF 按二进制处理。CAD 导出和离线着色器保留工具生成的空白。提交前核对暂存内容与校验清单，避免 Git 转换原始文件的换行。
 - 检索优先使用 `rg`。环境提供 `rtk` 时通过它运行命令；文档中的命令保持标准工具语法，便于跨机器使用。
 
 ## 修改与生成流程

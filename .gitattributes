@@ -2,8 +2,8 @@
 * text eol=lf
 
 # Preserve native CAD and CSV bytes, including their original line endings.
-*.stp -text
-*.step -text
+*.stp -text -whitespace
+*.step -text -whitespace
 *.csv -text
 
 # Compressed projects and visual reference files are binary artifacts.
@@ -18,3 +18,4 @@
 # Generated bundles retain upstream shader and license text spacing.
 docs/assembly/r2/index.html -whitespace
 docs/assembly/r2/assets/third-party-licenses.txt -whitespace
+docs/design/r3/index.html -whitespace

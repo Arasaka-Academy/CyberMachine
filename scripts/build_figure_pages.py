@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Stage the CyberMachine figure and linked public files for GitHub Pages."""
+"""[INPUT]: Git文件清单、公开目录与根目录交付文档。
+[OUTPUT]: 保留仓库路径并通过本地链接检查的GitHub Pages目录。
+[POS]: Pages构建与发布之间的打包边界，拒绝符号链接和越界引用。
+[PROTOCOL]: Update this header on change, then check AGENTS.md
+"""
 
 from __future__ import annotations
 
@@ -14,7 +18,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DIRECTORIES = ("docs/", "hardware/", "references/", "validation/")
-PUBLIC_FILES = {"README.md", "AGENTS.md", "SHA256SUMS.txt"}
+PUBLIC_FILES = {"README.md", "AGENTS.md", "SHA256SUMS.txt", "viz3d-lessons.md"}
 
 
 class PageLinks(HTMLParser):

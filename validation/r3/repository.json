@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-24T10:10:49.499258+00:00",
+  "pythonSyntax": [
+    "hardware/enclosure/r3/src/check_board.py",
+    "hardware/enclosure/r3/src/check_dfm.py",
+    "hardware/enclosure/r3/src/check_fastening.py",
+    "hardware/enclosure/r3/src/check_frame.py",
+    "hardware/enclosure/r3/src/check_io.py",
+    "hardware/enclosure/r3/src/check_mating.py",
+    "hardware/enclosure/r3/src/check_mesh.py",
+    "hardware/enclosure/r3/src/check_print.py",
+    "hardware/enclosure/r3/src/check_service.py",
+    "hardware/enclosure/r3/src/check_top_fan.py",
+    "hardware/enclosure/r3/src/check_vents.py",
+    "hardware/enclosure/r3/src/design.py",
+    "hardware/enclosure/r3/src/export_candidates.py",
+    "hardware/enclosure/r3/src/io_geometry.py",
+    "hardware/enclosure/r3/src/slice_candidates.py",
+    "hardware/enclosure/r3/src/validate.py"
+  ],
+  "javascriptSyntax": [
+    "docs/design/r3/src/browser.mjs",
+    "docs/design/r3/src/build.mjs",
+    "docs/design/r3/src/frame-guard.mjs",
+    "docs/design/r3/src/io-review.mjs",
+    "docs/design/r3/src/main.mjs"
+  ],
+  "jsonFilesParsed": 42,
+  "svgFilesParsed": 4,
+  "checkedLocalLinks": 190,
+  "missing": [],
+  "sourceHtmlLinkBasis": "Build-template links are checked on generated HTML.",
+  "moduleMembershipComplete": true,
+  "modelAndReportHashesConsistent": true,
+  "r2Builds": "Dark/light builds passed; all three modes passed fresh full-precision audits, with mode 7 using the same APIs in an independent driver. Historical R2 bytes preserved.",
+  "r3Build": "Absolute build from /tmp. Browser report hashes match final files.",
+  "sliceCandidate": "Five P1S/PETG plates and nine pieces sliced; source, mesh, presets, 3MF and G-code hashes verified.",
+  "supportFigure": {
+    "pngSha256": "70030d3126e419c3404c33bc584227ad75c465f6be08c43eb979d4c773af29c9",
+    "currentGcodeSha256": "5a31c214f3921ddfab5af0ef6fd36be3e576a435a2ade4b8d1528cf47583f93d",
+    "measurementsSha256": "82c087a4c0a6122a5dada06c8058e3ee9dcaf93bbcf516a1638c596323696ef7"
+  },
+  "limits": [
+    "No physical print, support removal, assembly, stiffness, thermal or acoustic validation"
+  ]
+}

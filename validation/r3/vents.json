@@ -1,0 +1,1199 @@
+{
+  "checkedAt": "2026-11-24T09:34:06.076699+00:00",
+  "passed": true,
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "inputs": {
+    "lid": "303d34d4755666c38407dae94e18b2df3cba128a5fbf653428c5e55a00e1fb44",
+    "shell": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b"
+  },
+  "baselineInputs": {
+    "lid": "f43c44cf7c5bbbf351c421f188f98b981e888dd90cc8436b0fe1842b2cb7067c",
+    "shell": "d89edb38a47b5c79c9a6efdc588faeb999df2bb12f4a2e17ef3db8e2ec710da6"
+  },
+  "baselineBasis": "Prior STEP slices",
+  "top": {
+    "centerXYMm": [
+      71.99999999999909,
+      99.99999999999872
+    ],
+    "openAreaMm2": 2791.270627631543,
+    "baselineOpenAreaMm2": 2727.6295346996226,
+    "areaChangePercent": 2.3332014895097952,
+    "slotSegments": 28,
+    "radiiMm": [
+      6.0,
+      8.8,
+      12.0,
+      14.8,
+      18.0,
+      20.8,
+      24.0,
+      26.8,
+      30.0,
+      32.8,
+      36.0,
+      38.8,
+      42.0
+    ],
+    "radialSlotWidthMm": 3.2,
+    "radialRibWidthMm": 2.8,
+    "spokeWidthMm": 4,
+    "innermostInnerEndRadiusMm": 2.8284271247461903,
+    "mirrorDifferenceMm3": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "continuousBoreProbes": [
+      {
+        "ringCenterRadiusMm": 4.4,
+        "probeDiameterMm": 1.8,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.21126983722079729,
+        "overlapMm3": 0.0
+      },
+      {
+        "ringCenterRadiusMm": 10.4,
+        "probeDiameterMm": 3.0,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.09999999999999477,
+        "overlapMm3": 0.0
+      },
+      {
+        "ringCenterRadiusMm": 16.4,
+        "probeDiameterMm": 3.0,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.09999999999998473,
+        "overlapMm3": 0.0
+      },
+      {
+        "ringCenterRadiusMm": 22.4,
+        "probeDiameterMm": 3.0,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.09999999999998474,
+        "overlapMm3": 0.0
+      },
+      {
+        "ringCenterRadiusMm": 28.4,
+        "probeDiameterMm": 3.0,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.09999999999999477,
+        "overlapMm3": 0.0
+      },
+      {
+        "ringCenterRadiusMm": 34.4,
+        "probeDiameterMm": 3.0,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.09999999999999477,
+        "overlapMm3": 0.0
+      },
+      {
+        "ringCenterRadiusMm": 40.4,
+        "probeDiameterMm": 3.0,
+        "continuousZMm": [
+          191.1,
+          194.1
+        ],
+        "minWallGapMm": 0.09999999999998474,
+        "overlapMm3": 0.0
+      }
+    ],
+    "solidSpokeWitnesses": [
+      {
+        "boundsMm": [
+          30.0,
+          98.0,
+          191.3,
+          114.0,
+          102.0,
+          191.70000000000002
+        ],
+        "missingVolumeMm3": 0.0
+      },
+      {
+        "boundsMm": [
+          70.0,
+          58.0,
+          191.3,
+          74.0,
+          142.0,
+          191.70000000000002
+        ],
+        "missingVolumeMm3": 0.0
+      }
+    ]
+  },
+  "walls": {
+    "front": {
+      "openings": 30,
+      "openAreaMm2": 6404.398505048725,
+      "slotWidthMm": 4.4,
+      "interColumnWebMm": 3.6,
+      "baselineOpenAreaMm2": 5880.000000000008,
+      "areaChangePercent": 8.918341922597218,
+      "mirrorDifferenceMm3": 0.0,
+      "slots": [
+        {
+          "boundsMm": [
+            13.8,
+            28.6,
+            22.0,
+            18.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            21.8,
+            28.6,
+            20.348480684155,
+            26.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            29.8,
+            28.6,
+            18.829452884163,
+            34.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            37.8,
+            28.6,
+            17.455675181799002,
+            42.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            45.8,
+            28.6,
+            16.244526870999,
+            50.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            53.8,
+            28.6,
+            15.221765677314,
+            58.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            61.8,
+            28.6,
+            14.431959397725002,
+            66.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            69.8,
+            28.6,
+            14.0,
+            74.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            13.8,
+            28.6,
+            73.0,
+            18.2,
+            29.200000000000003,
+            118.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            21.8,
+            28.6,
+            73.0,
+            26.2,
+            29.200000000000003,
+            119.65151931584
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            29.8,
+            28.6,
+            73.0,
+            34.2,
+            29.200000000000003,
+            121.17054711583
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            37.8,
+            28.6,
+            73.0,
+            42.2,
+            29.200000000000003,
+            122.5443248182
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            45.8,
+            28.6,
+            73.0,
+            50.2,
+            29.200000000000003,
+            123.75547312900001
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            53.8,
+            28.6,
+            73.0,
+            58.2,
+            29.200000000000003,
+            124.77823432268
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            61.8,
+            28.6,
+            73.0,
+            66.2,
+            29.200000000000003,
+            125.56804060227
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            69.8,
+            28.6,
+            73.0,
+            74.2,
+            29.200000000000003,
+            126.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            77.8,
+            28.6,
+            14.431959397725002,
+            82.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            85.8,
+            28.6,
+            15.221765677314,
+            90.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            93.8,
+            28.6,
+            16.244526870999,
+            98.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            101.8,
+            28.6,
+            17.455675181799002,
+            106.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            109.8,
+            28.6,
+            18.829452884163,
+            114.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            117.8,
+            28.6,
+            20.348480684155,
+            122.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            125.8,
+            28.6,
+            22.0,
+            130.2,
+            29.200000000000003,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            77.8,
+            28.6,
+            73.0,
+            82.2,
+            29.200000000000003,
+            125.56804060227
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            85.8,
+            28.6,
+            73.0,
+            90.2,
+            29.200000000000003,
+            124.77823432268
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            93.8,
+            28.6,
+            73.0,
+            98.2,
+            29.200000000000003,
+            123.75547312900001
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            101.8,
+            28.6,
+            73.0,
+            106.2,
+            29.200000000000003,
+            122.5443248182
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            109.8,
+            28.6,
+            73.0,
+            114.2,
+            29.200000000000003,
+            121.17054711583
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            117.8,
+            28.6,
+            73.0,
+            122.2,
+            29.200000000000003,
+            119.65151931584
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            125.8,
+            28.6,
+            73.0,
+            130.2,
+            29.200000000000003,
+            118.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        }
+      ],
+      "horizontalBand": {
+        "columns": [
+          {
+            "centerXMm": 16.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 24.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 32.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 40.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 48.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 56.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 64.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 72.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 80.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 88.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 96.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 104.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 112.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 120.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 128.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          }
+        ],
+        "lowerSlotTopRangeMm": [
+          67.0,
+          67.0
+        ],
+        "upperSlotBottomRangeMm": [
+          73.0,
+          73.0
+        ],
+        "bandHeightRangeMm": [
+          6.0,
+          6.0
+        ],
+        "lowerAlignmentErrorMm": 0.0,
+        "upperAlignmentErrorMm": 0.0,
+        "materialWitnessBoundsMm": [
+          13.8,
+          28.6,
+          67.0,
+          130.20000000000002,
+          29.200000000000003,
+          73.0
+        ],
+        "materialWitnessMissingMm3": 0.0
+      }
+    },
+    "rear": {
+      "openings": 30,
+      "openAreaMm2": 6404.398505048649,
+      "slotWidthMm": 4.4,
+      "interColumnWebMm": 3.6,
+      "baselineOpenAreaMm2": 5879.999999999944,
+      "areaChangePercent": 8.918341922597106,
+      "mirrorDifferenceMm3": 0.0,
+      "slots": [
+        {
+          "boundsMm": [
+            13.8,
+            170.6,
+            22.0,
+            18.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            21.8,
+            170.6,
+            20.348480684155,
+            26.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            29.8,
+            170.6,
+            18.829452884163,
+            34.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            37.8,
+            170.6,
+            17.455675181799002,
+            42.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            45.8,
+            170.6,
+            16.244526870999,
+            50.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            53.8,
+            170.6,
+            15.221765677314,
+            58.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            61.8,
+            170.6,
+            14.431959397725002,
+            66.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            69.8,
+            170.6,
+            14.0,
+            74.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            13.8,
+            170.6,
+            73.0,
+            18.2,
+            171.2,
+            118.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            21.8,
+            170.6,
+            73.0,
+            26.2,
+            171.2,
+            119.65151931584
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            29.8,
+            170.6,
+            73.0,
+            34.2,
+            171.2,
+            121.17054711583
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            37.8,
+            170.6,
+            73.0,
+            42.2,
+            171.2,
+            122.5443248182
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            45.8,
+            170.6,
+            73.0,
+            50.2,
+            171.2,
+            123.75547312900001
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            53.8,
+            170.6,
+            73.0,
+            58.2,
+            171.2,
+            124.77823432268
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            61.8,
+            170.6,
+            73.0,
+            66.2,
+            171.2,
+            125.56804060227
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            69.8,
+            170.6,
+            73.0,
+            74.2,
+            171.2,
+            126.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            77.8,
+            170.6,
+            14.431959397725002,
+            82.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            85.8,
+            170.6,
+            15.221765677314,
+            90.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            93.8,
+            170.6,
+            16.244526870999,
+            98.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            101.8,
+            170.6,
+            17.455675181799002,
+            106.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            109.8,
+            170.6,
+            18.829452884163,
+            114.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            117.8,
+            170.6,
+            20.348480684155,
+            122.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            125.8,
+            170.6,
+            22.0,
+            130.2,
+            171.2,
+            67.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            77.8,
+            170.6,
+            73.0,
+            82.2,
+            171.2,
+            125.56804060227
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            85.8,
+            170.6,
+            73.0,
+            90.2,
+            171.2,
+            124.77823432268
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            93.8,
+            170.6,
+            73.0,
+            98.2,
+            171.2,
+            123.75547312900001
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            101.8,
+            170.6,
+            73.0,
+            106.2,
+            171.2,
+            122.5443248182
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            109.8,
+            170.6,
+            73.0,
+            114.2,
+            171.2,
+            121.17054711583
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            117.8,
+            170.6,
+            73.0,
+            122.2,
+            171.2,
+            119.65151931584
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        },
+        {
+          "boundsMm": [
+            125.8,
+            170.6,
+            73.0,
+            130.2,
+            171.2,
+            118.0
+          ],
+          "continuousDiameter3_8GaugeOverlapMm3": 0.0
+        }
+      ],
+      "horizontalBand": {
+        "columns": [
+          {
+            "centerXMm": 16.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 24.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 32.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 40.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 48.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 56.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 64.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 72.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 80.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 88.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 96.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 104.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 112.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 120.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          },
+          {
+            "centerXMm": 128.0,
+            "lowerSlotTopZMm": 67.0,
+            "upperSlotBottomZMm": 73.0,
+            "bandHeightMm": 6.0
+          }
+        ],
+        "lowerSlotTopRangeMm": [
+          67.0,
+          67.0
+        ],
+        "upperSlotBottomRangeMm": [
+          73.0,
+          73.0
+        ],
+        "bandHeightRangeMm": [
+          6.0,
+          6.0
+        ],
+        "lowerAlignmentErrorMm": 0.0,
+        "upperAlignmentErrorMm": 0.0,
+        "materialWitnessBoundsMm": [
+          13.8,
+          170.6,
+          67.0,
+          130.20000000000002,
+          171.2,
+          73.0
+        ],
+        "materialWitnessMissingMm3": 0.0
+      }
+    }
+  },
+  "negativeControls": {
+    "curvedMiddleBand": {
+      "performed": true,
+      "rejected": true,
+      "reason": "\u4e0b\u6bb5\u69fd\u7aef\u4e0d\u6c34\u5e73",
+      "inputSha256": "1dee465e6bd347b2b98e5d1b7a044d7bceb71df2a9e03dc7e7c2e8b0701586a8",
+      "measuredEndpoints": {
+        "columns": [
+          {
+            "centerXMm": 16.0,
+            "lowerSlotTopZMm": 68.0,
+            "upperSlotBottomZMm": 72.0,
+            "bandHeightMm": 4.0
+          },
+          {
+            "centerXMm": 24.0,
+            "lowerSlotTopZMm": 69.32653061224501,
+            "upperSlotBottomZMm": 73.326530612245,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 32.0,
+            "lowerSlotTopZMm": 70.448979591837,
+            "upperSlotBottomZMm": 74.448979591837,
+            "bandHeightMm": 4.0
+          },
+          {
+            "centerXMm": 40.0,
+            "lowerSlotTopZMm": 71.36734693877601,
+            "upperSlotBottomZMm": 75.367346938776,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 48.0,
+            "lowerSlotTopZMm": 72.081632653061,
+            "upperSlotBottomZMm": 76.08163265306099,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 56.0,
+            "lowerSlotTopZMm": 72.591836734694,
+            "upperSlotBottomZMm": 76.591836734694,
+            "bandHeightMm": 4.0
+          },
+          {
+            "centerXMm": 64.0,
+            "lowerSlotTopZMm": 72.89795918367301,
+            "upperSlotBottomZMm": 76.897959183673,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 72.0,
+            "lowerSlotTopZMm": 73.0,
+            "upperSlotBottomZMm": 77.0,
+            "bandHeightMm": 4.0
+          },
+          {
+            "centerXMm": 80.0,
+            "lowerSlotTopZMm": 72.89795918367301,
+            "upperSlotBottomZMm": 76.897959183673,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 88.0,
+            "lowerSlotTopZMm": 72.591836734694,
+            "upperSlotBottomZMm": 76.591836734694,
+            "bandHeightMm": 4.0
+          },
+          {
+            "centerXMm": 96.0,
+            "lowerSlotTopZMm": 72.081632653061,
+            "upperSlotBottomZMm": 76.08163265306099,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 104.0,
+            "lowerSlotTopZMm": 71.36734693877601,
+            "upperSlotBottomZMm": 75.367346938776,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 112.0,
+            "lowerSlotTopZMm": 70.448979591837,
+            "upperSlotBottomZMm": 74.448979591837,
+            "bandHeightMm": 4.0
+          },
+          {
+            "centerXMm": 120.0,
+            "lowerSlotTopZMm": 69.32653061224501,
+            "upperSlotBottomZMm": 73.326530612245,
+            "bandHeightMm": 3.999999999999986
+          },
+          {
+            "centerXMm": 128.0,
+            "lowerSlotTopZMm": 68.0,
+            "upperSlotBottomZMm": 72.0,
+            "bandHeightMm": 4.0
+          }
+        ],
+        "lowerSlotTopRangeMm": [
+          68.0,
+          73.0
+        ],
+        "upperSlotBottomRangeMm": [
+          72.0,
+          77.0
+        ],
+        "bandHeightRangeMm": [
+          3.999999999999986,
+          4.0
+        ],
+        "lowerAlignmentErrorMm": 5.0,
+        "upperAlignmentErrorMm": 5.0
+      }
+    }
+  },
+  "rearUpper": {
+    "openings": 15,
+    "openAreaMm2": 1412.5693460559603,
+    "baselineOpenAreaMm2": 1175.9999999999898,
+    "areaChangePercent": 20.11644099115413,
+    "mirrorDifferenceMm3": 0.0
+  },
+  "rearFanSweepProjection": {
+    "diameterMm": 110,
+    "centerXZMm": [
+      72,
+      68
+    ],
+    "openAreaMm2": 4759.289584892811,
+    "baselineOpenAreaMm2": 4723.767321915274,
+    "scope": "Wall openings clipped by nominal rotor disk only; hub, frame, blades and pressure drop excluded."
+  },
+  "limits": [
+    "Geometric area is not airflow or cooling performance.",
+    "Outer ring arcs span about 59 mm between spokes; pressure deflection, impact, fan guarding and vibration are untested.",
+    "Rounded slot caps, overhangs, support removal and PETG warpage require slicing and physical trial."
+  ]
+}

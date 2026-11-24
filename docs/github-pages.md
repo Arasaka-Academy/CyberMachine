@@ -22,7 +22,7 @@ python3 scripts/build_figure_pages.py
 python3 -m http.server 8000 --bind 127.0.0.1 --directory outputs/github-pages
 ```
 
-访问 `http://127.0.0.1:8000/`。暂存器保持仓库相对路径，复制 `docs/`、`hardware/`、`references/`、`validation/` 中 Git 管理或未忽略的公开文件，以及根目录 README、AGENTS 和完整性清单，保证说明、图片与模型下载的本地链接可用。`work/`、`outputs/` 和 Git 元数据不会发布。
+访问 `http://127.0.0.1:8000/`。暂存器保持仓库相对路径，复制 `docs/`、`hardware/`、`references/`、`validation/` 中 Git 管理或未忽略的公开文件，以及根目录 README、AGENTS、完整性清单和 `viz3d-lessons.md`，保证说明、图片与模型下载的本地链接可用。`work/`、`outputs/`、本机依赖链接和 Git 元数据不会发布。
 
 默认输出为被 Git 忽略的 `outputs/github-pages/`。为保护已有输出，目标目录必须尚不存在；重复构建时使用新的目录，例如 `python3 scripts/build_figure_pages.py --output outputs/github-pages-preview`。从其他工作目录运行时，使用脚本绝对路径；默认输出仍位于仓库中。暂存时检查全部 HTML 和 Markdown 的本地文件链接。
 

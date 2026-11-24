@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-11-24T11:21:06.899634+00:00",
+  "passed": true,
+  "instance": "http://192.168.11.35:3333",
+  "skill": "PrintStash",
+  "uploadedModelCount": 1,
+  "modelUrl": "http://192.168.11.35:3333/models/40",
+  "modelName": "CyberMachine R3 Final 20261124｜五盘九件完整工程｜P1S PETG",
+  "source": {
+    "path": "hardware/enclosure/r3/print/CyberMachine-r3-final-20261124-p1s-petg.3mf",
+    "bytes": 8121671,
+    "localSha256": "eec4f1e6189c633a41f6d964716eebf542358161d0a209b52ef5a121f0195709",
+    "serverSha256": "eec4f1e6189c633a41f6d964716eebf542358161d0a209b52ef5a121f0195709",
+    "hashMatch": true,
+    "serverPlateObjectCounts": [
+      1,
+      1,
+      1,
+      3,
+      3
+    ]
+  },
+  "multipartSet": {
+    "url": "http://192.168.11.35:3333/multipart-models/8",
+    "name": "CyberMachine R3 Final 20261124｜NAS一体机箱｜五盘九件交付",
+    "modelCount": 1,
+    "unitsPerObject": 1,
+    "partName": "完整五盘工程×1（内含底壳、上盖、主架、后框、5盘托）",
+    "guideCount": 3,
+    "collection": "Vault only",
+    "freshNavigationReadbackPassed": true
+  },
+  "cover": {
+    "localPath": "docs/design/r3/final-cover.png",
+    "savedAndReloaded": true,
+    "serverNaturalWidth": 640,
+    "note": "Service resizes/transcodes cover; original image SHA is not asserted for the derived WebP."
+  },
+  "guides": [
+    {
+      "url": "http://192.168.11.35:3333/documents/20",
+      "localPath": "docs/design/r3/final-guide.md",
+      "renderedAndReadBack": true,
+      "renderedTables": 2
+    },
+    {
+      "url": "http://192.168.11.35:3333/documents/21",
+      "localPath": "docs/design/r3/final-assembly.png",
+      "downloadedBytes": 171989,
+      "downloadedSha256": "3f1c9cf25f3069cd95b4fc57954e7c98b3900320cd68a67347542731cc21f873",
+      "downloadMatchesLocal": true
+    },
+    {
+      "url": "http://192.168.11.35:3333/documents/22",
+      "sourceName": "cybermachine-r3-final-20261124-checksums.txt",
+      "renderedAndReadBack": true,
+      "nativeProjectHashVisible": true
+    }
+  ],
+  "screenshot": "work/final-r3-2026-11-24/verification/printstash-final-set.png",
+  "limits": [
+    "One source model uploaded; the native project contains five plates and nine printed pieces.",
+    "STEP and STL ZIP are local repository deliverables, not separately uploaded to PrintStash.",
+    "PrintStash shows zero separate G-code revisions; embedded G-code remains in the verified native 3MF.",
+    "No print/build job started. No physical fit, strength or thermal acceptance claimed.",
+    "Native Bambu GUI unavailable; command-line project reloading and reslicing were verified."
+  ]
+}

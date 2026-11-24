@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-24T09:35:51.742695+00:00",
+  "inputs": {
+    "shell.step": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+    "lid.step": "303d34d4755666c38407dae94e18b2df3cba128a5fbf653428c5e55a00e1fb44"
+  },
+  "overlapMm3": 0.0,
+  "seatContactAreaMm2": 463.4270141859315,
+  "spigotSeatContactAreaMm2": 76.8000000000001,
+  "lidLockSeatContactAreaMm2": 386.6270141859314,
+  "lidLockSeats": [
+    {
+      "centerXYmm": [
+        3.0,
+        48.0
+      ],
+      "contactZmm": 174.0,
+      "areaMm2": 96.65675354648289,
+      "expectedAnnularAreaMm2": 96.65675354648329
+    },
+    {
+      "centerXYmm": [
+        141.0,
+        48.0
+      ],
+      "contactZmm": 174.0,
+      "areaMm2": 96.65675354648306,
+      "expectedAnnularAreaMm2": 96.65675354648329
+    },
+    {
+      "centerXYmm": [
+        3.0,
+        152.0
+      ],
+      "contactZmm": 174.0,
+      "areaMm2": 96.65675354648235,
+      "expectedAnnularAreaMm2": 96.65675354648329
+    },
+    {
+      "centerXYmm": [
+        141.0,
+        152.0
+      ],
+      "contactZmm": 174.0,
+      "areaMm2": 96.65675354648307,
+      "expectedAnnularAreaMm2": 96.65675354648329
+    }
+  ],
+  "externalGapMm": 0.30000000000001137,
+  "spigotSingleSideGapMm": 0.3500000000000001,
+  "scope": "Exact B-rep nominal mating only. Printed shrinkage, warpage and fit feel are not measured."
+}

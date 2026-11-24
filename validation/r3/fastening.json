@@ -1,0 +1,1770 @@
+{
+  "checkedAt": "2026-11-24T09:39:03.821399+00:00",
+  "passed": true,
+  "geometryPassed": true,
+  "strengthValidated": false,
+  "sourceSha256": "50f593a841799415d45f85a7e3880fd5f104612bf7dac087e5f1db1a5bac294a",
+  "checkerSha256": "204d50ab8b2207687026e9c30db6647fac06552ff8da6ae891db404a074ce466",
+  "metadataSha256": "ebc2fb1c26d79a353bc13185fee5c2ba2f8ab0e51ef988410af3ca965504d28b",
+  "boardSourceSha256": "ae7c367b31fb37409de8968619ead885995b42f2a717672a963eff95a82beeac",
+  "inputs": {
+    "shell.step": "95e36e40f4bbd1f6caa5f9ed1d6d68bf5dcd74d3d61921e1b7c61ab5e212406b",
+    "lid.step": "303d34d4755666c38407dae94e18b2df3cba128a5fbf653428c5e55a00e1fb44",
+    "spine.step": "f069fb06ee6fe190415cf6f28d11d1163eaca68d341ad0ad6b3805a7b05e1cbb",
+    "carrier.step": "36c3566fa8d832c78b29a64cde0eb1bb98e5bb1411639d546e6599d848a12e0a",
+    "rear-fan-frame.step": "e3a3360eaab6b383f6a9dbf4a43f76302620e5463d55038b39f004e3adcb710d",
+    "top-fan.step": "ef8528e83778ce2525061fca463eebafa7ce4ed243842a41024fb35d53b2b9bf",
+    "lid-fasteners.step": "f47960fcb31345f728d25822a7ee6b65f00c11518c0cb0f8ab30c889fc759935"
+  },
+  "baseline": {
+    "directory": "work/lid-fixing-r3/baseline/outputs/redesign-r3",
+    "inputSha256": {
+      "shell.step": "b11a6db75bead676c08b4ac9c792d3470483b772e419f5cbe5066c8104d3ae17",
+      "lid.step": "1ea18f984f33e6c37b2578108d906c01a833d6df09bb115a115ad838ddd2d102",
+      "spine.step": "bd600d02e8db5fc55ed54e5d4d207b32dfb9c2b35de0d5abcbc0407cf20e3336"
+    }
+  },
+  "lidLocks": [
+    {
+      "xyMm": [
+        3.0,
+        48.0
+      ],
+      "pilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          166.4,
+          174.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "throughHole": {
+        "radiusMm": 1.7,
+        "axisRangeMm": [
+          174.0,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "counterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          191.8,
+          194.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwShaft": {
+        "radiusMm": 1.5,
+        "axisRangeMm": [
+          166.8,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwHead": {
+        "radiusMm": 2.85,
+        "axisRangeMm": [
+          191.8,
+          193.5
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "headBelowRoofMm": 0.5,
+      "seatContactAreaMm2": 96.65675354648292,
+      "headBearingAreaMm2": 16.438383559908583,
+      "pilotSidewallSection": {
+        "sectionCenterMm": [
+          3.0,
+          48.0,
+          171
+        ],
+        "boreRadiusMm": 2.05,
+        "nearestOtherBoundaryFromAxisMm": 5.199999999999999,
+        "minimumMaterialToOtherBoundaryMm": 3.1499999999999995,
+        "nearestBoundaryBoundsMm": [
+          8.2,
+          44.0,
+          171.0,
+          8.2,
+          52.0,
+          171.0
+        ]
+      },
+      "sleeveWallSection": {
+        "sectionCenterMm": [
+          3.0,
+          48.0,
+          180
+        ],
+        "boreRadiusMm": 1.7,
+        "nearestOtherBoundaryFromAxisMm": 5.999999999999924,
+        "minimumMaterialToOtherBoundaryMm": 4.299999999999923,
+        "nearestBoundaryBoundsMm": [
+          -2.2,
+          50.993325909419,
+          180.0,
+          -2.2,
+          149.00667409058016,
+          180.0
+        ]
+      },
+      "counterboreEdgeSection": {
+        "sectionCenterMm": [
+          3.0,
+          48.0,
+          192.5
+        ],
+        "boreRadiusMm": 3.15,
+        "nearestOtherBoundaryFromAxisMm": 8.0,
+        "minimumMaterialToOtherBoundaryMm": 4.85,
+        "nearestBoundaryBoundsMm": [
+          -5.0,
+          36.0,
+          192.5,
+          -5.0,
+          164.0,
+          192.5
+        ]
+      },
+      "requiredMaterial": [
+        {
+          "feature": "D-shaped-shell-seat",
+          "requiredVolumeMm3": 1142.4925253087906,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D12-compression-sleeve",
+          "requiredVolumeMm3": 1373.0393524367255,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-sleeve-root",
+          "requiredVolumeMm3": 291.81206961644403,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D16-roof-root-clipped-to-outer-wall",
+          "requiredVolumeMm3": 383.9654541217445,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "closed-counterbore-rim",
+          "requiredVolumeMm3": 191.07794837663863,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "blind-floor-material",
+          "requiredVolumeMm3": 31.24698424935842,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-wall-arm-ramp",
+          "requiredVolumeMm3": 661.5000000000001,
+          "missingMaterialMm3": 0.0
+        }
+      ],
+      "screwPrintedPartOverlapMm3": {
+        "lid": 0.0,
+        "shell": 0.0,
+        "spine": 0.0,
+        "rear-fan-frame": 0.0,
+        "top-fan": 0.0
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "innerDiameterMm": 3.0,
+        "lengthMm": 5.4,
+        "zMm": [
+          168.6,
+          174.0
+        ],
+        "shellOverlapMm3": 0.0,
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "nominalThreadOverlapMm": 5.4,
+      "screwBeyondInsertMm": 1.8,
+      "tipFloorClearanceMm": 0.4000000000000057,
+      "blindFloorMaterialMm": 2.4000000000000057,
+      "driverDiameterMm": 6.0,
+      "driverChecks": [
+        {
+          "part": "lid",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.14999999999999727
+        },
+        {
+          "part": "top-fan",
+          "overlapMm3": 0.0,
+          "distanceMm": 21.210177465357138
+        },
+        {
+          "part": "other-lock-1",
+          "overlapMm3": 0.0,
+          "distanceMm": 132.15
+        },
+        {
+          "part": "other-lock-2",
+          "overlapMm3": 0.0,
+          "distanceMm": 98.15
+        },
+        {
+          "part": "other-lock-3",
+          "overlapMm3": 0.0,
+          "distanceMm": 166.95046296234278
+        }
+      ]
+    },
+    {
+      "xyMm": [
+        141.0,
+        48.0
+      ],
+      "pilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          166.4,
+          174.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "throughHole": {
+        "radiusMm": 1.7,
+        "axisRangeMm": [
+          174.0,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "counterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          191.8,
+          194.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwShaft": {
+        "radiusMm": 1.5,
+        "axisRangeMm": [
+          166.8,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwHead": {
+        "radiusMm": 2.85,
+        "axisRangeMm": [
+          191.8,
+          193.5
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "headBelowRoofMm": 0.5,
+      "seatContactAreaMm2": 96.65675354648306,
+      "headBearingAreaMm2": 16.438383559908623,
+      "pilotSidewallSection": {
+        "sectionCenterMm": [
+          141.0,
+          48.0,
+          171
+        ],
+        "boreRadiusMm": 2.05,
+        "nearestOtherBoundaryFromAxisMm": 5.199999999999989,
+        "minimumMaterialToOtherBoundaryMm": 3.149999999999989,
+        "nearestBoundaryBoundsMm": [
+          135.8,
+          44.0,
+          171.0,
+          135.8,
+          52.0,
+          171.0
+        ]
+      },
+      "sleeveWallSection": {
+        "sectionCenterMm": [
+          141.0,
+          48.0,
+          180
+        ],
+        "boreRadiusMm": 1.7,
+        "nearestOtherBoundaryFromAxisMm": 5.999999999999914,
+        "minimumMaterialToOtherBoundaryMm": 4.299999999999914,
+        "nearestBoundaryBoundsMm": [
+          135.0,
+          42.0,
+          180.0,
+          146.20000000000007,
+          54.0,
+          180.0
+        ]
+      },
+      "counterboreEdgeSection": {
+        "sectionCenterMm": [
+          141.0,
+          48.0,
+          192.5
+        ],
+        "boreRadiusMm": 3.15,
+        "nearestOtherBoundaryFromAxisMm": 8.0,
+        "minimumMaterialToOtherBoundaryMm": 4.85,
+        "nearestBoundaryBoundsMm": [
+          149.0,
+          36.0,
+          192.5,
+          149.0,
+          164.0,
+          192.5
+        ]
+      },
+      "requiredMaterial": [
+        {
+          "feature": "D-shaped-shell-seat",
+          "requiredVolumeMm3": 1142.4925253087915,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D12-compression-sleeve",
+          "requiredVolumeMm3": 1373.039352436726,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-sleeve-root",
+          "requiredVolumeMm3": 291.8120696164439,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D16-roof-root-clipped-to-outer-wall",
+          "requiredVolumeMm3": 383.96545412174453,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "closed-counterbore-rim",
+          "requiredVolumeMm3": 191.07794837663857,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "blind-floor-material",
+          "requiredVolumeMm3": 31.246984249358455,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-wall-arm-ramp",
+          "requiredVolumeMm3": 661.5,
+          "missingMaterialMm3": 0.0
+        }
+      ],
+      "screwPrintedPartOverlapMm3": {
+        "lid": 0.0,
+        "shell": 0.0,
+        "spine": 0.0,
+        "rear-fan-frame": 0.0,
+        "top-fan": 0.0
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "innerDiameterMm": 3.0,
+        "lengthMm": 5.4,
+        "zMm": [
+          168.6,
+          174.0
+        ],
+        "shellOverlapMm3": 0.0,
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "nominalThreadOverlapMm": 5.4,
+      "screwBeyondInsertMm": 1.8,
+      "tipFloorClearanceMm": 0.4000000000000057,
+      "blindFloorMaterialMm": 2.4000000000000057,
+      "driverDiameterMm": 6.0,
+      "driverChecks": [
+        {
+          "part": "lid",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.14999999999997934
+        },
+        {
+          "part": "top-fan",
+          "overlapMm3": 0.0,
+          "distanceMm": 21.21017746535713
+        },
+        {
+          "part": "other-lock-0",
+          "overlapMm3": 0.0,
+          "distanceMm": 132.15
+        },
+        {
+          "part": "other-lock-2",
+          "overlapMm3": 0.0,
+          "distanceMm": 166.95046296234278
+        },
+        {
+          "part": "other-lock-3",
+          "overlapMm3": 0.0,
+          "distanceMm": 98.15
+        }
+      ]
+    },
+    {
+      "xyMm": [
+        3.0,
+        152.0
+      ],
+      "pilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          166.4,
+          174.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "throughHole": {
+        "radiusMm": 1.7,
+        "axisRangeMm": [
+          174.0,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "counterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          191.8,
+          194.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwShaft": {
+        "radiusMm": 1.5,
+        "axisRangeMm": [
+          166.8,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwHead": {
+        "radiusMm": 2.85,
+        "axisRangeMm": [
+          191.8,
+          193.5
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "headBelowRoofMm": 0.5,
+      "seatContactAreaMm2": 96.65675354648243,
+      "headBearingAreaMm2": 16.438383559908583,
+      "pilotSidewallSection": {
+        "sectionCenterMm": [
+          3.0,
+          152.0,
+          171
+        ],
+        "boreRadiusMm": 2.05,
+        "nearestOtherBoundaryFromAxisMm": 5.199999999999999,
+        "minimumMaterialToOtherBoundaryMm": 3.1499999999999995,
+        "nearestBoundaryBoundsMm": [
+          8.2,
+          148.0,
+          171.0,
+          8.2,
+          156.0,
+          171.0
+        ]
+      },
+      "sleeveWallSection": {
+        "sectionCenterMm": [
+          3.0,
+          152.0,
+          180
+        ],
+        "boreRadiusMm": 1.7,
+        "nearestOtherBoundaryFromAxisMm": 5.999999999995436,
+        "minimumMaterialToOtherBoundaryMm": 4.2999999999954355,
+        "nearestBoundaryBoundsMm": [
+          -2.2,
+          154.99332590941,
+          180.0,
+          -2.2,
+          164.0,
+          180.0
+        ]
+      },
+      "counterboreEdgeSection": {
+        "sectionCenterMm": [
+          3.0,
+          152.0,
+          192.5
+        ],
+        "boreRadiusMm": 3.15,
+        "nearestOtherBoundaryFromAxisMm": 8.0,
+        "minimumMaterialToOtherBoundaryMm": 4.85,
+        "nearestBoundaryBoundsMm": [
+          -5.0,
+          36.0,
+          192.5,
+          -5.0,
+          164.0,
+          192.5
+        ]
+      },
+      "requiredMaterial": [
+        {
+          "feature": "D-shaped-shell-seat",
+          "requiredVolumeMm3": 1142.4925253087906,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D12-compression-sleeve",
+          "requiredVolumeMm3": 1373.039352436726,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-sleeve-root",
+          "requiredVolumeMm3": 291.81206961644403,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D16-roof-root-clipped-to-outer-wall",
+          "requiredVolumeMm3": 383.9654541217444,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "closed-counterbore-rim",
+          "requiredVolumeMm3": 191.07794837663857,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "blind-floor-material",
+          "requiredVolumeMm3": 31.24698424935842,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-wall-arm-ramp",
+          "requiredVolumeMm3": 661.5,
+          "missingMaterialMm3": 0.0
+        }
+      ],
+      "screwPrintedPartOverlapMm3": {
+        "lid": 0.0,
+        "shell": 0.0,
+        "spine": 0.0,
+        "rear-fan-frame": 0.0,
+        "top-fan": 0.0
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "innerDiameterMm": 3.0,
+        "lengthMm": 5.4,
+        "zMm": [
+          168.6,
+          174.0
+        ],
+        "shellOverlapMm3": 0.0,
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "nominalThreadOverlapMm": 5.4,
+      "screwBeyondInsertMm": 1.8,
+      "tipFloorClearanceMm": 0.4000000000000057,
+      "blindFloorMaterialMm": 2.4000000000000057,
+      "driverDiameterMm": 6.0,
+      "driverChecks": [
+        {
+          "part": "lid",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.14999999999999183
+        },
+        {
+          "part": "top-fan",
+          "overlapMm3": 0.0,
+          "distanceMm": 21.210177465357138
+        },
+        {
+          "part": "other-lock-0",
+          "overlapMm3": 0.0,
+          "distanceMm": 98.15
+        },
+        {
+          "part": "other-lock-1",
+          "overlapMm3": 0.0,
+          "distanceMm": 166.95046296234278
+        },
+        {
+          "part": "other-lock-3",
+          "overlapMm3": 0.0,
+          "distanceMm": 132.15
+        }
+      ]
+    },
+    {
+      "xyMm": [
+        141.0,
+        152.0
+      ],
+      "pilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          166.4,
+          174.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "throughHole": {
+        "radiusMm": 1.7,
+        "axisRangeMm": [
+          174.0,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "counterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          191.8,
+          194.0
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwShaft": {
+        "radiusMm": 1.5,
+        "axisRangeMm": [
+          166.8,
+          191.8
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "screwHead": {
+        "radiusMm": 2.85,
+        "axisRangeMm": [
+          191.8,
+          193.5
+        ],
+        "angularSpanRad": 6.28318530718
+      },
+      "headBelowRoofMm": 0.5,
+      "seatContactAreaMm2": 96.65675354648307,
+      "headBearingAreaMm2": 16.438383559908623,
+      "pilotSidewallSection": {
+        "sectionCenterMm": [
+          141.0,
+          152.0,
+          171
+        ],
+        "boreRadiusMm": 2.05,
+        "nearestOtherBoundaryFromAxisMm": 5.199999999999989,
+        "minimumMaterialToOtherBoundaryMm": 3.149999999999989,
+        "nearestBoundaryBoundsMm": [
+          135.8,
+          148.0,
+          171.0,
+          135.8,
+          156.0,
+          171.0
+        ]
+      },
+      "sleeveWallSection": {
+        "sectionCenterMm": [
+          141.0,
+          152.0,
+          180
+        ],
+        "boreRadiusMm": 1.7,
+        "nearestOtherBoundaryFromAxisMm": 5.999999999995426,
+        "minimumMaterialToOtherBoundaryMm": 4.299999999995426,
+        "nearestBoundaryBoundsMm": [
+          135.0,
+          146.0,
+          180.0,
+          146.20000000000397,
+          158.0,
+          180.0
+        ]
+      },
+      "counterboreEdgeSection": {
+        "sectionCenterMm": [
+          141.0,
+          152.0,
+          192.5
+        ],
+        "boreRadiusMm": 3.15,
+        "nearestOtherBoundaryFromAxisMm": 8.0,
+        "minimumMaterialToOtherBoundaryMm": 4.85,
+        "nearestBoundaryBoundsMm": [
+          149.0,
+          36.0,
+          192.5,
+          149.0,
+          164.0,
+          192.5
+        ]
+      },
+      "requiredMaterial": [
+        {
+          "feature": "D-shaped-shell-seat",
+          "requiredVolumeMm3": 1142.4925253087915,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D12-compression-sleeve",
+          "requiredVolumeMm3": 1373.0393524367264,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-sleeve-root",
+          "requiredVolumeMm3": 291.8120696164439,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "D16-roof-root-clipped-to-outer-wall",
+          "requiredVolumeMm3": 383.9654541217446,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "closed-counterbore-rim",
+          "requiredVolumeMm3": 191.07794837663857,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "blind-floor-material",
+          "requiredVolumeMm3": 31.24698424935845,
+          "missingMaterialMm3": 0.0
+        },
+        {
+          "feature": "45-degree-wall-arm-ramp",
+          "requiredVolumeMm3": 661.5,
+          "missingMaterialMm3": 0.0
+        }
+      ],
+      "screwPrintedPartOverlapMm3": {
+        "lid": 0.0,
+        "shell": 0.0,
+        "spine": 0.0,
+        "rear-fan-frame": 0.0,
+        "top-fan": 0.0
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "innerDiameterMm": 3.0,
+        "lengthMm": 5.4,
+        "zMm": [
+          168.6,
+          174.0
+        ],
+        "shellOverlapMm3": 0.0,
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "nominalThreadOverlapMm": 5.4,
+      "screwBeyondInsertMm": 1.8,
+      "tipFloorClearanceMm": 0.4000000000000057,
+      "blindFloorMaterialMm": 2.4000000000000057,
+      "driverDiameterMm": 6.0,
+      "driverChecks": [
+        {
+          "part": "lid",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.1499999999999813
+        },
+        {
+          "part": "top-fan",
+          "overlapMm3": 0.0,
+          "distanceMm": 21.21017746535713
+        },
+        {
+          "part": "other-lock-0",
+          "overlapMm3": 0.0,
+          "distanceMm": 166.95046296234278
+        },
+        {
+          "part": "other-lock-1",
+          "overlapMm3": 0.0,
+          "distanceMm": 98.15
+        },
+        {
+          "part": "other-lock-2",
+          "overlapMm3": 0.0,
+          "distanceMm": 132.15
+        }
+      ]
+    }
+  ],
+  "baseMounts": [
+    {
+      "xyMm": [
+        10.0,
+        36.0
+      ],
+      "shellWebRequiredMaterial": {
+        "feature": "shell-foot-to-wall-web",
+        "requiredVolumeMm3": 144.1600000000001,
+        "missingMaterialMm3": 0.0
+      },
+      "baselineMissingWeb": {
+        "feature": "old-missing-shell-web",
+        "requiredVolumeMm3": 144.1600000000001,
+        "missingMaterialMm3": 85.30739179832025
+      },
+      "webSectionBoundsMm": [
+        4.5,
+        34.4,
+        2.81,
+        4.6,
+        37.6,
+        7.99
+      ],
+      "webSectionAreaMm2": 16.575999999999954,
+      "framePilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          8.0,
+          12.8
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "shellHeadCounterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          0.0,
+          2.2
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "contactAreaMm2": 50.41470810848288,
+      "blindFloor": {
+        "feature": "base-insert-blind-floor",
+        "requiredVolumeMm3": 15.427381344871549,
+        "missingMaterialMm3": 0.0
+      },
+      "blindFloorMaterialMm": 1.1999999999999993,
+      "screwGauge": {
+        "size": "M3x10",
+        "shaftZMm": [
+          2.2,
+          12.2
+        ],
+        "headDiameterMm": 5.7,
+        "headZMm": [
+          0.5,
+          2.2
+        ]
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "lengthMm": 4.8,
+        "zMm": [
+          8.0,
+          12.8
+        ],
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "screwTipFloorClearanceMm": 0.6000000000000014,
+      "nominalThreadOverlapMm": 4.2,
+      "driverChecks": [
+        {
+          "part": "shell",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.14999999999999536
+        },
+        {
+          "part": "spine",
+          "overlapMm3": 0.0,
+          "distanceMm": 7.5
+        }
+      ]
+    },
+    {
+      "xyMm": [
+        134.0,
+        36.0
+      ],
+      "shellWebRequiredMaterial": {
+        "feature": "shell-foot-to-wall-web",
+        "requiredVolumeMm3": 144.1600000000001,
+        "missingMaterialMm3": 0.0
+      },
+      "baselineMissingWeb": {
+        "feature": "old-missing-shell-web",
+        "requiredVolumeMm3": 144.1600000000001,
+        "missingMaterialMm3": 85.30739179831689
+      },
+      "webSectionBoundsMm": [
+        139.4,
+        34.4,
+        2.81,
+        139.5,
+        37.6,
+        7.99
+      ],
+      "webSectionAreaMm2": 16.57599999999907,
+      "framePilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          8.0,
+          12.8
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "shellHeadCounterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          0.0,
+          2.2
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "contactAreaMm2": 50.414708108482,
+      "blindFloor": {
+        "feature": "base-insert-blind-floor",
+        "requiredVolumeMm3": 15.427381344871565,
+        "missingMaterialMm3": 0.0
+      },
+      "blindFloorMaterialMm": 1.1999999999999993,
+      "screwGauge": {
+        "size": "M3x10",
+        "shaftZMm": [
+          2.2,
+          12.2
+        ],
+        "headDiameterMm": 5.7,
+        "headZMm": [
+          0.5,
+          2.2
+        ]
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "lengthMm": 4.8,
+        "zMm": [
+          8.0,
+          12.8
+        ],
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "screwTipFloorClearanceMm": 0.6000000000000014,
+      "nominalThreadOverlapMm": 4.2,
+      "driverChecks": [
+        {
+          "part": "shell",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.1499999999999941
+        },
+        {
+          "part": "spine",
+          "overlapMm3": 0.0,
+          "distanceMm": 7.5
+        }
+      ]
+    },
+    {
+      "xyMm": [
+        10.0,
+        132.0
+      ],
+      "shellWebRequiredMaterial": {
+        "feature": "shell-foot-to-wall-web",
+        "requiredVolumeMm3": 144.15999999999946,
+        "missingMaterialMm3": 0.0
+      },
+      "baselineMissingWeb": {
+        "feature": "old-missing-shell-web",
+        "requiredVolumeMm3": 144.15999999999946,
+        "missingMaterialMm3": 85.54507709198063
+      },
+      "webSectionBoundsMm": [
+        4.5,
+        130.4,
+        2.81,
+        4.6,
+        133.6,
+        7.99
+      ],
+      "webSectionAreaMm2": 16.57599999999988,
+      "framePilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          8.0,
+          12.8
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "shellHeadCounterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          0.0,
+          2.2
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "contactAreaMm2": 50.41470810848299,
+      "blindFloor": {
+        "feature": "base-insert-blind-floor",
+        "requiredVolumeMm3": 15.427381344871547,
+        "missingMaterialMm3": 0.0
+      },
+      "blindFloorMaterialMm": 1.1999999999999993,
+      "screwGauge": {
+        "size": "M3x10",
+        "shaftZMm": [
+          2.2,
+          12.2
+        ],
+        "headDiameterMm": 5.7,
+        "headZMm": [
+          0.5,
+          2.2
+        ]
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "lengthMm": 4.8,
+        "zMm": [
+          8.0,
+          12.8
+        ],
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "screwTipFloorClearanceMm": 0.6000000000000014,
+      "nominalThreadOverlapMm": 4.2,
+      "driverChecks": [
+        {
+          "part": "shell",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.1499999999999882
+        },
+        {
+          "part": "spine",
+          "overlapMm3": 0.0,
+          "distanceMm": 7.5
+        }
+      ]
+    },
+    {
+      "xyMm": [
+        134.0,
+        132.0
+      ],
+      "shellWebRequiredMaterial": {
+        "feature": "shell-foot-to-wall-web",
+        "requiredVolumeMm3": 144.15999999999946,
+        "missingMaterialMm3": 0.0
+      },
+      "baselineMissingWeb": {
+        "feature": "old-missing-shell-web",
+        "requiredVolumeMm3": 144.15999999999946,
+        "missingMaterialMm3": 85.54507709196983
+      },
+      "webSectionBoundsMm": [
+        139.4,
+        130.4,
+        2.81,
+        139.5,
+        133.6,
+        7.99
+      ],
+      "webSectionAreaMm2": 16.575999999998995,
+      "framePilot": {
+        "radiusMm": 2.05,
+        "axisRangeMm": [
+          8.0,
+          12.8
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "shellHeadCounterbore": {
+        "radiusMm": 3.15,
+        "axisRangeMm": [
+          0.0,
+          2.2
+        ],
+        "angularSpanRad": 6.283185307179586
+      },
+      "contactAreaMm2": 50.4147081084821,
+      "blindFloor": {
+        "feature": "base-insert-blind-floor",
+        "requiredVolumeMm3": 15.427381344871563,
+        "missingMaterialMm3": 0.0
+      },
+      "blindFloorMaterialMm": 1.1999999999999993,
+      "screwGauge": {
+        "size": "M3x10",
+        "shaftZMm": [
+          2.2,
+          12.2
+        ],
+        "headDiameterMm": 5.7,
+        "headZMm": [
+          0.5,
+          2.2
+        ]
+      },
+      "insertGauge": {
+        "outerDiameterMm": 4.1,
+        "lengthMm": 4.8,
+        "zMm": [
+          8.0,
+          12.8
+        ],
+        "assumptionOnly": true,
+        "actualInsertSelected": false
+      },
+      "screwTipFloorClearanceMm": 0.6000000000000014,
+      "nominalThreadOverlapMm": 4.2,
+      "driverChecks": [
+        {
+          "part": "shell",
+          "overlapMm3": 0.0,
+          "distanceMm": 0.14999999999998564
+        },
+        {
+          "part": "spine",
+          "overlapMm3": 0.0,
+          "distanceMm": 7.5
+        }
+      ]
+    }
+  ],
+  "frontFrameRoots": [
+    {
+      "corner": 1,
+      "material": {
+        "feature": "front-frame-foot-gusset",
+        "requiredVolumeMm3": 577.3930559562372,
+        "missingMaterialMm3": 0.0
+      },
+      "baselineMissingMaterial": {
+        "feature": "old-front-frame-foot-root",
+        "requiredVolumeMm3": 577.3930559562372,
+        "missingMaterialMm3": 197.30405097114712
+      },
+      "rootWitness": {
+        "feature": "front-root-full-height-witness",
+        "requiredVolumeMm3": 6.0,
+        "missingMaterialMm3": 0.0
+      },
+      "measuredRootThicknessMm": 6.0
+    },
+    {
+      "corner": 2,
+      "material": {
+        "feature": "front-frame-foot-gusset",
+        "requiredVolumeMm3": 577.3930559562372,
+        "missingMaterialMm3": 0.0
+      },
+      "baselineMissingMaterial": {
+        "feature": "old-front-frame-foot-root",
+        "requiredVolumeMm3": 577.3930559562372,
+        "missingMaterialMm3": 358.2015509711545
+      },
+      "rootWitness": {
+        "feature": "front-root-full-height-witness",
+        "requiredVolumeMm3": 6.0,
+        "missingMaterialMm3": 0.0
+      },
+      "measuredRootThicknessMm": 6.0
+    }
+  ],
+  "addedSeatProjectionIsolation": [
+    {
+      "xyMm": [
+        3.0,
+        48.0
+      ],
+      "actualAddedSeatBoundsMm": [
+        -2.200000000000003,
+        42.0,
+        153.6,
+        8.200000000000001,
+        54.0,
+        174.0
+      ],
+      "addedSeatVolumeMm3": 1779.4525253087925,
+      "projectionMethod": "Exact final seat B-rep clipped inside the moved sidewall inner face; its measured bounds are expanded 0.00001 mm in XY and extended through all moving-part heights. This rectangular projection contains the actual seat projection.",
+      "columnBoundsMm": [
+        -2.200010000000003,
+        41.99999,
+        -10.0,
+        8.20001,
+        54.000009999999996,
+        400.0
+      ],
+      "movingParts": [
+        {
+          "part": "spine",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 1.7641714536082067
+        },
+        {
+          "part": "rear-fan-frame",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 82.55634917436817
+        },
+        {
+          "part": "carrier-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 16.09999
+        },
+        {
+          "part": "7mm-drive-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 18.09999
+        },
+        {
+          "part": "carrier-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 37.59999
+        },
+        {
+          "part": "7mm-drive-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 39.59999
+        },
+        {
+          "part": "carrier-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 59.09999
+        },
+        {
+          "part": "7mm-drive-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 61.09999
+        },
+        {
+          "part": "carrier-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 80.59998999999999
+        },
+        {
+          "part": "7mm-drive-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 82.59998999999999
+        },
+        {
+          "part": "carrier-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 102.09998999999999
+        },
+        {
+          "part": "7mm-drive-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 104.09998999999999
+        },
+        {
+          "part": "rear-fan-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 88.08199682114501
+        },
+        {
+          "part": "cm5-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 34.00734032529154
+        },
+        {
+          "part": "cooler-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 31.941185075075097
+        },
+        {
+          "part": "rear-fan-head-19.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.31548910453591
+        },
+        {
+          "part": "rear-fan-head-19.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.31548910453591
+        },
+        {
+          "part": "rear-fan-head-124.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 160.12463261784615
+        },
+        {
+          "part": "rear-fan-head-124.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 160.12463261784615
+        }
+      ],
+      "nativeBoard": {
+        "solidCount": 730,
+        "broadphaseCandidates": [],
+        "actualProjectionOverlapMm3": 0,
+        "xyClearanceMm": 0.999989999999995,
+        "nearestSolidIndex": 0,
+        "wholeBoardBoxOverlapMm3": 0.0,
+        "wholeBoardBoxFalsePositive": false
+      },
+      "scope": "Continuous vertical-translation isolation for the four added shell seats only. Full shell service path remains covered by geometry.json discrete poses."
+    },
+    {
+      "xyMm": [
+        141.0,
+        48.0
+      ],
+      "actualAddedSeatBoundsMm": [
+        135.8,
+        42.0,
+        153.6,
+        146.20000000000002,
+        54.0,
+        174.0
+      ],
+      "addedSeatVolumeMm3": 1779.4525253087907,
+      "projectionMethod": "Exact final seat B-rep clipped inside the moved sidewall inner face; its measured bounds are expanded 0.00001 mm in XY and extended through all moving-part heights. This rectangular projection contains the actual seat projection.",
+      "columnBoundsMm": [
+        135.79999,
+        41.99999,
+        -10.0,
+        146.20001000000002,
+        54.000009999999996,
+        400.0
+      ],
+      "movingParts": [
+        {
+          "part": "spine",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 1.7641714536082058
+        },
+        {
+          "part": "rear-fan-frame",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 82.51454913529007
+        },
+        {
+          "part": "carrier-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 97.19999000000001
+        },
+        {
+          "part": "7mm-drive-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 102.49999000000001
+        },
+        {
+          "part": "carrier-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 75.69999000000001
+        },
+        {
+          "part": "7mm-drive-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 80.99999000000001
+        },
+        {
+          "part": "carrier-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 54.199990000000014
+        },
+        {
+          "part": "7mm-drive-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 59.49999000000001
+        },
+        {
+          "part": "carrier-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 32.699990000000014
+        },
+        {
+          "part": "7mm-drive-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 37.99999000000001
+        },
+        {
+          "part": "carrier-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 11.199990000000014
+        },
+        {
+          "part": "7mm-drive-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 16.49999000000001
+        },
+        {
+          "part": "rear-fan-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 88.08199682114501
+        },
+        {
+          "part": "cm5-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 39.90111622499051
+        },
+        {
+          "part": "cooler-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 37.91884998256409
+        },
+        {
+          "part": "rear-fan-head-19.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 160.12463261784615
+        },
+        {
+          "part": "rear-fan-head-19.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 160.12463261784615
+        },
+        {
+          "part": "rear-fan-head-124.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.31548910453591
+        },
+        {
+          "part": "rear-fan-head-124.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.31548910453591
+        }
+      ],
+      "nativeBoard": {
+        "solidCount": 730,
+        "broadphaseCandidates": [],
+        "actualProjectionOverlapMm3": 0,
+        "xyClearanceMm": 12.912380000000013,
+        "nearestSolidIndex": 0,
+        "wholeBoardBoxOverlapMm3": 0.0,
+        "wholeBoardBoxFalsePositive": false
+      },
+      "scope": "Continuous vertical-translation isolation for the four added shell seats only. Full shell service path remains covered by geometry.json discrete poses."
+    },
+    {
+      "xyMm": [
+        3.0,
+        152.0
+      ],
+      "actualAddedSeatBoundsMm": [
+        -2.200000000000003,
+        146.0,
+        153.6,
+        8.200000000000001,
+        158.0,
+        174.0
+      ],
+      "addedSeatVolumeMm3": 1779.4525253087925,
+      "projectionMethod": "Exact final seat B-rep clipped inside the moved sidewall inner face; its measured bounds are expanded 0.00001 mm in XY and extended through all moving-part heights. This rectangular projection contains the actual seat projection.",
+      "columnBoundsMm": [
+        -2.200010000000003,
+        145.99999,
+        -10.0,
+        8.20001,
+        158.00001,
+        400.0
+      ],
+      "movingParts": [
+        {
+          "part": "spine",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 8.148761194206145
+        },
+        {
+          "part": "rear-fan-frame",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 4.289800578138799
+        },
+        {
+          "part": "carrier-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 30.072731335883013
+        },
+        {
+          "part": "7mm-drive-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 39.092600898382294
+        },
+        {
+          "part": "carrier-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 45.37530980610711
+        },
+        {
+          "part": "7mm-drive-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 52.619207662223495
+        },
+        {
+          "part": "carrier-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 64.327041825349
+        },
+        {
+          "part": "7mm-drive-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 70.24123137445841
+        },
+        {
+          "part": "carrier-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 84.50750191551161
+        },
+        {
+          "part": "7mm-drive-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 89.57332278642006
+        },
+        {
+          "part": "carrier-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 105.21201190928818
+        },
+        {
+          "part": "7mm-drive-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 109.71522102698512
+        },
+        {
+          "part": "rear-fan-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 3.7999899999999993
+        },
+        {
+          "part": "cm5-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 56.06155930760577
+        },
+        {
+          "part": "cooler-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 54.288474688465875
+        },
+        {
+          "part": "rear-fan-head-19.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 12.345126609322397
+        },
+        {
+          "part": "rear-fan-head-19.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 12.345126609322397
+        },
+        {
+          "part": "rear-fan-head-124.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.80641480602137
+        },
+        {
+          "part": "rear-fan-head-124.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.80641480602137
+        }
+      ],
+      "nativeBoard": {
+        "solidCount": 730,
+        "broadphaseCandidates": [],
+        "actualProjectionOverlapMm3": 0,
+        "xyClearanceMm": 25.81878060978143,
+        "nearestSolidIndex": 0,
+        "wholeBoardBoxOverlapMm3": 0.0,
+        "wholeBoardBoxFalsePositive": false
+      },
+      "scope": "Continuous vertical-translation isolation for the four added shell seats only. Full shell service path remains covered by geometry.json discrete poses."
+    },
+    {
+      "xyMm": [
+        141.0,
+        152.0
+      ],
+      "actualAddedSeatBoundsMm": [
+        135.8,
+        146.0,
+        153.6,
+        146.20000000000002,
+        158.0,
+        174.0
+      ],
+      "addedSeatVolumeMm3": 1779.4525253087904,
+      "projectionMethod": "Exact final seat B-rep clipped inside the moved sidewall inner face; its measured bounds are expanded 0.00001 mm in XY and extended through all moving-part heights. This rectangular projection contains the actual seat projection.",
+      "columnBoundsMm": [
+        135.79999,
+        145.99999,
+        -10.0,
+        146.20001000000002,
+        158.00001,
+        400.0
+      ],
+      "movingParts": [
+        {
+          "part": "spine",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 8.000146186176847
+        },
+        {
+          "part": "rear-fan-frame",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 4.0003023635970285
+        },
+        {
+          "part": "carrier-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 102.31637169583469
+        },
+        {
+          "part": "7mm-drive-1",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 108.19828906688036
+        },
+        {
+          "part": "carrier-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 82.16623605228733
+        },
+        {
+          "part": "7mm-drive-2",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 88.10005781496515
+        },
+        {
+          "part": "carrier-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 62.9161408304753
+        },
+        {
+          "part": "7mm-drive-3",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 68.85398040055638
+        },
+        {
+          "part": "carrier-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 45.7175153196256
+        },
+        {
+          "part": "7mm-drive-4",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 51.4258791563178
+        },
+        {
+          "part": "carrier-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 31.961212492648027
+        },
+        {
+          "part": "7mm-drive-5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 38.37800772578223
+        },
+        {
+          "part": "rear-fan-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 3.799990000000008
+        },
+        {
+          "part": "cm5-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 59.82055091688976
+        },
+        {
+          "part": "cooler-envelope",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 58.00722682563096
+        },
+        {
+          "part": "rear-fan-head-19.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.80641480602138
+        },
+        {
+          "part": "rear-fan-head-19.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 113.80641480602138
+        },
+        {
+          "part": "rear-fan-head-124.5-15.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 12.345126609322408
+        },
+        {
+          "part": "rear-fan-head-124.5-120.5",
+          "projectionOverlapMm3": 0.0,
+          "xyClearanceMm": 12.345126609322408
+        }
+      ],
+      "nativeBoard": {
+        "solidCount": 730,
+        "broadphaseCandidates": [],
+        "actualProjectionOverlapMm3": 0,
+        "xyClearanceMm": 29.76410008712305,
+        "nearestSolidIndex": 0,
+        "wholeBoardBoxOverlapMm3": 0.0,
+        "wholeBoardBoxFalsePositive": false
+      },
+      "scope": "Continuous vertical-translation isolation for the four added shell seats only. Full shell service path remains covered by geometry.json discrete poses."
+    }
+  ],
+  "negativeControls": {
+    "oldLidLip": {
+      "sectionCenterMm": [
+        12.0,
+        167.5,
+        171.8
+      ],
+      "boreRadiusMm": 1.65,
+      "nearestOtherBoundaryFromAxisMm": 2.5,
+      "minimumMaterialToOtherBoundaryMm": 0.8500000000000001,
+      "nearestBoundaryBoundsMm": [
+        4.642545607160095,
+        167.5,
+        169.3,
+        139.3574543928399,
+        167.5,
+        169.3
+      ]
+    },
+    "oldLipFailsTwoMmMaterialCriterion": true,
+    "oldOpenCounterbore": {
+      "feature": "old-open-rear-head-recess",
+      "requiredVolumeMm3": 1.7278759594743507,
+      "missingMaterialMm3": 0.35202778891543207
+    },
+    "oversizeShaftDiameterMm": 3.6,
+    "oversizeShaftOverlapMm3": 19.352210746113514,
+    "oversizeHeadDiameterMm": 7.0,
+    "oversizeHeadOverlapMm3": 12.43049673209174,
+    "oversizeDriverDiameterMm": 8.0,
+    "oversizeDriverOverlapMm3": 9.546514676096082,
+    "cutFootWeb": {
+      "feature": "deliberately-cut-foot-web",
+      "requiredVolumeMm3": 59.36000000000004,
+      "missingMaterialMm3": 5.088000000000001
+    },
+    "previousWideSeatProjection": {
+      "boundsXyMm": [
+        7,
+        35,
+        19,
+        47
+      ],
+      "actualFrameProjectionOverlapMm3": 1708.8643894794104,
+      "rejected": true
+    },
+    "nativeWholeTreeBooleanControl": {
+      "boundsXyMm": [
+        2.8,
+        42,
+        11.5,
+        54
+      ],
+      "pcbSolidProjectionOverlapMm3": 44.159999999999904,
+      "wholeTreeProjectionOverlapMm3": 0.0,
+      "wholeTreeFalseNegativeObserved": true,
+      "acceptanceUsesIndividualSolids": true,
+      "rejected": true
+    }
+  },
+  "mating": {
+    "oldStopContactAreaMm2": 76.8000000000001,
+    "newFourSeatContactAreaMm2": 386.62701418593144,
+    "totalContactAreaMm2": 463.4270141859315,
+    "shellLidOverlapMm3": 0.0
+  },
+  "limits": [
+    "Independent STEP/B-rep geometry only; no physical or FEA strength, torque, fatigue, vibration or thermal validation.",
+    "Insert OD4.1/length5.4 for lid and OD4.1/length4.8 for base are unthreaded geometric gauges, not purchase specifications or heat-set fit guarantees.",
+    "M3 fully threaded shafts and nominal head envelopes omit threads, knurls, tolerances and tool-bit shape.",
+    "Driver envelopes prove the stated rigid shafts only, not full hand access; wiring and real solder-tail variation remain unverified.",
+    "Nominal coplanar contact area and material sections do not prove preload distribution or printed strength."
+  ]
+}
